@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, flash, request
 from wtforms import Form, TextField, TextAreaField, validators, StringField, SubmitField
 
@@ -9,9 +10,6 @@ app.config['SECRET_KEY'] = '7d441f27d441f27567d441f2b6176a'
 
 
 class ReusableForm(Form):
-    name = TextField('Name:', validators=[validators.required()])
-    email = TextField('Email:', validators=[validators.required(), validators.Length(min=6, max=35)])
-    password = TextField('Password:', validators=[validators.required(), validators.Length(min=3, max=35)])
 
     @app.route("/", methods=['GET', 'POST'])
     def hello():
@@ -19,19 +17,17 @@ class ReusableForm(Form):
 
         print(form.errors)
         if request.method == 'POST':
-            name = request.form['name']
-            password = request.form['password']
-            email = request.form['email']
-            print(name, " ", email, " ", password)
+            pass
 
         if form.validate():
-            # Save the comment here.
-            flash('Thanks for registration ' + name)
+            pass
         else:
             flash('Error: All the form fields are required. ')
 
         return render_template('form.html', form=form)
 
 
-if __name__ == "__main__":
-    app.run()
+if __name__ == '__main__':
+    # Bind to PORT if defined, otherwise default to 5000.
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
