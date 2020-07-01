@@ -11,8 +11,8 @@ app.config['SECRET_KEY'] = '7d441f27d441f27567d441f2b6176a'
 
 class ReusableForm(Form):
 
-    @app.route("/", methods=['GET', 'POST'])
-    def hello():
+    @app.route("/bc", methods=['GET', 'POST'])
+    def bodega_central():
         form = ReusableForm(request.form)
 
         print(form.errors)
@@ -24,7 +24,25 @@ class ReusableForm(Form):
         else:
             flash('Error: All the form fields are required. ')
 
-        return render_template('form.html', form=form)
+        return render_template('form_bc.html', form=form)
+
+
+
+    @app.route("/bp", methods=['GET', 'POST'])
+    def bodegas_perifericas():
+        form = ReusableForm(request.form)
+
+        print(form.errors)
+        if request.method == 'POST':
+            pass
+
+        if form.validate():
+            pass
+        else:
+            flash('Error: All the form fields are required. ')
+
+        return render_template('form_bp.html', form=form)
+
 
 
 if __name__ == '__main__':
