@@ -44,7 +44,7 @@ h4 {
 }
 </style>
 
-<script>
+<!--<script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function() {
   'use strict';
@@ -65,6 +65,7 @@ h4 {
 })();
 
 </script>
+-->
 
 <script>
   $(function() {
@@ -201,7 +202,7 @@ $(document).ready(function(){
                                 <div class="form-group">
                                     Fecha Ingreso
                                     </br>
-                                    <input type="text"  id="BCE_Datepicker" class="datepicker form-control" placeholder="Escoja una fecha" required>
+                                    <input type="text"  id="BCE_Datepicker" class="datepicker form-control" placeholder="Escoja una fecha">
                                 </div>
                             </div>
 
@@ -210,7 +211,7 @@ $(document).ready(function(){
                                     Nro Formato Entrega
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Solo numeros y letras sin espacio entre caracteres." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="BCE_Nro_Formato_Entrega" class="form-control" required>
+                                    <input type="text" id="BCE_Nro_Formato_Entrega" class="form-control">
                                 </div>
                             </div>
 
@@ -219,7 +220,7 @@ $(document).ready(function(){
                                     Nro de Orden de Compra
                              <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Si no tiene o no existe numero de orden de compra, ingrese 'NA' (No Aplica)." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="BCE_Nro_Orden_Compra" class="form-control" required>
+                                    <input type="text" id="BCE_Nro_Orden_Compra" class="form-control">
                                 </div>
                             </div>
 
@@ -228,7 +229,7 @@ $(document).ready(function(){
                                     Nro de la Factura
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Si no tiene o no existe numero de la factura, ingrese 'NA' (No Aplica)." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="BCE_Nro_Factura" class="form-control" required>
+                                    <input type="text" id="BCE_Nro_Factura" class="form-control">
                                 </div>
                             </div>
                         </div>
@@ -239,7 +240,7 @@ $(document).ready(function(){
                                     Entregado por
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Digitar un solo nombre y un solo apellido sin tildes." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="BCE_Entregado_Por" class="form-control" required>
+                                    <input type="text" id="BCE_Entregado_Por" class="form-control">
                                 </div>
                             </div>
 
@@ -248,7 +249,7 @@ $(document).ready(function(){
                                     Recibido por
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Digitar un solo nombre y un solo apellido sin tildes." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="BCE_Recibido_Por" class="form-control" required>
+                                    <input type="text" id="BCE_Recibido_Por" class="form-control">
                                 </div>
                             </div>
                         </div>
@@ -260,7 +261,7 @@ $(document).ready(function(){
                             <div class="col">
                                 <div class="form-group">
                                     Descripcion
-                                    <select class="form-control" id="BCE_Desc_Producto" required>
+                                    <select class="form-control" id="BCE_Desc_Producto">
                                         <option value="">Escoja una opcion o digite el producto</option>
                                         <option>Jeringas </option>
                                         <option>Guantes </option>
@@ -291,7 +292,7 @@ $(document).ready(function(){
                                     Cantidad
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Numero de unidades, cajas, paquetes, etc." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="BCE_Cantidad" class="form-control" required>
+                                    <input type="text" id="BCE_Cantidad" class="form-control">
                                 </div>
                             </div>
 
@@ -299,12 +300,12 @@ $(document).ready(function(){
                                 <div class="form-group">
                                     Formato
                                     </br>
-                                    <select class="form-control" id="BCE_Formato" required>
+                                    <select class="form-control" id="BCE_Formato">
                                         <option value="">Escoja una opcion</option>
                                         <option>Unidad(es) </option>
                                         <option>Caja(s) </option>
                                         <option>Paquete(s) </option>
-                                        <option>ML(s) </option>
+                                        <option>ml(s) </option>
                                         <option>Litro(s) </option>
                                         <option>Resma(s) </option>
                                         <option>Par(es) </option>
@@ -317,7 +318,7 @@ $(document).ready(function(){
                                     Cantidad detalle
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Cuantas unidades por caja, paquete, resma, etc. Digitar '0' en caso de no existir informacion o no ser necesaria." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="BCE_C_Detalle" class="form-control" required>
+                                    <input type="text" id="BCE_C_Detalle" class="form-control">
                                 </div>
                             </div>
                         </div>
@@ -328,7 +329,7 @@ $(document).ready(function(){
                                     Valor por formato
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Ingresar solo numeros sin simbolo de $." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="BCE_Valor_Formato" class="form-control" required>
+                                    <input type="text" id="BCE_Valor_Formato" class="form-control">
                                 </div>
                             </div>
 
@@ -337,14 +338,14 @@ $(document).ready(function(){
                                     Valor Total
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Ingresar solo numeros sin simbolo de $." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="BCE_Valor_Total" class="form-control" required>
+                                    <input type="text" id="BCE_Valor_Total" class="form-control">
                                 </div>
                             </div>
 
                             <div class="col">
                                 <div class="form-group">
                                     Bodega Entrada
-                                    <select class="form-control" id="BCE_Bodega_Entrada" required>
+                                    <select class="form-control" id="BCE_Bodega_Entrada">
                                         <option value="">Escoja una opcion</option>
                                         <option>Bodega 1 </option>
                                         <option>Bodega 1A </option>
@@ -387,7 +388,8 @@ $(document).ready(function(){
                             </div>
                         </div>
                     </div>
-                    <script type="text/javascript">
+
+    <script type="text/javascript">
 
     var form1 = document.forms["form1"];
 
@@ -410,13 +412,14 @@ $(document).ready(function(){
 
         $("#tbody1").append(row_data + row + "</tr>");
 
-
-        $("input[name='BCES_producto']").val('');
-        $("input[name='BCES_cantidad']").val('');
-        $("input[name='BCES_cdetalle']").val('');
-        $("input[name='BCES_valorformato']").val('');
-        $("input[name='BCES_valortotal']").val('');
-        $("input[name='BCES_bentrada']").val('');
+        $("select[id='BCE_Desc_Producto']").val('');
+        $("input[id='BCE_Esp_Producto']").val('');
+        $("input[id='BCE_Cantidad']").val('');
+        $("select[id='BCE_Formato']").val('');
+        $("input[id='BCE_C_Detalle']").val('');
+        $("input[id='BCE_Valor_Formato']").val('');
+        $("input[id='BCE_Valor_Total']").val('');
+        $("select[id='BCE_Bodega_Entrada']").val('');
      });
 
     $("body").on("click", ".btn-delete1", function(){
@@ -532,7 +535,7 @@ $(document).ready(function(){
                                 <div class="form-group">
                                     Fecha Egreso
                                     </br>
-                                    <input type="text" id="BCS_datepicker" class="datepicker form-control" required>
+                                    <input type="text" id="BCS_datepicker" class="datepicker form-control">
                                 </div>
                             </div>
 
@@ -541,14 +544,14 @@ $(document).ready(function(){
                                     Nro Acta de Entrega
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Solo numeros y letras sin espacio entre caracteres." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="BCS_Nro_Acta" class="form-control" required>
+                                    <input type="text" id="BCS_Nro_Acta" class="form-control">
                                     </div>
                             </div>
 
                             <div class="col">
                                 <div class="form-group">
                                     Bodega Destino
-                                    <select class="form-control" id="BCS_Bodega_Destino" required>
+                                    <select class="form-control" id="BCS_Bodega_Destino">
                                         <option value="">Escoja una opcion</option>
                                         <option value="1">Graneros </option>
                                         <option value="1">Rengo </option>
@@ -565,7 +568,7 @@ $(document).ready(function(){
                                 <div class="form-group">
                                     Movil del Traslado
                                     </br>
-                                    <select class="form-control" id="BCS_Movil" required>
+                                    <select class="form-control" id="BCS_Movil">
                                         <option value="">Escoja una opcion</option>
                                         <option>M17 - Graneros</option>
                                         <option>M2 - Rancagua</option>
@@ -593,7 +596,7 @@ $(document).ready(function(){
                                     Entregado por
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Digitar un solo nombre y un solo apellido sin tildes." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="BCS_Entregado_Por" class="form-control" required>
+                                    <input type="text" id="BCS_Entregado_Por" class="form-control">
                                 </div>
                             </div>
 
@@ -602,7 +605,7 @@ $(document).ready(function(){
                                     Recibido por
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Digitar un solo nombre y un solo apellido sin tildes." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="BCS_Recibido_Por" class="form-control" required>
+                                    <input type="text" id="BCS_Recibido_Por" class="form-control">
                                 </div>
                             </div>
 
@@ -617,7 +620,7 @@ $(document).ready(function(){
                                 <div class="form-group">
                                     Descripcion
                                     </br>
-                                    <select class="form-control" id="BCS_Desc_Producto" required>
+                                    <select class="form-control" id="BCS_Desc_Producto">
                                         <option value="">Escoja una opcion</option>
                                         <option>Jeringas </option>
                                         <option>Guantes </option>
@@ -647,7 +650,7 @@ $(document).ready(function(){
                                     Cantidad
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Numero de unidades, cajas, paquetes, etc." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="BCS_Cantidad" class="form-control" required>
+                                    <input type="text" id="BCS_Cantidad" class="form-control">
                                 </div>
                             </div>
 
@@ -655,7 +658,7 @@ $(document).ready(function(){
                                 <div class="form-group">
                                     Formato
                                     </br>
-                                    <select class="form-control" id="BCS_Formato" required>
+                                    <select class="form-control" id="BCS_Formato">
                                         <option value="">Escoja una opcion</option>
                                         <option>Unidad(es) </option>
                                         <option>Caja(s) </option>
@@ -673,7 +676,7 @@ $(document).ready(function(){
                                     Cantidad detalle
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Cuantas unidades por caja, paquete, resma, etc. Digitar '0' en caso de no existir informacion o no ser necesaria." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="BCS_C_Detalle" class="form-control" required>
+                                    <input type="text" id="BCS_C_Detalle" class="form-control">
                                 </div>
                             </div>
 
@@ -682,7 +685,7 @@ $(document).ready(function(){
                                         Valor por formato
                                         <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Ingresar solo numeros sin simbolo de $." data-trigger="hover"></i></span>
                                         </br>
-                                        <input type="text" id="BCS_Valor_Formato" class="form-control" required>
+                                        <input type="text" id="BCS_Valor_Formato" class="form-control">
                                     </div>
                                 </div>
 
@@ -691,13 +694,13 @@ $(document).ready(function(){
                                         Valor Total
                                         <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Ingresar solo numeros sin simbolo de $." data-trigger="hover"></i></span>
                                         </br>
-                                        <input type="text" id="BCS_Valor_Total" class="form-control" required>
+                                        <input type="text" id="BCS_Valor_Total" class="form-control">
                                     </div>
                                 </div>
                             <div class="col">
                                 <div class="form-group">
                                     Bodega Salida
-                                    <select class="form-control" id="BCS_Bodega_Salida" required>
+                                    <select class="form-control" id="BCS_Bodega_Salida">
                                         <option value="">Escoja una opcion</option>
                                         <option>Bodega 1 </option>
                                         <option>Bodega 1A </option>
@@ -764,15 +767,14 @@ $(document).ready(function(){
 
         $("#tbody2").append(row_data + row + "</tr>");
 
-
-        $("input[name='BCSS_producto']").val('');
-        $("input[name='BCSS_eproducto']").val('');
-        $("input[name='BCSS_cantidad']").val('');
-        $("input[name='BCSS_formato']").val('');
-        $("input[name='BCSS_cdetalle']").val('');
-        $("input[name='BCSS_valorformato']").val('');
-        $("input[name='BCSS_valortotal']").val('');
-        $("input[name='BCSS_Bodega_Salida']").val('');
+        $("select[id='BCS_Desc_Producto']").val('');
+        $("input[id='BCS_Esp_Producto']").val('');
+        $("input[id='BCS_Cantidad']").val('');
+        $("select[id='BCS_Formato']").val('');
+        $("input[id='BCS_C_Detalle']").val('');
+        $("input[id='BCS_Valor_Formato']").val('');
+        $("input[id='BCS_Valor_Total']").val('');
+        $("select[id='BCS_Bodega_Salida']").val('');
 
      });
 
@@ -812,7 +814,6 @@ $(document).ready(function(){
         var BCSS_valorformato = $(this).parents("tr").attr('data-BCSS_valorformato');
         var BCSS_valortotal = $(this).parents("tr").attr('data-BCSS_valortotal');
         var BCSS_Bodega_Salida = $(this).parents("tr").attr('data-BCSS_Bodega_Salida');
-
 
         $(this).parents("tr").find("td:eq(0)").text(BCSS_producto);
         $(this).parents("tr").find("td:eq(1)").text(BCSS_eproducto);
@@ -884,7 +885,7 @@ $(document).ready(function(){
                                 <div class="form-group">
                                     Fecha Egreso
                                     </br>
-                                    <input type="text" id="BCSA_datepicker" class="datepicker form-control" required>
+                                    <input type="text" id="BCSA_datepicker" class="datepicker form-control">
                                 </div>
                             </div>
 
@@ -893,14 +894,14 @@ $(document).ready(function(){
                                     Nro Acta de Entrega
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Solo numeros y letras sin espacio entre caracteres." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="BCSA_Nro_Acta" class="form-control" required>
+                                    <input type="text" id="BCSA_Nro_Acta" class="form-control">
                                 </div>
                             </div>
 
                             <div class="col">
                                 <div class="form-group">
                                     Movil Destino
-                                    <select class="form-control" id="BCSA_Movil" required>
+                                    <select class="form-control" id="BCSA_Movil">
                                         <option value="">Escoja una opcion</option>
                                         <option>M17 - Graneros</option>
                                         <option>M2 - Rancagua</option>
@@ -928,7 +929,7 @@ $(document).ready(function(){
                                     Entregado por
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Digitar un solo nombre y un solo apellido sin tildes." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="BCSA_Entregado_Por"  class="form-control" required>
+                                    <input type="text" id="BCSA_Entregado_Por"  class="form-control">
                                 </div>
                             </div>
 
@@ -937,7 +938,7 @@ $(document).ready(function(){
                                     Recibido por
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Digitar un solo nombre y un solo apellido sin tildes." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="BCSA_Recibido_Por" class="form-control" required>
+                                    <input type="text" id="BCSA_Recibido_Por" class="form-control">
                                 </div>
                             </div>
                         </div>
@@ -949,7 +950,7 @@ $(document).ready(function(){
                                 <div class="form-group">
                                     Descripcion
                                     </br>
-                                    <select class="form-control" id="BCSA_Desc_Producto" title="Escoja una opcion o escriba el producto" required>
+                                    <select class="form-control" id="BCSA_Desc_Producto" title="Escoja una opcion o escriba el producto">
                                         <option value="">Escoja una opcion</option>
                                         <option>Jeringas </option>
                                         <option>Guantes </option>
@@ -979,7 +980,7 @@ $(document).ready(function(){
                                     Cantidad
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Numero de unidades, cajas, paquetes, etc." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="BCSA_Cantidad" class="form-control" required>
+                                    <input type="text" id="BCSA_Cantidad" class="form-control">
                                 </div>
                             </div>
 
@@ -987,7 +988,7 @@ $(document).ready(function(){
                                 <div class="form-group">
                                     Formato
                                     </br>
-                                    <select class="form-control" id="BCSA_Formato" required>
+                                    <select class="form-control" id="BCSA_Formato">
                                         <option value="">Escoja una opcion</option>
                                         <option>Unidad(es) </option>
                                         <option>Caja(s) </option>
@@ -1005,7 +1006,7 @@ $(document).ready(function(){
                                     Cantidad detalle
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Cuantas unidades por caja, paquete, resma, etc. Digitar '0' en caso de no existir informacion o no ser necesaria." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="BCSA_C_Detalle" class="form-control" required>
+                                    <input type="text" id="BCSA_C_Detalle" class="form-control">
                                 </div>
                             </div>
 
@@ -1014,7 +1015,7 @@ $(document).ready(function(){
                                         Valor por formato
                                         <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Ingresar solo numeros sin simbolo de $." data-trigger="hover"></i></span>
                                         </br>
-                                        <input type="text" id="BCSA_Valor_Formato" class="form-control" required>
+                                        <input type="text" id="BCSA_Valor_Formato" class="form-control">
                                     </div>
                                 </div>
 
@@ -1023,14 +1024,14 @@ $(document).ready(function(){
                                         Valor Total
                                         <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Ingresar solo numeros sin simbolo de $." data-trigger="hover"></i></span>
                                         </br>
-                                        <input type="text" id="BCSA_Valor_Total" class="form-control" required>
+                                        <input type="text" id="BCSA_Valor_Total" class="form-control">
                                     </div>
                                 </div>
 
                             <div class="col">
                                 <div class="form-group">
                                     Bodega Salida
-                                    <select class="form-control" id="BCSA_Bodega_Salida" required>
+                                    <select class="form-control" id="BCSA_Bodega_Salida">
                                         <option value="">Escoja una opcion</option>
                                         <option>Bodega 1 </option>
                                         <option>Bodega 1A </option>
@@ -1098,14 +1099,14 @@ $(document).ready(function(){
         $("#tbody3").append(row_data + row + "</tr>");
 
 
-        $("input[name='BCSAS_producto']").val('');
-        $("input[name='BCSAS_eproducto']").val('');
-        $("input[name='BCSAS_cantidad']").val('');
-        $("input[name='BCSAS_formato']").val('');
-        $("input[name='BCSAS_cdetalle']").val('');
-        $("input[name='BCSAS_valorformato']").val('');
-        $("input[name='BCSAS_valortotal']").val('');
-        $("input[name='BCSAS_bsalida']").val('');
+        $("select[id='BCSA_Desc_Producto']").val('');
+        $("input[id='BCSA_Esp_Producto']").val('');
+        $("input[id='BCSA_Cantidad']").val('');
+        $("select[id='BCSA_Formato']").val('');
+        $("input[id='BCSA_C_Detalle']").val('');
+        $("input[id='BCSA_Valor_Formato']").val('');
+        $("input[id='BCSA_Valor_Total']").val('');
+        $("select[id='BCSA_Bodega_Salida']").val('');
 
      });
 
@@ -1217,7 +1218,7 @@ $(document).ready(function(){
                                 <div class="form-group">
                                     Fecha Movimiento
                                     </br>
-                                    <input type="text" id="MIS_datepicker" class="datepicker form-control" required>
+                                    <input type="text" id="MIS_datepicker" class="datepicker form-control">
                                 </div>
                             </div>
 
@@ -1226,7 +1227,7 @@ $(document).ready(function(){
                                     Nro Movimiento Interno
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Solo numeros y letras sin espacio entre caracteres." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="MIS_Nro_Acta" class="form-control" required>
+                                    <input type="text" id="MIS_Nro_Acta" class="form-control">
                                     </div>
                             </div>
 
@@ -1235,7 +1236,7 @@ $(document).ready(function(){
                                     Movimiento Efectuado por
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Digitar un solo nombre y un solo apellido sin tildes." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="MIS_Entregado_Por"  class="form-control" required>
+                                    <input type="text" id="MIS_Entregado_Por"  class="form-control">
                                 </div>
                             </div>
 
@@ -1244,7 +1245,7 @@ $(document).ready(function(){
                                     Movimiento Digitado por
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Digitar un solo nombre y un solo apellido sin tildes." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="MIS_Recibido_Por" class="form-control" required>
+                                    <input type="text" id="MIS_Recibido_Por" class="form-control">
                                 </div>
                             </div>
 
@@ -1257,7 +1258,7 @@ $(document).ready(function(){
                                 <div class="form-group">
                                     Descripcion
                                     </br>
-                                    <select class="form-control" id="MIS_Desc_Producto" required>
+                                    <select class="form-control" id="MIS_Desc_Producto">
                                         <option value="">Escoja una opcion</option>
                                         <option>Jeringas </option>
                                         <option>Guantes </option>
@@ -1287,7 +1288,7 @@ $(document).ready(function(){
                                     Cantidad
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Numero de unidades, cajas, paquetes, etc." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="MIS_Cantidad" class="form-control" required>
+                                    <input type="text" id="MIS_Cantidad" class="form-control">
                                 </div>
                             </div>
 
@@ -1295,7 +1296,7 @@ $(document).ready(function(){
                                 <div class="form-group">
                                     Formato
                                     </br>
-                                    <select class="form-control" id="MIS_Formato" required>
+                                    <select class="form-control" id="MIS_Formato">
                                         <option value="">Escoja una opcion</option>
                                         <option>Unidad(es) </option>
                                         <option>Caja(s) </option>
@@ -1313,7 +1314,7 @@ $(document).ready(function(){
                                     Cantidad detalle
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Cuantas unidades por caja, paquete, resma, etc. Digitar '0' en caso de no existir informacion o no ser necesaria." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="MIS_C_Detalle" class="form-control" required>
+                                    <input type="text" id="MIS_C_Detalle" class="form-control">
                                 </div>
                             </div>
 
@@ -1322,7 +1323,7 @@ $(document).ready(function(){
                                         Valor por formato
                                         <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Ingresar solo numeros sin simbolo de $." data-trigger="hover"></i></span>
                                         </br>
-                                        <input type="text" id="MIS_Valor_Formato" class="form-control" required>
+                                        <input type="text" id="MIS_Valor_Formato" class="form-control">
                                  </div>
                                 </div>
 
@@ -1331,7 +1332,7 @@ $(document).ready(function(){
                                         Valor Total
                                         <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Ingresar solo numeros sin simbolo de $." data-trigger="hover"></i></span>
                                         </br>
-                                        <input type="text" id="MIS_Valor_Total" class="form-control" required>
+                                        <input type="text" id="MIS_Valor_Total" class="form-control">
                                     </div>
                                 </div>
                         </div>
@@ -1340,7 +1341,7 @@ $(document).ready(function(){
                         <div class="col">
                                 <div class="form-group">
                                     Bodega Salida
-                                    <select class="form-control" id="MIS_Bodega_Salida" required>
+                                    <select class="form-control" id="MIS_Bodega_Salida">
                                         <option value="">Escoja una opcion</option>
                                         <option>Bodega 1 </option>
                                         <option>Bodega 1A </option>
@@ -1356,7 +1357,7 @@ $(document).ready(function(){
                             <div class="col">
                                 <div class="form-group">
                                     Bodega Destino
-                                    <select class="form-control" id="MIS_Bodega_Destino" required>
+                                    <select class="form-control" id="MIS_Bodega_Destino">
                                         <option value="">Escoja una opcion</option>
                                         <option id="Bodega1">Bodega 1 </option>
                                         <option id="Bodega1A">Bodega 1A </option>
@@ -1426,15 +1427,15 @@ $(document).ready(function(){
         $("#tbody4").append(row_data + row + "</tr>");
 
 
-        $("input[name='MISS_producto']").val('');
-        $("input[name='MISS_eproducto']").val('');
-        $("input[name='MISS_cantidad']").val('');
-        $("input[name='MISS_formato']").val('');
-        $("input[name='MISS_cdetalle']").val('');
-        $("input[name='MISS_valorformato']").val('');
-        $("input[name='MISS_valortotal']").val('');
-        $("input[name='MISS_bsalida']").val('');
-        $("input[name='MISS_bdestino']").val('');
+        $("select[id='MIS_Desc_Producto']").val('');
+        $("input[id='MIS_Esp_Producto']").val('');
+        $("input[id='MIS_Cantidad']").val('');
+        $("select[id='MIS_Formato']").val('');
+        $("input[id='MIS_C_Detalle']").val('');
+        $("input[id='MIS_Valor_Formato']").val('');
+        $("input[id='MIS_Valor_Total']").val('');
+        $("select[id='MIS_Bodega_Salida']").val('');
+        $("select[id='MIS_Bodega_Destino']").val('');
 
      });
 
