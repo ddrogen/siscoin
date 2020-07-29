@@ -85,13 +85,46 @@ h4 {
       } );
   </script>
 -->
-    <script>
-    $(document).ready(function(){
- $('select[id="BCS_Bodega_Destino"]').change(function(){
-   $('select[id="BCS_Movil"]').prop('disabled',this.value != 0 ?false:true);
+<script>
+ $(document).ready(function(){
+ $('select[id="BCS_Tipo_Salida"]').change(function(){
+   $('select[id="BCS_Bodega_Intermediaria"]').prop('disabled',this.value != 0 ?false:true);
  });
 });
 </script>
+
+<script>
+     function disable(select_val,input_id) {
+                var e = document.getElementById(select_val);
+                var option = e.options[e.selectedIndex].value;
+                if(option === "1"){
+                    document.getElementById(input_id).disabled = true;
+                }
+                else{
+                    document.getElementById(input_id).value = document.getElementById(input_id).defaultValue;
+                    document.getElementById(input_id).disabled = false;
+                }
+    }
+</script>
+
+
+
+<script>
+ $(document).ready(function(){
+ $('select[id="BCE_Tipo_Entrada"]').change(function(){
+   $('select[id="BCE_Bodega_Salida"]').prop('disabled',this.value != 0 ?false:true);
+ });
+});
+</script>
+
+<script>
+ $(document).ready(function(){
+ $('select[id="BCE_Tipo_Entrada"]').change(function(){
+   $('select[id="BCE_Movil"]').prop('disabled',this.value != 0 ?false:true);
+ });
+});
+</script>
+
 
 <!--<script>
 $(document).ready(function(){
@@ -170,6 +203,60 @@ $(document).ready(function(){
 
  </script>
 
+    <script>
+   $(document).ready(function() {
+
+  $("#BCS_Bodega_Intermediaria").change(function() {
+
+    var el = $(this);
+
+     if(el.val() === "Graneros" ) {
+
+    	 $("#BCS_Bodega_Destino").append(this.removed)
+
+       $(document.getElementById("Graneros")).remove();
+       this.removed = "<option id=\"Graneros\">Graneros</option>"
+    }
+    else if(el.val() === "Rengo" ) {
+    	 $("#BCS_Bodega_Destino").append(this.removed)
+       $(document.getElementById("Rengo")).remove();
+       this.removed = "<option id=\"Rengo\">Rengo</option>"
+    }
+    else if(el.val() === "San Fernando" ) {
+    	 $("#BCS_Bodega_Destino").append(this.removed)
+       $(document.getElementById("SanFernando")).remove();
+       this.removed = "<option id=\"SanFernando\">San Fernando</option>"
+    }
+    else if(el.val() === "Chimbarongo" ) {
+    	 $("#BCS_Bodega_Destino").append(this.removed)
+       $(document.getElementById("Chimbarongo")).remove();
+       this.removed = "<option id=\"Chimbarongo\">Chimbarongo</option>"
+    }
+    else if(el.val() === "San Vicente" ) {
+    	 $("#BCS_Bodega_Destino").append(this.removed)
+       $(document.getElementById("SanVicente")).remove();
+       this.removed = "<option id=\"SanVicente\">San Vicente</option>"
+    }
+    else if(el.val() === "Peumo" ) {
+    	 $("#BCS_Bodega_Destino").append(this.removed)
+       $(document.getElementById("Peumo")).remove();
+       this.removed = "<option id=\"Peumo\">Peumo</option>"
+    }
+    else if(el.val() === "Santa Cruz" ) {
+    	 $("#BCS_Bodega_Destino").append(this.removed)
+       $(document.getElementById("SantaCruz")).remove();
+       this.removed = "<option id=\"SantaCruz\">Santa Cruz</option>"
+    }
+    else if(el.val() === "Pichilemu" ) {
+    	 $("#BCS_Bodega_Destino").append(this.removed)
+       $(document.getElementById("Pichilemu")).remove();
+       this.removed = "<option id=\"Pichilemu\">Pichilemu</option>"
+    }
+  });
+});
+
+ </script>
+
 </head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -208,8 +295,8 @@ $(document).ready(function(){
 
                             <div class="col">
                                 <div class="form-group">
-                                    Nro Formato Entrega
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Solo numeros y letras sin espacio entre caracteres." data-trigger="hover"></i></span>
+                                    Nro Orden Interna o Nro Formato Entrega
+                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Nro Orden Interna proviene desde Servicio de Salud. Nro Acta Entrega desde Bodegas Perifericas. Solo numeros y letras sin espacio entre caracteres." data-trigger="hover"></i></span>
                                     </br>
                                     <input type="text" id="BCE_Nro_Formato_Entrega" class="form-control">
                                 </div>
@@ -217,8 +304,68 @@ $(document).ready(function(){
 
                             <div class="col">
                                 <div class="form-group">
-                                    Nro de Orden de Compra
-                             <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Si no tiene o no existe numero de orden de compra, ingrese 'NA' (No Aplica)." data-trigger="hover"></i></span>
+                                    Tipo de Entrada
+                                    <select class="form-control" id="BCE_Tipo_Entrada">
+                                        <option value="">Escoja una opcion</option>
+                                        <option value="0">Desde Bodega Servicio de Salud</option>
+                                        <option value="1">Desde Bodegas Perifericas</option>
+                                    </select>
+                                   </div>
+                            </div>
+                         </div>
+
+                        <div class="row">
+                           <div class="col">
+                                <div class="form-group">
+                                    Bodega Periferica Emisora
+                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Bodega periferica emisora desde donde los insumos se trasladan a Bodega Central." data-trigger="hover"></i></span>
+                                    </br>
+                                    <select class="form-control" id="BCE_Bodega_Salida" disabled>
+                                        <option value="">Escoja una opcion</option>
+                                        <option value="1">Graneros</option>
+                                        <option value="1">Rengo</option>
+                                        <option value="1">San Fernando</option>
+                                        <option value="1">Chimbarongo</option>
+                                        <option value="1">San Vicente</option>
+                                        <option value="1">Peumo</option>
+                                        <option value="1">Santa Cruz</option>
+                                        <option value="1">Pichilemu</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    Movil del Traslado
+                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Movil que transporta insumos desde bodega periferica hasta bodega central." data-trigger="hover"></i></span>
+                                    </br>
+                                    <select class="form-control" id="BCE_Movil" disabled>
+                                        <option value="">Escoja una opcion</option>
+                                        <option>VIR- Vehiculo de Intervencion Rapida</option>
+                                        <option>M17 - Graneros</option>
+                                        <option>M2 - Rancagua</option>
+                                        <option>M23 - Rancagua</option>
+                                        <option>M24 - Rancagua</option>
+                                        <option>M11 - Rancagua</option>
+                                        <option>M15 - Rengo</option>
+                                        <option>M25 - Rengo</option>
+                                        <option>M16 - S. Fernando</option>
+                                        <option>M22 - S. Fernando</option>
+                                        <option>M19 - S. Vicente</option>
+                                        <option>M10 - Chimbarongo</option>
+                                        <option>M18 - Peumo</option>
+                                        <option>M14 - S. Cruz</option>
+                                        <option>M28 - S. Cruz</option>
+                                        <option>M27 - Pichilemu</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    Nro Orden de Compra
+                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Si no existe numero de orden de compra, ingrese 'NA' (No Aplica)." data-trigger="hover"></i></span>
                                     </br>
                                     <input type="text" id="BCE_Nro_Orden_Compra" class="form-control">
                                 </div>
@@ -226,15 +373,13 @@ $(document).ready(function(){
 
                             <div class="col">
                                 <div class="form-group">
-                                    Nro de la Factura
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Si no tiene o no existe numero de la factura, ingrese 'NA' (No Aplica)." data-trigger="hover"></i></span>
+                                    Nro de Factura
+                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Si no existe numero de la factura, ingrese 'NA' (No Aplica)." data-trigger="hover"></i></span>
                                     </br>
                                     <input type="text" id="BCE_Nro_Factura" class="form-control">
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row">
                             <div class="col">
                                 <div class="form-group">
                                     Entregado por
@@ -300,15 +445,15 @@ $(document).ready(function(){
                                 <div class="form-group">
                                     Formato
                                     </br>
-                                    <select class="form-control" id="BCE_Formato">
-                                        <option value="">Escoja una opcion</option>
-                                        <option>Unidad(es) </option>
-                                        <option>Caja(s) </option>
-                                        <option>Paquete(s) </option>
-                                        <option>ml(s) </option>
-                                        <option>Litro(s) </option>
-                                        <option>Resma(s) </option>
-                                        <option>Par(es) </option>
+                                    <select class="form-control" id="BCE_Formato" onchange="disable('BCE_Formato', 'BCE_C_Detalle')">
+                                        <option value="0">Escoja una opcion</option>
+                                        <option value="1">Unidad(es)</option>
+                                        <option value="2">Caja(s)</option>
+                                        <option value="2">Paquete(s)</option>
+                                        <option value="1">ml(s)</option>
+                                        <option value="1">Litro(s)</option>
+                                        <option value="2">Resma(s)</option>
+                                        <option value="1">Par(es)</option>
                                     </select>
                                 </div>
                             </div>
@@ -550,26 +695,61 @@ $(document).ready(function(){
 
                             <div class="col">
                                 <div class="form-group">
-                                    Bodega Destino
-                                    <select class="form-control" id="BCS_Bodega_Destino">
+                                    Tipo de Salida
+                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Directa: de una bodega a otra sin bodegas intermediarias. Indirecta caso contrario." data-trigger="hover"></i></span>
+                                    </br>
+                                    <select class="form-control" id="BCS_Tipo_Salida">
                                         <option value="">Escoja una opcion</option>
-                                        <option value="1">Graneros </option>
-                                        <option value="1">Rengo </option>
-                                        <option value="1">San Fernando </option>
-                                        <option value="1">Chimbarongo </option>
-                                        <option value="1">San Vicente </option>
-                                        <option value="1">Peumo </option>
-                                        <option value="1">Santa Cruz </option>
-                                        <option value="1">Pichilemu </option>
+                                        <option value="0">Directa </option>
+                                        <option value="1">Indirecta </option>
                                     </select>
                                 </div>
                             </div>
-                        <div class="col">
+
+                            <div class="col">
+                                <div class="form-group">
+                                    Bodega Intermediaria
+                                    <select class="form-control" id="BCS_Bodega_Intermediaria" disabled>
+                                        <option value="">Escoja una opcion</option>
+                                        <option>Graneros</option>
+                                        <option>Rengo</option>
+                                        <option>San Fernando</option>
+                                        <option>Chimbarongo</option>
+                                        <option>San Vicente</option>
+                                        <option>Peumo</option>
+                                        <option>Santa Cruz</option>
+                                        <option>Pichilemu</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="form-group">
+                                    Bodega Destino
+                                    <select class="form-control" id="BCS_Bodega_Destino">
+                                        <option value="">Escoja una opcion</option>
+                                        <option id="Graneros">Graneros</option>
+                                        <option id="Rengo">Rengo</option>
+                                        <option id="SanFernando">San Fernando</option>
+                                        <option id="Chimbarongo">Chimbarongo</option>
+                                        <option id="SanVicente">San Vicente</option>
+                                        <option id="Peumo">Peumo</option>
+                                        <option id="SantaCruz">Santa Cruz</option>
+                                        <option id="Pichilemu">Pichilemu</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                           </div>
+
+                        <div class="row">
+                            <div class="col">
                                 <div class="form-group">
                                     Movil del Traslado
                                     </br>
                                     <select class="form-control" id="BCS_Movil">
                                         <option value="">Escoja una opcion</option>
+                                        <option>VIR- Vehiculo de Intervencion Rapida</option>
                                         <option>M17 - Graneros</option>
                                         <option>M2 - Rancagua</option>
                                         <option>M23 - Rancagua</option>
@@ -588,11 +768,9 @@ $(document).ready(function(){
                                     </select>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row">
                             <div class="col">
-                                <div class="form-group">
+                               <div class="form-group">
                                     Entregado por
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Digitar un solo nombre y un solo apellido sin tildes." data-trigger="hover"></i></span>
                                     </br>
@@ -608,10 +786,7 @@ $(document).ready(function(){
                                     <input type="text" id="BCS_Recibido_Por" class="form-control">
                                 </div>
                             </div>
-
                             </div>
-
-
 
                         <p class="h6"><strong>Informacion del Producto </strong></p>
 
@@ -658,15 +833,15 @@ $(document).ready(function(){
                                 <div class="form-group">
                                     Formato
                                     </br>
-                                    <select class="form-control" id="BCS_Formato">
-                                        <option value="">Escoja una opcion</option>
-                                        <option>Unidad(es) </option>
-                                        <option>Caja(s) </option>
-                                        <option>Paquete(s) </option>
-                                        <option>ML(s) </option>
-                                        <option>Litro(s) </option>
-                                        <option>Resma(s) </option>
-                                        <option>Par(es) </option>
+                                    <select class="form-control" id="BCS_Formato" onchange="disable('BCS_Formato', 'BCS_C_Detalle')">>
+                                        <option value="0">Escoja una opcion</option>
+                                        <option value="1">Unidad(es) </option>
+                                        <option value="2">Caja(s) </option>
+                                        <option value="2">Paquete(s) </option>
+                                        <option value="1">ml(s) </option>
+                                        <option value="1">Litro(s) </option>
+                                        <option value="2">Resma(s) </option>
+                                        <option value="1">Par(es) </option>
                                     </select>
                                 </div>
                             </div>
@@ -954,7 +1129,7 @@ $(document).ready(function(){
                                         <option value="">Escoja una opcion</option>
                                         <option>Jeringas </option>
                                         <option>Guantes </option>
-                                        <option>Murcarillas </option>
+                                        <option>Mascarillas </option>
                                         <option>Martillos </option>
                                         <option>Apositos Adultos </option>
                                         <option>Apositos Pediatricos </option>
@@ -988,15 +1163,15 @@ $(document).ready(function(){
                                 <div class="form-group">
                                     Formato
                                     </br>
-                                    <select class="form-control" id="BCSA_Formato">
-                                        <option value="">Escoja una opcion</option>
-                                        <option>Unidad(es) </option>
-                                        <option>Caja(s) </option>
-                                        <option>Paquete(s) </option>
-                                        <option>ML(s) </option>
-                                        <option>Litro(s) </option>
-                                        <option>Resma(s) </option>
-                                        <option>Par(es) </option>
+                                    <select class="form-control" id="BCSA_Formato" onchange="disable('BCSA_Formato', 'BCSA_C_Detalle')">
+                                        <option value="0">Escoja una opcion</option>
+                                        <option value="1">Unidad(es)</option>
+                                        <option value="2">Caja(s)</option>
+                                        <option value="2">Paquete(s)</option>
+                                        <option value="1">ml(s)</option>
+                                        <option value="1">Litro(s)</option>
+                                        <option value="2">Resma(s)</option>
+                                        <option value="1">Par(es)</option>
                                     </select>
                                 </div>
                             </div>
@@ -1262,7 +1437,7 @@ $(document).ready(function(){
                                         <option value="">Escoja una opcion</option>
                                         <option>Jeringas </option>
                                         <option>Guantes </option>
-                                        <option>Murcarillas </option>
+                                        <option>Mascarillas </option>
                                         <option>Martillos </option>
                                         <option>Apositos Adultos </option>
                                         <option>Apositos Pediatricos </option>
@@ -1296,15 +1471,15 @@ $(document).ready(function(){
                                 <div class="form-group">
                                     Formato
                                     </br>
-                                    <select class="form-control" id="MIS_Formato">
-                                        <option value="">Escoja una opcion</option>
-                                        <option>Unidad(es) </option>
-                                        <option>Caja(s) </option>
-                                        <option>Paquete(s) </option>
-                                        <option>ML(s) </option>
-                                        <option>Litro(s) </option>
-                                        <option>Resma(s) </option>
-                                        <option>Par(es) </option>
+                                    <select class="form-control" id="MIS_Formato" onchange="disable('MIS_Formato', 'MIS_C_Detalle')">
+                                        <option value="0">Escoja una opcion</option>
+                                        <option value="1">Unidad(es) </option>
+                                        <option value="2">Caja(s) </option>
+                                        <option value="2">Paquete(s) </option>
+                                        <option value="1">ml(s)</option>
+                                        <option value="1">Litro(s) </option>
+                                        <option value="2">Resma(s) </option>
+                                        <option value="1">Par(es) </option>
                                     </select>
                                 </div>
                             </div>
