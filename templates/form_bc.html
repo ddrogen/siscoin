@@ -506,6 +506,7 @@ $(document).ready(function(){
                         <button type="submit" class="btn btn-primary save-btn">+</button>
                     </form>
                     <br/>
+
                     <form  action="" method="post">
                     <input type="hidden" id="form1headerdata" name="form1headerdata">
                     <input type="hidden" id="form1tabledata" name="form1tabledata">
@@ -529,7 +530,7 @@ $(document).ready(function(){
                     <div class="container">
                         <div class="row">
                             <div class="col text-center">
-                                <button onclick="getFormData()" type="submit" id="BCE_Enviar" class="btn btn-success">Enviar</button>
+                                <button onclick="getForm1Data()" type="submit" id="BCE_Enviar" class="btn btn-success">Enviar</button>
                             </div>
                         </div>
                     </div>
@@ -537,11 +538,11 @@ $(document).ready(function(){
 
 <script>
 
-function getFormData() {
+function getForm1Data() {
 
   var form1headerdata = []
 
-  form1headerdata.push("BCE")
+  form1headerdata.push("BC-Entrada-Insumos")
   form1headerdata.push(document.getElementById('BCE_Datepicker').value)
   form1headerdata.push(document.getElementById('BCE_Nro_Formato_Entrega').value)
   form1headerdata.push(document.getElementById('BCE_Tipo_Entrada').value)
@@ -929,8 +930,11 @@ function getFormData() {
                     </form>
                     <br/>
 
+                    <form  action="" method="post">
+                    <input type="hidden" id="form2headerdata" name="form2headerdata">
+                    <input type="hidden" id="form2tabledata" name="form2tabledata">
                     <div style="overflow-x:auto;">
-                        <table class="table data-table">
+                        <table id="form2table" class="table data-table">
                             <thead>
                             <th>Descripcion</th>
                             <th>Especificacion</th>
@@ -946,15 +950,48 @@ function getFormData() {
                         </table>
                     </div>
 
-                    <div class="container">
+                     <div class="container">
                         <div class="row">
                             <div class="col text-center">
-                                <button type="submit" class="btn btn-success">Enviar</button>
+                                <button onclick="getForm2Data()" type="submit" id="BCSOB_Enviar" class="btn btn-success">Enviar</button>
                             </div>
                         </div>
-                    </div>
+                     </div>
+                    </form>
 
-                    <script type="text/javascript">
+<script>
+
+function getForm2Data() {
+
+  var form2headerdata = []
+
+  form2headerdata.push("BC-Salida-OB")
+  form2headerdata.push(document.getElementById('BCS_datepicker').value)
+  form2headerdata.push(document.getElementById('BCS_Nro_Acta').value)
+  form2headerdata.push(document.getElementById('BCS_Tipo_Salida').value)
+  form2headerdata.push(document.getElementById('BCS_Bodega_Intermediaria').value)
+  form2headerdata.push(document.getElementById('BCS_Bodega_Destino').value)
+  form2headerdata.push(document.getElementById('BCS_Movil').value)
+  form2headerdata.push(document.getElementById('BCS_Entregado_Por').value)
+  form2headerdata.push(document.getElementById('BCS_Recibido_Por').value)
+
+  var form2tabledata = []
+
+  var form2table = document.getElementById("form2table").tBodies;
+
+  Array.from(form2table).forEach(function(element) {
+      form2tabledata.push(element.innerHTML)
+      }
+   )
+
+  $("input[id='form2headerdata']").val(form2headerdata);
+  $("input[id='form2tabledata']").val(form2tabledata);
+
+}
+
+</script>
+
+<script type="text/javascript">
 
     var form2 = document.forms["form2"];
 
@@ -1260,8 +1297,11 @@ function getFormData() {
                     </form>
                     <br/>
 
+                    <form  action="" method="post">
+                    <input type="hidden" id="form3headerdata" name="form3headerdata">
+                    <input type="hidden" id="form3tabledata" name="form3tabledata">
                     <div style="overflow-x:auto;">
-                        <table class="table data-table">
+                        <table id="form3table" class="table data-table">
                             <thead>
                             <th>Descripcion</th>
                             <th>Especificacion</th>
@@ -1280,12 +1320,42 @@ function getFormData() {
                     <div class="container">
                         <div class="row">
                             <div class="col text-center">
-                                <button type="submit" class="btn btn-success">Enviar</button>
+                                <button onclick="getForm3Data()" type="submit" id="BCSA_Enviar" class="btn btn-success">Enviar</button>
                             </div>
                         </div>
                     </div>
+                    </form>
 
-                    <script type="text/javascript">
+<script>
+
+function getForm3Data() {
+
+  var form3headerdata = []
+
+  form3headerdata.push("BC-Salida-Amb")
+  form3headerdata.push(document.getElementById('BCSA_datepicker').value)
+  form3headerdata.push(document.getElementById('BCSA_Nro_Acta').value)
+  form3headerdata.push(document.getElementById('BCSA_Movil').value)
+  form3headerdata.push(document.getElementById('BCSA_Entregado_Por').value)
+  form3headerdata.push(document.getElementById('BCSA_Recibido_Por').value)
+
+  var form3tabledata = []
+
+  var form3table = document.getElementById("form3table").tBodies;
+
+  Array.from(form3table).forEach(function(element) {
+      form3tabledata.push(element.innerHTML)
+      }
+   )
+
+  $("input[id='form3headerdata']").val(form3headerdata);
+  $("input[id='form3tabledata']").val(form3tabledata);
+
+}
+
+</script>
+
+<script type="text/javascript">
 
     var form3 = document.forms["form3"];
 
@@ -1456,7 +1526,7 @@ function getFormData() {
                                     Movimiento Digitado por
                                     <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Digitar un solo nombre y un solo apellido sin tildes." data-trigger="hover"></i></span>
                                     </br>
-                                    <input type="text" id="MIS_Recibido_Por" class="form-control">
+                                    <input type="text" id="MIS_Digitado_Por" class="form-control">
                                 </div>
                             </div>
 
@@ -1586,8 +1656,11 @@ function getFormData() {
                     </form>
                     <br/>
 
+                    <form  action="" method="post">
+                    <input type="hidden" id="form4headerdata" name="form4headerdata">
+                    <input type="hidden" id="form4tabledata" name="form4tabledata">
                     <div style="overflow-x:auto;">
-                        <table class="table data-table">
+                        <table id="form4table" class="table data-table">
                             <thead>
                             <th>Descripcion</th>
                             <th>Especificacion</th>
@@ -1607,12 +1680,41 @@ function getFormData() {
                     <div class="container">
                         <div class="row">
                             <div class="col text-center">
-                                <button type="submit" class="btn btn-success">Enviar</button>
+                                <button onclick="getForm4Data()" type="submit" id="MIS_Enviar" class="btn btn-success">Enviar</button>
                             </div>
                         </div>
                     </div>
+                    </form>
 
-                    <script type="text/javascript">
+<script>
+
+function getForm4Data() {
+
+  var form4headerdata = []
+
+  form4headerdata.push("BC-Movimiento-Interno")
+  form4headerdata.push(document.getElementById('MIS_datepicker').value)
+  form4headerdata.push(document.getElementById('MIS_Nro_Acta').value)
+  form4headerdata.push(document.getElementById('MIS_Entregado_Por').value)
+  form4headerdata.push(document.getElementById('MIS_Digitado_Por').value)
+
+  var form4tabledata = []
+
+  var form4table = document.getElementById("form4table").tBodies;
+
+  Array.from(form4table).forEach(function(element) {
+      form4tabledata.push(element.innerHTML)
+      }
+   )
+
+  $("input[id='form3headerdata']").val(form4headerdata);
+  $("input[id='form3tabledata']").val(form4tabledata);
+
+}
+
+</script>
+
+<script type="text/javascript">
 
     var form4 = document.forms["form4"];
 
