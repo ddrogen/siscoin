@@ -503,14 +503,14 @@ $(document).ready(function(){
                                 </div>
                             </div>
                         </div>
-
                         <button type="submit" class="btn btn-primary save-btn">+</button>
                     </form>
-
                     <br/>
-
+                    <form  action="" method="post">
+                    <input type="hidden" id="form1headerdata" name="form1headerdata">
+                    <input type="hidden" id="form1tabledata" name="form1tabledata">
                     <div style="overflow-x:auto;">
-                        <table class="table data-table">
+                        <table id="form1table" class="table data-table">
                             <thead>
                             <th>Descripcion</th>
                             <th>Especificacion</th>
@@ -529,10 +529,44 @@ $(document).ready(function(){
                     <div class="container">
                         <div class="row">
                             <div class="col text-center">
-                                <button type="submit" id="BCE_Enviar" class="btn btn-success">Enviar</button>
+                                <button onclick="getFormData()" type="submit" id="BCE_Enviar" class="btn btn-success">Enviar</button>
                             </div>
                         </div>
                     </div>
+                    </form>
+
+<script>
+
+function getFormData() {
+
+  var form1headerdata = []
+
+  form1headerdata.push("BCE")
+  form1headerdata.push(document.getElementById('BCE_Datepicker').value)
+  form1headerdata.push(document.getElementById('BCE_Nro_Formato_Entrega').value)
+  form1headerdata.push(document.getElementById('BCE_Tipo_Entrada').value)
+  form1headerdata.push(document.getElementById('BCE_Bodega_Salida').value)
+  form1headerdata.push(document.getElementById('BCE_Movil').value)
+  form1headerdata.push(document.getElementById('BCE_Nro_Orden_Compra').value)
+  form1headerdata.push(document.getElementById('BCE_Nro_Factura').value)
+  form1headerdata.push(document.getElementById('BCE_Entregado_Por').value)
+  form1headerdata.push(document.getElementById('BCE_Recibido_Por').value)
+
+  var form1tabledata = []
+
+  var form1table = document.getElementById("form1table").tBodies;
+
+  Array.from(form1table).forEach(function(element) {
+      form1tabledata.push(element.innerHTML)
+      }
+   )
+
+  $("input[id='form1headerdata']").val(form1headerdata);
+  $("input[id='form1tabledata']").val(form1tabledata);
+
+}
+
+</script>
 
     <script type="text/javascript">
 
@@ -556,6 +590,7 @@ $(document).ready(function(){
         var row = "<td>"+BCES_producto+"</td> <td>"+BCES_eproducto+"</td> <td>"+BCES_cantidad+"</td> <td>"+BCES_formato+"</td> <td>"+BCES_cdetalle+"</td> <td>"+BCES_valorformato+"</td> <td>"+BCES_valortotal+"</td> <td>"+BCES_bentrada+"</td> <td>"+actions+"</td>"
 
         $("#tbody1").append(row_data + row + "</tr>");
+
 
         $("select[id='BCE_Desc_Producto']").val('');
         $("input[id='BCE_Esp_Producto']").val('');
@@ -1716,6 +1751,3 @@ $(document).ready(function(){
                 </div>
             </div>
 </html>
-
-
-
