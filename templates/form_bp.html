@@ -469,11 +469,13 @@ $(document).ready(function(){
 
                         <button type="submit" class="btn btn-primary save-btn">+</button>
                        </form>
-
                     <br/>
 
+                    <form  action="" method="post">
+                    <input type="hidden" id="form1headerdata" name="form1headerdata">
+                    <input type="hidden" id="form1tabledata" name="form1tabledata">
                     <div style="overflow-x:auto;">
-                        <table class="table data-table">
+                        <table id="form1table" class="table data-table">
                             <thead>
                             <th>Descripcion</th>
                             <th>Especificacion</th>
@@ -488,14 +490,48 @@ $(document).ready(function(){
                         </table>
                     </div>
 
-                    <div class="container">
+                   <div class="container">
                         <div class="row">
                             <div class="col text-center">
-                                <button type="submit" id="BPE_Enviar" class="btn btn-success">Enviar</button>
+                                <button onclick="getForm1Data()" type="submit" id="BPE_Enviar" class="btn btn-success">Enviar</button>
                             </div>
                         </div>
                     </div>
-                    <script type="text/javascript">
+                    </form>
+
+<script>
+
+function getForm1Data() {
+
+  var form1headerdata = []
+
+  form1headerdata.push("BP-Entrada-Insumos")
+  form1headerdata.push(document.getElementById('BPE_Datepicker').value)
+  form1headerdata.push(document.getElementById('BPE_Nro_Formato_Entrega').value)
+  form1headerdata.push(document.getElementById('BPE_Tipo_Entrada').value)
+  form1headerdata.push(document.getElementById('BPE_Bodega_Entrada').value)
+  form1headerdata.push(document.getElementById('BPE_Bodega_Destino').value)
+  form1headerdata.push(document.getElementById('BPE_Movil').value)
+  form1headerdata.push(document.getElementById('BPE_Entregado_Por').value)
+  form1headerdata.push(document.getElementById('BPE_Recibido_Por').value)
+
+  var form1tabledata = []
+
+  var form1table = document.getElementById("form1table").tBodies;
+
+  Array.from(form1table).forEach(function(element) {
+      form1tabledata.push(element.innerHTML)
+      }
+   )
+
+  $("input[id='form1headerdata']").val(form1headerdata);
+  $("input[id='form1tabledata']").val(form1tabledata);
+
+}
+
+</script>
+
+<script type="text/javascript">
 
     var form1 = document.forms["form1"];
 
@@ -826,9 +862,11 @@ $(document).ready(function(){
                     </form>
                     <br/>
 
-                    <div style="overflow-x:auto;">
-                        <table class="table data-table">
-                            <thead>
+                    <form  action="" method="post">
+                    <input type="hidden" id="form2headerdata" name="form2headerdata">
+                    <input type="hidden" id="form2tabledata" name="form2tabledata">
+                        <div style="overflow-x:auto;">
+                        <table id="form2table" class="table data-table">                            <thead>
                             <th>Descripcion</th>
                             <th>Especificacion</th>
                             <th>Cantidad</th>
@@ -842,15 +880,48 @@ $(document).ready(function(){
                         </table>
                     </div>
 
-                    <div class="container">
+                     <div class="container">
                         <div class="row">
                             <div class="col text-center">
-                                <button type="submit" class="btn btn-success">Enviar</button>
+                                <button onclick="getForm2Data()" type="submit" id="BPS_Enviar" class="btn btn-success">Enviar</button>
                             </div>
                         </div>
-                    </div>
+                     </div>
+                    </form>
 
-                    <script type="text/javascript">
+<script>
+
+function getForm2Data() {
+
+  var form2headerdata = []
+
+  form2headerdata.push("BP-Salida-Insumos")
+  form2headerdata.push(document.getElementById('BPS_datepicker').value)
+  form2headerdata.push(document.getElementById('BPS_Nro_Acta').value)
+  form2headerdata.push(document.getElementById('BPS_Tipo_Salida').value)
+  form2headerdata.push(document.getElementById('BPS_Bodega_Salida').value)
+  form2headerdata.push(document.getElementById('BPS_Bodega_Destino').value)
+  form2headerdata.push(document.getElementById('BPS_Movil').value)
+  form2headerdata.push(document.getElementById('BPS_Entregado_Por').value)
+  form2headerdata.push(document.getElementById('BPS_Recibido_Por').value)
+
+  var form2tabledata = []
+
+  var form2table = document.getElementById("form2table").tBodies;
+
+  Array.from(form2table).forEach(function(element) {
+      form2tabledata.push(element.innerHTML)
+      }
+   )
+
+  $("input[id='form2headerdata']").val(form2headerdata);
+  $("input[id='form2tabledata']").val(form2tabledata);
+
+}
+
+</script>
+
+<script type="text/javascript">
 
     var form2 = document.forms["form2"];
 
