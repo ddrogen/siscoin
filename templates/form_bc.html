@@ -407,15 +407,10 @@ $(document).ready(function(){
                                 <div class="form-group">
                                     Descripcion
                                     <select class="form-control" id="BCE_Desc_Producto">
-                                        <option value="">Escoja una opcion o digite el producto</option>
-                                        <option>Jeringas </option>
-                                        <option>Guantes </option>
-                                        <option>Mascarillas </option>
-                                        <option>Martillos </option>
-                                        <option>Apositos Adultos </option>
-                                        <option>Apositos Pediatricos </option>
-                                        <option>Lapices </option>
-                                        <option>Desinfectante </option>
+                                        <option>Escoja una opcion o digite el producto</option>
+                                        {% for option in option_list %}
+                                        <option>{{ option }}</option>
+                                        {% endfor %}
                                     </select>
                                    </div>
                             </div>
@@ -835,15 +830,10 @@ function getForm1Data() {
                                     Descripcion
                                     </br>
                                     <select class="form-control" id="BCS_Desc_Producto">
-                                        <option value="">Escoja una opcion</option>
-                                        <option>Jeringas </option>
-                                        <option>Guantes </option>
-                                        <option>Mascarillas </option>
-                                        <option>Martillos </option>
-                                        <option>Apositos Adultos </option>
-                                        <option>Apositos Pediatricos </option>
-                                        <option>Lapices </option>
-                                        <option>Desinfectante </option>
+                                      <option>Escoja una opcion o digite el producto</option>
+                                      {% for option in option_list %}
+                                      <option>{{ option }}</option>
+                                      {% endfor %}
                                     </select>
                                 </div>
                             </div>
@@ -1203,15 +1193,11 @@ function getForm2Data() {
                                     Descripcion
                                     </br>
                                     <select class="form-control" id="BCSA_Desc_Producto" title="Escoja una opcion o escriba el producto">
-                                        <option value="">Escoja una opcion</option>
-                                        <option>Jeringas </option>
-                                        <option>Guantes </option>
-                                        <option>Mascarillas </option>
-                                        <option>Martillos </option>
-                                        <option>Apositos Adultos </option>
-                                        <option>Apositos Pediatricos </option>
-                                        <option>Lapices </option>
-                                        <option>Desinfectante </option>
+
+                                      <option>Escoja una opcion o digite el producto</option>
+                                      {% for option in option_list %}
+                                      <option>{{ option }}</option>
+                                      {% endfor %}
                                     </select>
                                 </div>
                             </div>
@@ -1545,15 +1531,10 @@ function getForm3Data() {
                                     Descripcion
                                     </br>
                                     <select class="form-control" id="MIS_Desc_Producto">
-                                        <option value="">Escoja una opcion</option>
-                                        <option>Jeringas </option>
-                                        <option>Guantes </option>
-                                        <option>Mascarillas </option>
-                                        <option>Martillos </option>
-                                        <option>Apositos Adultos </option>
-                                        <option>Apositos Pediatricos </option>
-                                        <option>Lapices </option>
-                                        <option>Desinfectante </option>
+                                      <option>Escoja una opcion o digite el producto</option>
+                                      {% for option in option_list %}
+                                      <option>{{ option }}</option>
+                                      {% endfor %}
                                     </select>
                                 </div>
                             </div>

@@ -18,9 +18,16 @@ def home():
 
 @app.route("/bc", methods=['GET', 'POST'])
 def bodega_central():
+
+    option_list = []
+    if request.method == 'GET':
+        google_spread = GoogleSpread(sheet="siscoin_data")
+        option_list = google_spread.get_option_list()
+
     if request.method == 'POST':
 
         google_spread = GoogleSpread(sheet="siscoin_data", worksheet="Bodega Central")
+        option_list = google_spread.get_option_list()
 
         now = datetime.now() # current date and time
         date_time = [now.strftime("%d/%m/%Y %H:%M:%S")]
@@ -32,14 +39,21 @@ def bodega_central():
             record = date_time + formheader + row
             google_spread.append(record)
 
-    return render_template('form_bc.html')
+    return render_template('form_bc.html', option_list=option_list)
 
 
 @app.route("/bp", methods=['GET', 'POST'])
 def bodega_periferica():
+
+    option_list = []
+    if request.method == 'GET':
+        google_spread = GoogleSpread(sheet="siscoin_data")
+
+
     if request.method == 'POST':
 
         google_spread = GoogleSpread(sheet="siscoin_data", worksheet="Bodega Periferica")
+        option_list = google_spread.get_option_list()
 
         now = datetime.now() # current date and time
         date_time = [now.strftime("%d/%m/%Y %H:%M:%S")]
@@ -51,7 +65,7 @@ def bodega_periferica():
             record = date_time + formheader + row
             google_spread.append(record)
 
-    return render_template('form_bp.html')
+    return render_template('form_bp.html', option_list=option_list)
 
 
 if __name__ == '__main__':
