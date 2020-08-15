@@ -1,50 +1,57 @@
 <html>
 <head>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script> <!--ese script tb hace funcionar el calendario-->
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> <!-- ese script hace funcionar el calendario -->
-<script src="https://kit.fontawesome.com/66502b62f5.js" crossorigin="anonymous"></script>
+  <meta name="generator" content="HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 16.5), see www.w3.org">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity=
+  "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" type="text/css">
+  <!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<!--
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity=
+  "sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" type="text/javascript">
+</script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity=
+  "sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" type="text/javascript">
+</script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" type="text/css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js" type="text/javascript">
+</script><!--ese script tb hace funcionar el calendario-->
+
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" type="text/javascript">
+</script><!-- ese script hace funcionar el calendario -->
+
+  <script src="https://kit.fontawesome.com/66502b62f5.js" crossorigin="anonymous" type="text/javascript">
+</script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" type="text/javascript">
+</script><!--
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 -->
 
-<style>
-    .datepicker{
+  <style type="text/css">
+  .datepicker{
 
     }
   </style>
-
-<style>
+  <style type="text/css">
 .btn-group-xs > .btn, .btn-xs {
   padding: .25rem .4rem;
   font-size: .875rem;
   line-height: .5;
   border-radius: .2rem;
-}
-</style>
-
-<style>
-    .container {
+  }
+  </style>
+  <style type="text/css">
+  .container {
   padding: 3rem 0rem;
-}
+  }
 
-h4 {
+  h4 {
   margin: 2rem 0rem 1rem;
-}
-.form-group {
+  }
+  .form-group {
   position: relative;
-}
-</style>
-
-<!--<script>
+  }
+  </style><!--<script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function() {
   'use strict';
@@ -67,13 +74,11 @@ h4 {
 </script>
 -->
 
-<script>
-  $(function() {
+  <script type="text/javascript">
+$(function() {
     $( ".datepicker" ).datepicker();
   });
-  </script>
-
-<!--<script>
+  </script><!--<script>
   $( function() {
     var tooltips = $( "[title]" ).tooltip({
       position: {
@@ -85,16 +90,16 @@ h4 {
       } );
   </script>
 -->
-<script>
- $(document).ready(function(){
- $('select[id="BCS_Tipo_Salida"]').change(function(){
-   $('select[id="BCS_Bodega_Intermediaria"]').prop('disabled',this.value != 0 ?false:true);
- });
-});
-</script>
 
-<script>
-     function disable(select_val,input_id) {
+  <script type="text/javascript">
+$(document).ready(function(){
+  $('select[id="BCS_Tipo_Salida"]').change(function(){
+   $('select[id="BCS_Bodega_Intermediaria"]').prop('disabled',this.value != 0 ?false:true);
+  });
+  });
+  </script>
+  <script type="text/javascript">
+   function disable(select_val,input_id) {
                 var e = document.getElementById(select_val);
                 var option = e.options[e.selectedIndex].value;
                 if(option === "1"){
@@ -105,28 +110,21 @@ h4 {
                     document.getElementById(input_id).disabled = false;
                 }
     }
-</script>
-
-
-
-<script>
- $(document).ready(function(){
- $('select[id="BCE_Tipo_Entrada"]').change(function(){
+  </script>
+  <script type="text/javascript">
+$(document).ready(function(){
+  $('select[id="BCE_Tipo_Entrada"]').change(function(){
    $('select[id="BCE_Bodega_Salida"]').prop('disabled',this.value != 0 ?false:true);
- });
-});
-</script>
-
-<script>
- $(document).ready(function(){
- $('select[id="BCE_Tipo_Entrada"]').change(function(){
+  });
+  });
+  </script>
+  <script type="text/javascript">
+$(document).ready(function(){
+  $('select[id="BCE_Tipo_Entrada"]').change(function(){
    $('select[id="BCE_Movil"]').prop('disabled',this.value != 0 ?false:true);
- });
-});
-</script>
-
-
-<!--<script>
+  });
+  });
+  </script><!--<script>
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip({
         placement : 'top'
@@ -135,14 +133,13 @@ $(document).ready(function(){
 </script>
     -->
 
-    <script>
+  <script type="text/javascript">
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
-});
-</script>
-
- <script>
-   $(document).ready(function() {
+  });
+  </script>
+  <script type="text/javascript">
+ $(document).ready(function() {
 
   $("#MIS_Bodega_Salida").change(function() {
 
@@ -151,60 +148,59 @@ $(document).ready(function(){
 
      if(el.val() === "Bodega 1" ) {
 
-    	 $("#MIS_Bodega_Destino").append(this.removed)
+         $("#MIS_Bodega_Destino").append(this.removed)
 
        $(document.getElementById("Bodega1")).remove();
-       this.removed = "<option id=\"Bodega1\">Bodega 1</option>"
+       this.removed = "<option id=\"Bodega1\">Bodega 1<\/option>"
     }
     else if(el.val() === "Bodega 1A" ) {
-    	 $("#MIS_Bodega_Destino").append(this.removed)
+         $("#MIS_Bodega_Destino").append(this.removed)
        $(document.getElementById("Bodega1A")).remove();
-       this.removed = "<option id=\"Bodega1A\">Bodega 1A</option>"
+       this.removed = "<option id=\"Bodega1A\">Bodega 1A<\/option>"
 
     }
     else if(el.val() === "Bodega 1B" ) {
-    	 $("#MIS_Bodega_Destino").append(this.removed)
+         $("#MIS_Bodega_Destino").append(this.removed)
        $(document.getElementById("Bodega1B")).remove();
-       this.removed = "<option id=\"Bodega1B\">Bodega 1B</option>"
+       this.removed = "<option id=\"Bodega1B\">Bodega 1B<\/option>"
 
     }
 
     else if(el.val() === "Bodega 2" ) {
-    	 $("#MIS_Bodega_Destino").append(this.removed)
+         $("#MIS_Bodega_Destino").append(this.removed)
        $(document.getElementById("Bodega2")).remove();
-       this.removed = "<option id=\"Bodega2\">Bodega 2</option>"
+       this.removed = "<option id=\"Bodega2\">Bodega 2<\/option>"
 
     }
 
     else if(el.val() === "Bodega 3" ) {
-    	 $("#MIS_Bodega_Destino").append(this.removed)
+         $("#MIS_Bodega_Destino").append(this.removed)
        $(document.getElementById("Bodega3")).remove();
-       this.removed = "<option id=\"Bodega3\">Bodega 3</option>"
+       this.removed = "<option id=\"Bodega3\">Bodega 3<\/option>"
 
     }
 
     else if(el.val() === "Bodega 4" ) {
-    	 $("#MIS_Bodega_Destino").append(this.removed)
+         $("#MIS_Bodega_Destino").append(this.removed)
        $(document.getElementById("Bodega4")).remove();
-       this.removed = "<option id=\"Bodega4\">Bodega 4</option>"
+       this.removed = "<option id=\"Bodega4\">Bodega 4<\/option>"
 
     }
 
     else if(el.val() === "Bodega Administrativo" ) {
-    	 $("#MIS_Bodega_Destino").append(this.removed)
+         $("#MIS_Bodega_Destino").append(this.removed)
        $(document.getElementById("BodegaAdm")).remove();
-       this.removed = "<option id=\"BodegaAdm\">Bodega Administrativo</option>"
+       this.removed = "<option id=\"BodegaAdm\">Bodega Administrativo<\/option>"
 
     }
 
   });
 
-});
+  });
 
- </script>
-
-    <script>
-   $(document).ready(function() {
+  </script>
+  <script type="text/javascript">
+ $(document).ready(function() {
 
   $("#BCS_Bodega_Intermediaria").change(function() {
 
@@ -212,1632 +208,1996 @@ $(document).ready(function(){
 
      if(el.val() === "Graneros" ) {
 
-    	 $("#BCS_Bodega_Destino").append(this.removed)
+         $("#BCS_Bodega_Destino").append(this.removed)
 
        $(document.getElementById("Graneros")).remove();
-       this.removed = "<option id=\"Graneros\">Graneros</option>"
+       this.removed = "<option id=\"Graneros\">Graneros<\/option>"
     }
     else if(el.val() === "Rengo" ) {
-    	 $("#BCS_Bodega_Destino").append(this.removed)
+         $("#BCS_Bodega_Destino").append(this.removed)
        $(document.getElementById("Rengo")).remove();
-       this.removed = "<option id=\"Rengo\">Rengo</option>"
+       this.removed = "<option id=\"Rengo\">Rengo<\/option>"
     }
     else if(el.val() === "San Fernando" ) {
-    	 $("#BCS_Bodega_Destino").append(this.removed)
+         $("#BCS_Bodega_Destino").append(this.removed)
        $(document.getElementById("SanFernando")).remove();
-       this.removed = "<option id=\"SanFernando\">San Fernando</option>"
+       this.removed = "<option id=\"SanFernando\">San Fernando<\/option>"
     }
     else if(el.val() === "Chimbarongo" ) {
-    	 $("#BCS_Bodega_Destino").append(this.removed)
+         $("#BCS_Bodega_Destino").append(this.removed)
        $(document.getElementById("Chimbarongo")).remove();
-       this.removed = "<option id=\"Chimbarongo\">Chimbarongo</option>"
+       this.removed = "<option id=\"Chimbarongo\">Chimbarongo<\/option>"
     }
     else if(el.val() === "San Vicente" ) {
-    	 $("#BCS_Bodega_Destino").append(this.removed)
+         $("#BCS_Bodega_Destino").append(this.removed)
        $(document.getElementById("SanVicente")).remove();
-       this.removed = "<option id=\"SanVicente\">San Vicente</option>"
+       this.removed = "<option id=\"SanVicente\">San Vicente<\/option>"
     }
     else if(el.val() === "Peumo" ) {
-    	 $("#BCS_Bodega_Destino").append(this.removed)
+         $("#BCS_Bodega_Destino").append(this.removed)
        $(document.getElementById("Peumo")).remove();
-       this.removed = "<option id=\"Peumo\">Peumo</option>"
+       this.removed = "<option id=\"Peumo\">Peumo<\/option>"
     }
     else if(el.val() === "Santa Cruz" ) {
-    	 $("#BCS_Bodega_Destino").append(this.removed)
+         $("#BCS_Bodega_Destino").append(this.removed)
        $(document.getElementById("SantaCruz")).remove();
-       this.removed = "<option id=\"SantaCruz\">Santa Cruz</option>"
+       this.removed = "<option id=\"SantaCruz\">Santa Cruz<\/option>"
     }
     else if(el.val() === "Pichilemu" ) {
-    	 $("#BCS_Bodega_Destino").append(this.removed)
+         $("#BCS_Bodega_Destino").append(this.removed)
        $(document.getElementById("Pichilemu")).remove();
-       this.removed = "<option id=\"Pichilemu\">Pichilemu</option>"
+       this.removed = "<option id=\"Pichilemu\">Pichilemu<\/option>"
     }
   });
-});
+  });
 
- </script>
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title></title>
 </head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<div class="container">
-    </br>
-    <h2>SISCOIN - Sistema Control de Inventario - SAMU VI Region</h2>
-    <br action="" method="post" role="form">
-    <strong>Bodega Central </strong>- Formulario para el gerenciamiento de insumos y control de inventario
-    <br class="form-group"/>
-    </br>
+<body>
+  <div class="container">
+    <br>
+
+    <h2>SISCOIN - Sistema Control de Inventario - SAMU VI Region</h2><br action="" method="post" role="form">
+    <strong>Bodega Central</strong> - Formulario para el gerenciamiento de insumos y control de inventario<br class="form-group">
+    <br>
+
     <div class="accordion" id="accordionExample">
-        <div class="card">
-            <div class="card-header bg-primary" id="headingOne">
-                <h2 class="mb-0">
-                    <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Entrada de Insumos
-                    </button>
-                </h2>
-            </div>
-
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-
-                    <form name="form1" class="needs-validation" novalidate>
-
-                        <p class="h6"><strong>Informacion del Pedido </strong></p>
-
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    Fecha Ingreso
-                                    </br>
-                                    <input type="text"  id="BCE_Datepicker" class="datepicker form-control" placeholder="Escoja una fecha">
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Nro Orden Interna o Nro Formato Entrega
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Nro Orden Interna proviene desde Servicio de Salud. Nro Acta Entrega desde Bodegas Perifericas. Solo numeros y letras sin espacio entre caracteres." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="BCE_Nro_Formato_Entrega" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Tipo de Entrada
-                                    <select class="form-control" id="BCE_Tipo_Entrada">
-                                        <option value="">Escoja una opcion</option>
-                                        <option value="0">Desde Bodega Servicio de Salud</option>
-                                        <option value="1">Desde Bodegas Perifericas</option>
-                                    </select>
-                                   </div>
-                            </div>
-                         </div>
-
-                        <div class="row">
-                           <div class="col">
-                                <div class="form-group">
-                                    Bodega Periferica Emisora
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Bodega periferica emisora desde donde los insumos se trasladan a Bodega Central." data-trigger="hover"></i></span>
-                                    </br>
-                                    <select class="form-control" id="BCE_Bodega_Salida" disabled>
-                                        <option value="">Escoja una opcion</option>
-                                        <option value="1">Graneros</option>
-                                        <option value="1">Rengo</option>
-                                        <option value="1">San Fernando</option>
-                                        <option value="1">Chimbarongo</option>
-                                        <option value="1">San Vicente</option>
-                                        <option value="1">Peumo</option>
-                                        <option value="1">Santa Cruz</option>
-                                        <option value="1">Pichilemu</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    Movil del Traslado
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Movil que transporta insumos desde bodega periferica hasta bodega central." data-trigger="hover"></i></span>
-                                    </br>
-                                    <select class="form-control" id="BCE_Movil" disabled>
-                                        <option value="">Escoja una opcion</option>
-                                        <option>VIR- Vehiculo de Intervencion Rapida</option>
-                                        <option>M17 - Graneros</option>
-                                        <option>M2 - Rancagua</option>
-                                        <option>M23 - Rancagua</option>
-                                        <option>M24 - Rancagua</option>
-                                        <option>M11 - Rancagua</option>
-                                        <option>M15 - Rengo</option>
-                                        <option>M25 - Rengo</option>
-                                        <option>M16 - S. Fernando</option>
-                                        <option>M22 - S. Fernando</option>
-                                        <option>M19 - S. Vicente</option>
-                                        <option>M10 - Chimbarongo</option>
-                                        <option>M18 - Peumo</option>
-                                        <option>M14 - S. Cruz</option>
-                                        <option>M28 - S. Cruz</option>
-                                        <option>M27 - Pichilemu</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    Nro Orden de Compra
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Si no existe numero de orden de compra, ingrese 'NA' (No Aplica)." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="BCE_Nro_Orden_Compra" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Nro de Factura
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Si no existe numero de la factura, ingrese 'NA' (No Aplica)." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="BCE_Nro_Factura" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Entregado por
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Digitar un solo nombre y un solo apellido sin tildes." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="BCE_Entregado_Por" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Recibido por
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Digitar un solo nombre y un solo apellido sin tildes." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="BCE_Recibido_Por" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <p class="h6"><strong>Informacion del Producto </strong></p>
-
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    Descripcion
-                                    <select class="form-control" id="BCE_Desc_Producto">
-                                        <option>Escoja una opcion o digite el producto</option>
-                                        {% for option in option_list %}
-                                        <option>{{ option }}</option>
-                                        {% endfor %}
-                                    </select>
-                                   </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Especificacion
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Caso necesario, ingrese informacion extra como por exemplo: numero jeringa, marca u otro." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="BCE_Esp_Producto" class="form-control">
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    Cantidad
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Numero de unidades, cajas, paquetes, etc." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="BCE_Cantidad" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Formato
-                                    </br>
-                                    <select class="form-control" id="BCE_Formato" onchange="disable('BCE_Formato', 'BCE_C_Detalle')">
-                                        <option value="0">Escoja una opcion</option>
-                                        <option value="1">Unidad(es)</option>
-                                        <option value="2">Caja(s)</option>
-                                        <option value="2">Paquete(s)</option>
-                                        <option value="1">ml(s)</option>
-                                        <option value="1">Litro(s)</option>
-                                        <option value="2">Resma(s)</option>
-                                        <option value="1">Par(es)</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Cantidad detalle
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Cuantas unidades por caja, paquete, resma, etc. Digitar '0' en caso de no existir informacion o no ser necesaria." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="BCE_C_Detalle" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    Valor por formato
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Ingresar solo numeros sin simbolo de $." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="BCE_Valor_Formato" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Valor Total
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Ingresar solo numeros sin simbolo de $." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="BCE_Valor_Total" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Bodega Entrada
-                                    <select class="form-control" id="BCE_Bodega_Entrada">
-                                        <option value="">Escoja una opcion</option>
-                                        <option>Bodega 1 </option>
-                                        <option>Bodega 1A </option>
-                                        <option>Bodega 1B </option>
-                                        <option>Bodega 2 </option>
-                                        <option>Bodega 3 </option>
-                                        <option>Bodega 4 </option>
-                                        <option>Bodega Administrativo </option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary save-btn">+</button>
-                    </form>
-                    <br/>
-
-                    <form  action="" method="post">
-                    <input type="hidden" id="formheaderdata" name="formheaderdata">
-                    <input type="hidden" id="formtabledata" name="formtabledata">
-                    <div style="overflow-x:auto;">
-                        <table id="form1table" class="table data-table">
-                            <thead>
-                            <th>Descripcion</th>
-                            <th>Especificacion</th>
-                            <th>Cantidad</th>
-                            <th>Formato</th>
-                            <th>Cantidad Detalle</th>
-                            <th>Valor por Formato</th>
-                            <th>Valor Total</th>
-                            <th>Bodega Entrada</th>
-                            </thead>
-                            <tbody id="tbody1">
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="container">
-                        <div class="row">
-                            <div class="col text-center">
-                                <button onclick="getForm1Data()" type="submit" id="BCE_Enviar" class="btn btn-success">Enviar</button>
-                            </div>
-                        </div>
-                    </div>
-                    </form>
-
-<script>
-
-function getForm1Data() {
-
-  var formheaderdata = []
-
-  var offset = "0"
-  formheaderdata.push(offset)
-  formheaderdata.push("BC-Entrada-Insumos")
-  formheaderdata.push(document.getElementById('BCE_Datepicker').value)
-  formheaderdata.push(document.getElementById('BCE_Nro_Formato_Entrega').value)
-  formheaderdata.push(document.getElementById('BCE_Tipo_Entrada').value)
-  formheaderdata.push(document.getElementById('BCE_Bodega_Salida').value)
-  formheaderdata.push(document.getElementById('BCE_Movil').value)
-  formheaderdata.push(document.getElementById('BCE_Nro_Orden_Compra').value)
-  formheaderdata.push(document.getElementById('BCE_Nro_Factura').value)
-  formheaderdata.push(document.getElementById('BCE_Entregado_Por').value)
-  formheaderdata.push(document.getElementById('BCE_Recibido_Por').value)
-
-  var formtabledata = []
-
-  var form1table = document.getElementById("form1table").tBodies;
-
-  Array.from(form1table).forEach(function(element) {
-      formtabledata.push(element.innerHTML)
-      }
-   )
-
-  $("input[id='formheaderdata']").val(formheaderdata);
-  $("input[id='formtabledata']").val(formtabledata);
-
-}
-
-</script>
-
-    <script type="text/javascript">
-
-    var form1 = document.forms["form1"];
-
-    $(form1).submit(function(e){
-        e.preventDefault();
-        var BCES_producto = $("select[id='BCE_Desc_Producto']").val();
-        var BCES_eproducto = $("input[id='BCE_Esp_Producto']").val();
-        var BCES_cantidad = $("input[id='BCE_Cantidad']").val();
-        var BCES_formato = $("select[id='BCE_Formato']").val();
-        var BCES_cdetalle = $("input[id='BCE_C_Detalle']").val();
-        var BCES_valorformato = $("input[id='BCE_Valor_Formato']").val();
-        var BCES_valortotal = $("input[id='BCE_Valor_Total']").val();
-        var BCES_bentrada = $("select[id='BCE_Bodega_Entrada']").val();
-
-        var actions = "<button class='btn btn-primary btn-xs btn-edit1'>E</button><button class='btn btn-danger btn-xs btn-delete1'>X</button>"
-
-        var row_data = "<tr data-BCES_producto='"+BCES_producto+"' data-BCES_eproducto='"+BCES_eproducto+"' data-BCES_cantidad='"+BCES_cantidad+"' data-BCES_formato='"+BCES_formato+"' data-BCES_cdetalle='"+BCES_cdetalle+"' data-BCES_valorformato='"+BCES_valorformato+"' data-BCES_valortotal='"+BCES_valortotal+"' data-BCES_bentrada='"+BCES_bentrada+"'>"
-
-        var row = "<td>"+BCES_producto+"</td> <td>"+BCES_eproducto+"</td> <td>"+BCES_cantidad+"</td> <td>"+BCES_formato+"</td> <td>"+BCES_cdetalle+"</td> <td>"+BCES_valorformato+"</td> <td>"+BCES_valortotal+"</td> <td>"+BCES_bentrada+"</td> <td>"+actions+"</td>"
-
-        $("#tbody1").append(row_data + row + "</tr>");
-
-
-        $("select[id='BCE_Desc_Producto']").val('');
-        $("input[id='BCE_Esp_Producto']").val('');
-        $("input[id='BCE_Cantidad']").val('');
-        $("select[id='BCE_Formato']").val('');
-        $("input[id='BCE_C_Detalle']").val('');
-        $("input[id='BCE_Valor_Formato']").val('');
-        $("input[id='BCE_Valor_Total']").val('');
-        $("select[id='BCE_Bodega_Entrada']").val('');
-     });
-
-    $("body").on("click", ".btn-delete1", function(){
-
-        $(this).parents("tr").remove();
-    });
-
-    $("body").on("click", ".btn-edit1", function(){
-
-
-        var BCES_producto = $(this).parents("tr").attr('data-BCES_producto');
-        var BCES_eproducto = $(this).parents("tr").attr('data-BCES_eproducto');
-        var BCES_cantidad = $(this).parents("tr").attr('data-BCES_cantidad');
-        var BCES_formato = $(this).parents("tr").attr('data-BCES_formato');
-        var BCES_cdetalle = $(this).parents("tr").attr('data-BCES_cdetalle');
-        var BCES_valorformato = $(this).parents("tr").attr('data-BCES_valorformato');
-        var BCES_valortotal = $(this).parents("tr").attr('data-BCES_valortotal');
-        var BCES_bentrada = $(this).parents("tr").attr('data-BCES_bentrada');
-
-
-        $(this).parents("tr").find("td:eq(0)").html(BCES_producto);
-        $(this).parents("tr").find("td:eq(1)").html('<input name="edit_BCES_eproducto" value="'+BCES_eproducto+'">');
-        $(this).parents("tr").find("td:eq(2)").html('<input name="edit_BCES_cantidad" value="'+BCES_cantidad+'">');
-        $(this).parents("tr").find("td:eq(3)").html(BCES_formato);
-        $(this).parents("tr").find("td:eq(4)").html('<input name="edit_BCES_cdetalle" value="'+BCES_cdetalle+'">');
-        $(this).parents("tr").find("td:eq(5)").html('<input name="edit_BCES_valorformato" value="'+BCES_valorformato+'">');
-        $(this).parents("tr").find("td:eq(6)").html('<input name="edit_BCES_valortotal" value="'+BCES_valortotal+'">');
-        $(this).parents("tr").find("td:eq(7)").html(BCES_bentrada);
-
-        $(this).parents("tr").find("td:eq(8)").prepend("<button class='btn btn-info btn-xs btn-update1'>A</button><button class='btn btn-warning btn-xs btn-cancel1'>C</button>")
-        $(this).hide();
-    });
-
-    $("body").on("click", ".btn-cancel1", function(){
-        var BCES_producto = $(this).parents("tr").attr('data-BCES_producto');
-        var BCES_eproducto = $(this).parents("tr").attr('data-BCES_eproducto');
-        var BCES_cantidad = $(this).parents("tr").attr('data-BCES_cantidad');
-        var BCES_formato = $(this).parents("tr").attr('data-BCES_formato');
-        var BCES_cdetalle = $(this).parents("tr").attr('data-BCES_cdetalle');
-        var BCES_valorformato = $(this).parents("tr").attr('data-BCES_valorformato');
-        var BCES_valortotal = $(this).parents("tr").attr('data-BCES_valortotal');
-        var BCES_bentrada = $(this).parents("tr").attr('data-BCES_bentrada');
-
-        $(this).parents("tr").find("td:eq(0)").text(BCES_producto);
-        $(this).parents("tr").find("td:eq(1)").text(BCES_eproducto);
-        $(this).parents("tr").find("td:eq(2)").text(BCES_cantidad);
-        $(this).parents("tr").find("td:eq(3)").text(BCES_formato);
-        $(this).parents("tr").find("td:eq(4)").text(BCES_cdetalle);
-        $(this).parents("tr").find("td:eq(5)").text(BCES_valorformato);
-        $(this).parents("tr").find("td:eq(6)").text(BCES_valortotal);
-        $(this).parents("tr").find("td:eq(7)").text(BCES_bentrada);
-
-        $(this).parents("tr").find(".btn-edit1").show();
-        $(this).parents("tr").find(".btn-update1").remove();
-        $(this).parents("tr").find(".btn-cancel1").remove();
-    });
-
-    $("body").on("click", ".btn-update1", function(){
-        var BCES_producto = $(this).parents("tr").find("input[name='edit_BCES_producto']").val();
-        var BCES_eproducto = $(this).parents("tr").find("input[name='edit_BCES_eproducto']").val();
-        var BCES_cantidad = $(this).parents("tr").find("input[name='edit_BCES_cantidad']").val();
-        var BCES_formato = $(this).parents("tr").find("input[name='edit_BCES_formato']").val();
-        var BCES_cdetalle = $(this).parents("tr").find("input[name='edit_BCES_cdetalle']").val();
-        var BCES_valorformato = $(this).parents("tr").find("input[name='edit_BCES_valorformato']").val();
-        var BCES_valortotal = $(this).parents("tr").find("input[name='edit_BCES_valortotal']").val();
-        var BCES_bentrada = $(this).parents("tr").find("input[name='edit_BCES_bentrada']").val();
-
-
-        $(this).parents("tr").find("td:eq(0)").text(BCES_producto);
-        $(this).parents("tr").find("td:eq(1)").text(BCES_eproducto);
-        $(this).parents("tr").find("td:eq(2)").text(BCES_cantidad);
-        $(this).parents("tr").find("td:eq(3)").text(BCES_formato);
-        $(this).parents("tr").find("td:eq(4)").text(BCES_cdetalle);
-        $(this).parents("tr").find("td:eq(5)").text(BCES_valorformato);
-        $(this).parents("tr").find("td:eq(6)").text(BCES_valortotal);
-        $(this).parents("tr").find("td:eq(7)").text(BCES_bentrada);
-
-        $(this).parents("tr").attr('data-BCES_producto', BCES_producto);
-        $(this).parents("tr").attr('data-BCES_eproducto', BCES_eproducto);
-        $(this).parents("tr").attr('data-BCES_cantidad', BCES_cantidad);
-        $(this).parents("tr").attr('data-BCES_formato', BCES_formato);
-        $(this).parents("tr").attr('data-BCES_cdetalle', BCES_cdetalle);
-        $(this).parents("tr").attr('BCES_valorformato', BCES_valorformato);
-        $(this).parents("tr").attr('BCES_valortotal', BCES_valortotal);
-        $(this).parents("tr").attr('data-BCES_bentrada', BCES_bentrada);
-
-        $(this).parents("tr").find(".btn-edit1").show();
-        $(this).parents("tr").find(".btn-cancel1").remove();
-        $(this).parents("tr").find(".btn-update1").remove();
-    });
-
-</script>
-
-                </div>
-            </div>
+      <div class="card">
+        <div class="card-header bg-primary" id="headingOne">
+          <h2 class="mb-0"><button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+          aria-controls="collapseOne">Entrada de Insumos</button></h2>
         </div>
 
-        <div class="card">
-            <div class="card-header bg-primary" id="headingTwo">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed text-white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Salida de Insumos - Bodegas Perifericas y Bodega Central Servicio de Salud
-                    </button>
-                </h2>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                    <form name="form2" class="needs-validation" novalidate>
-                        <p class="h6"><strong>Informaciones del Pedido </strong></p>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <form name="form1" class="needs-validation" novalidate="">
+              <p class="h6"><strong>Informacion del Pedido</strong></p>
 
-                        <div class="row">
-                           <div class="col">
-                                <div class="form-group">
-                                    Fecha Egreso
-                                    </br>
-                                    <input type="text" id="BCS_datepicker" class="datepicker form-control">
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Nro Acta de Entrega
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Solo numeros y letras sin espacio entre caracteres." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="BCS_Nro_Acta" class="form-control">
-                                    </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Tipo de Salida
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Directa: de una bodega a otra sin bodegas intermediarias. Indirecta caso contrario." data-trigger="hover"></i></span>
-                                    </br>
-                                    <select class="form-control" id="BCS_Tipo_Salida">
-                                        <option value="">Escoja una opcion</option>
-                                        <option value="0">Directa </option>
-                                        <option value="1">Indirecta </option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Bodega Intermediaria
-                                    <select class="form-control" id="BCS_Bodega_Intermediaria" disabled>
-                                        <option value="">Escoja una opcion</option>
-                                        <option>Graneros</option>
-                                        <option>Rengo</option>
-                                        <option>San Fernando</option>
-                                        <option>Chimbarongo</option>
-                                        <option>San Vicente</option>
-                                        <option>Peumo</option>
-                                        <option>Santa Cruz</option>
-                                        <option>Pichilemu</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Bodega Destino
-                                    <select class="form-control" id="BCS_Bodega_Destino">
-                                        <option value="">Escoja una opcion</option>
-                                        <option id="BCSSO">Bodega Central SSO</option>
-                                        <option id="Graneros">Graneros</option>
-                                        <option id="Rengo">Rengo</option>
-                                        <option id="SanFernando">San Fernando</option>
-                                        <option id="Chimbarongo">Chimbarongo</option>
-                                        <option id="SanVicente">San Vicente</option>
-                                        <option id="Peumo">Peumo</option>
-                                        <option id="SantaCruz">Santa Cruz</option>
-                                        <option id="Pichilemu">Pichilemu</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                           </div>
-
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    Movil del Traslado
-                                    </br>
-                                    <select class="form-control" id="BCS_Movil">
-                                        <option value="">Escoja una opcion</option>
-                                        <option>VIR- Vehiculo de Intervencion Rapida</option>
-                                        <option>M17 - Graneros</option>
-                                        <option>M2 - Rancagua</option>
-                                        <option>M23 - Rancagua</option>
-                                        <option>M24 - Rancagua</option>
-                                        <option>M11 - Rancagua</option>
-                                        <option>M15 - Rengo</option>
-                                        <option>M25 - Rengo</option>
-                                        <option>M16 - S. Fernando</option>
-                                        <option>M22 - S. Fernando</option>
-                                        <option>M19 - S. Vicente</option>
-                                        <option>M10 - Chimbarongo</option>
-                                        <option>M18 - Peumo</option>
-                                        <option>M14 - S. Cruz</option>
-                                        <option>M28 - S. Cruz</option>
-                                        <option>M27 - Pichilemu</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                               <div class="form-group">
-                                    Entregado por
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Digitar un solo nombre y un solo apellido sin tildes." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="BCS_Entregado_Por" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Recibido por
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Digitar un solo nombre y un solo apellido sin tildes." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="BCS_Recibido_Por" class="form-control">
-                                </div>
-                            </div>
-                            </div>
-
-                        <p class="h6"><strong>Informacion del Producto </strong></p>
-
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    Descripcion
-                                    </br>
-                                    <select class="form-control" id="BCS_Desc_Producto">
-                                      <option>Escoja una opcion o digite el producto</option>
-                                      {% for option in option_list %}
-                                      <option>{{ option }}</option>
-                                      {% endfor %}
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Especificacion
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Caso necesario, ingrese informacion extra como por exemplo: numero jeringa, marca u otro." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="BCS_Esp_Producto" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    Cantidad
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Numero de unidades, cajas, paquetes, etc." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="BCS_Cantidad" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Formato
-                                    </br>
-                                    <select class="form-control" id="BCS_Formato" onchange="disable('BCS_Formato', 'BCS_C_Detalle')">>
-                                        <option value="0">Escoja una opcion</option>
-                                        <option value="1">Unidad(es) </option>
-                                        <option value="2">Caja(s) </option>
-                                        <option value="2">Paquete(s) </option>
-                                        <option value="1">ml(s) </option>
-                                        <option value="1">Litro(s) </option>
-                                        <option value="2">Resma(s) </option>
-                                        <option value="1">Par(es) </option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Cantidad detalle
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Cuantas unidades por caja, paquete, resma, etc. Digitar '0' en caso de no existir informacion o no ser necesaria." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="BCS_C_Detalle" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                    <div class="form-group">
-                                        Valor por formato
-                                        <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Ingresar solo numeros sin simbolo de $." data-trigger="hover"></i></span>
-                                        </br>
-                                        <input type="text" id="BCS_Valor_Formato" class="form-control">
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="form-group">
-                                        Valor Total
-                                        <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Ingresar solo numeros sin simbolo de $." data-trigger="hover"></i></span>
-                                        </br>
-                                        <input type="text" id="BCS_Valor_Total" class="form-control">
-                                    </div>
-                                </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    Bodega Salida
-                                    <select class="form-control" id="BCS_Bodega_Salida">
-                                        <option value="">Escoja una opcion</option>
-                                        <option>Bodega 1 </option>
-                                        <option>Bodega 1A </option>
-                                        <option>Bodega 1B </option>
-                                        <option>Bodega 2 </option>
-                                        <option>Bodega 3 </option>
-                                        <option>Bodega 4 </option>
-                                        <option>Bodega Administrativo </option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary save-btn">+</button>
-                    </form>
-                    <br/>
-
-                    <form  action="" method="post">
-                    <input type="hidden" id="formheaderdata" name="formheaderdata">
-                    <input type="hidden" id="formtabledata" name="formtabledata">
-                    <div style="overflow-x:auto;">
-                        <table id="form2table" class="table data-table">
-                            <thead>
-                            <th>Descripcion</th>
-                            <th>Especificacion</th>
-                            <th>Cantidad</th>
-                            <th>Formato</th>
-                            <th>Cantidad Detalle</th>
-                            <th>Valor por Formato</th>
-                            <th>Valor Total</th>
-                            <th>Bodega Salida</th>
-                            </thead>
-                            <tbody id="tbody2">
-                            </tbody>
-                        </table>
-                    </div>
-
-                     <div class="container">
-                        <div class="row">
-                            <div class="col text-center">
-                                <button onclick="getForm2Data()" type="submit" id="BCSOB_Enviar" class="btn btn-success">Enviar</button>
-                            </div>
-                        </div>
-                     </div>
-                    </form>
-
-<script>
-
-function getForm2Data() {
-
-  var formheaderdata = []
-  var offset = "17"
-
-  formheaderdata.push(offset)
-  formheaderdata.push("BC-Salida-OB")
-  formheaderdata.push(document.getElementById('BCS_datepicker').value)
-  formheaderdata.push(document.getElementById('BCS_Nro_Acta').value)
-  formheaderdata.push(document.getElementById('BCS_Tipo_Salida').value)
-  formheaderdata.push(document.getElementById('BCS_Bodega_Intermediaria').value)
-  formheaderdata.push(document.getElementById('BCS_Bodega_Destino').value)
-  formheaderdata.push(document.getElementById('BCS_Movil').value)
-  formheaderdata.push(document.getElementById('BCS_Entregado_Por').value)
-  formheaderdata.push(document.getElementById('BCS_Recibido_Por').value)
-
-  var formtabledata = []
-
-  var form2table = document.getElementById("form2table").tBodies;
-
-  Array.from(form2table).forEach(function(element) {
-      formtabledata.push(element.innerHTML)
-      }
-   )
-
-  $("input[id='formheaderdata']").val(formheaderdata);
-  $("input[id='formtabledata']").val(formtabledata);
-
-}
-
-</script>
-
-<script type="text/javascript">
-
-    var form2 = document.forms["form2"];
-
-    $(form2).submit(function(e){
-        e.preventDefault();
-        var BCSS_producto = $("select[id='BCS_Desc_Producto']").val();
-        var BCSS_eproducto = $("input[id='BCS_Esp_Producto']").val();
-        var BCSS_cantidad = $("input[id='BCS_Cantidad']").val();
-        var BCSS_formato = $("select[id='BCS_Formato']").val();
-        var BCSS_cdetalle = $("input[id='BCS_C_Detalle']").val();
-        var BCSS_valorformato = $("input[id='BCS_Valor_Formato']").val();
-        var BCSS_valortotal = $("input[id='BCS_Valor_Total']").val();
-        var BCSS_Bodega_Salida = $("select[id='BCS_Bodega_Salida']").val();
-
-
-        var actions = "<button class='btn btn-primary btn-xs btn-edit2'>E</button><button class='btn btn-danger btn-xs btn-delete2'>X</button>"
-
-        var row_data = "<tr data-BCSS_producto='"+BCSS_producto+"' data-BCSS_eproducto='"+BCSS_eproducto+"' data-BCSS_cantidad='"+BCSS_cantidad+"' data-BCSS_formato='"+BCSS_formato+"' data-BCSS_cdetalle='"+BCSS_cdetalle+"' data-BCSS_valorformato='"+BCSS_valorformato+"' data-BCSS_valortotal='"+BCSS_valortotal+"' data-BCSS_Bodega_Salida='"+BCSS_Bodega_Salida+"'>"
-
-        var row = "<td>"+BCSS_producto+"</td> <td>"+BCSS_eproducto+"</td> <td>"+BCSS_cantidad+"</td> <td>"+BCSS_formato+"</td> <td>"+BCSS_cdetalle+"</td> <td>"+BCSS_valorformato+"</td> <td>"+BCSS_valortotal+"</td> <td>"+BCSS_Bodega_Salida+"</td> <td>"+actions+"</td>"
-
-        $("#tbody2").append(row_data + row + "</tr>");
-
-        $("select[id='BCS_Desc_Producto']").val('');
-        $("input[id='BCS_Esp_Producto']").val('');
-        $("input[id='BCS_Cantidad']").val('');
-        $("select[id='BCS_Formato']").val('');
-        $("input[id='BCS_C_Detalle']").val('');
-        $("input[id='BCS_Valor_Formato']").val('');
-        $("input[id='BCS_Valor_Total']").val('');
-        $("select[id='BCS_Bodega_Salida']").val('');
-
-     });
-
-    $("body").on("click", ".btn-delete2", function(){
-        $(this).parents("tr").remove();
-    });
-
-    $("body").on("click", ".btn-edit2", function(){
-        var BCSS_producto = $(this).parents("tr").attr('data-BCSS_producto');
-        var BCSS_eproducto = $(this).parents("tr").attr('data-BCSS_eproducto');
-        var BCSS_cantidad = $(this).parents("tr").attr('data-BCSS_cantidad');
-        var BCSS_formato = $(this).parents("tr").attr('data-BCSS_formato');
-        var BCSS_cdetalle = $(this).parents("tr").attr('data-BCSS_cdetalle');
-        var BCSS_valorformato = $(this).parents("tr").attr('data-BCSS_valorformato');
-        var BCSS_valortotal = $(this).parents("tr").attr('data-BCSS_valortotal');
-        var BCSS_Bodega_Salida = $(this).parents("tr").attr('data-BCSS_Bodega_Salida');
-
-
-        $(this).parents("tr").find("td:eq(0)").html(BCSS_producto);
-        $(this).parents("tr").find("td:eq(1)").html('<input name="edit_BCSS_eproducto" value="'+BCSS_eproducto+'">');
-        $(this).parents("tr").find("td:eq(2)").html('<input name="edit_BCSS_cantidad" value="'+BCSS_cantidad+'">');
-        $(this).parents("tr").find("td:eq(3)").html(BCSS_formato);
-        $(this).parents("tr").find("td:eq(4)").html('<input name="edit_BCSS_cdetalle" value="'+BCSS_cdetalle+'">');
-        $(this).parents("tr").find("td:eq(5)").html('<input name="edit_BCSS_valorformato" value="'+BCSS_valorformato+'">');
-        $(this).parents("tr").find("td:eq(6)").html('<input name="edit_BCSS_valortotal" value="'+BCSS_valortotal+'">');
-        $(this).parents("tr").find("td:eq(7)").html(BCSS_Bodega_Salida);
-        $(this).parents("tr").find("td:eq(8)").prepend("<button class='btn btn-info btn-xs btn-update2'>A</button><button class='btn btn-warning btn-xs btn-cancel2'>C</button>")
-        $(this).hide();
-    });
-
-    $("body").on("click", ".btn-cancel2", function(){
-        var BCSS_producto = $(this).parents("tr").attr('data-BCSS_producto');
-        var BCSS_eproducto = $(this).parents("tr").attr('data-BCSS_eproducto');
-        var BCSS_cantidad = $(this).parents("tr").attr('data-BCSS_cantidad');
-        var BCSS_formato = $(this).parents("tr").attr('data-BCSS_formato');
-        var BCSS_cdetalle = $(this).parents("tr").attr('data-BCSS_cdetalle');
-        var BCSS_valorformato = $(this).parents("tr").attr('data-BCSS_valorformato');
-        var BCSS_valortotal = $(this).parents("tr").attr('data-BCSS_valortotal');
-        var BCSS_Bodega_Salida = $(this).parents("tr").attr('data-BCSS_Bodega_Salida');
-
-        $(this).parents("tr").find("td:eq(0)").text(BCSS_producto);
-        $(this).parents("tr").find("td:eq(1)").text(BCSS_eproducto);
-        $(this).parents("tr").find("td:eq(2)").text(BCSS_cantidad);
-        $(this).parents("tr").find("td:eq(3)").text(BCSS_formato);
-        $(this).parents("tr").find("td:eq(4)").text(BCSS_cdetalle);
-        $(this).parents("tr").find("td:eq(5)").text(BCSS_valorformato);
-        $(this).parents("tr").find("td:eq(6)").text(BCSS_valortotal);
-        $(this).parents("tr").find("td:eq(7)").text(BCSS_Bodega_Salida);
-
-        $(this).parents("tr").find(".btn-edit2").show();
-        $(this).parents("tr").find(".btn-update2").remove();
-        $(this).parents("tr").find(".btn-cancel2").remove();
-    });
-
-    $("body").on("click", ".btn-update2", function(){
-        var BCSS_producto = $(this).parents("tr").find("input[name='edit_BCSS_producto']").val();
-        var BCSS_eproducto = $(this).parents("tr").find("input[name='edit_BCSS_eproducto']").val();
-        var BCSS_cantidad = $(this).parents("tr").find("input[name='edit_BCSS_cantidad']").val();
-        var BCSS_formato = $(this).parents("tr").find("input[name='edit_BCSS_formato']").val();
-        var BCSS_cdetalle = $(this).parents("tr").find("input[name='edit_BCSS_cdetalle']").val();
-        var BCSS_valorformato = $(this).parents("tr").find("input[name='edit_BCSS_valorformato']").val();
-        var BCSS_valortotal = $(this).parents("tr").find("input[name='edit_BCSS_valortotal']").val();
-        var BCSS_Bodega_Salida = $(this).parents("tr").find("input[name='edit_BCSS_Bodega_Salida']").val();
-
-        $(this).parents("tr").find("td:eq(0)").text(BCSS_producto);
-        $(this).parents("tr").find("td:eq(1)").text(BCSS_eproducto);
-        $(this).parents("tr").find("td:eq(2)").text(BCSS_cantidad);
-        $(this).parents("tr").find("td:eq(3)").text(BCSS_formato);
-        $(this).parents("tr").find("td:eq(4)").text(BCSS_cdetalle);
-        $(this).parents("tr").find("td:eq(5)").text(BCSS_valorformato);
-        $(this).parents("tr").find("td:eq(6)").text(BCSS_valortotal);
-        $(this).parents("tr").find("td:eq(7)").text(BCSS_Bodega_Salida);
-
-        $(this).parents("tr").attr('data-BCSS_producto', BCSS_producto);
-        $(this).parents("tr").attr('data-BCSS_eproducto', BCSS_eproducto);
-        $(this).parents("tr").attr('data-BCSS_cantidad', BCSS_cantidad);
-        $(this).parents("tr").attr('data-BCSS_formato', BCSS_formato);
-        $(this).parents("tr").attr('data-BCSS_cdetalle', BCSS_cdetalle);
-        $(this).parents("tr").attr('data-BCSS_valorformato', BCSS_valorformato);
-        $(this).parents("tr").attr('data-BCSS_valortotal', BCSS_valortotal);
-        $(this).parents("tr").attr('data-BCSS_Bodega_Salida', BCSS_Bodega_Salida);
-
-        $(this).parents("tr").find(".btn-edit2").show();
-        $(this).parents("tr").find(".btn-cancel2").remove();
-        $(this).parents("tr").find(".btn-update2").remove();
-    });
-
-</script>
-
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    Fecha Ingreso<br>
+                    <input type="text" id="BCE_Datepicker" class="datepicker form-control" placeholder="Escoja una fecha">
+                  </div>
                 </div>
-            </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Nro Orden Interna o Nro Formato Entrega<br>
+                    <input type="text" id="BCE_Nro_Formato_Entrega" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Tipo de Entrada <select class="form-control" id="BCE_Tipo_Entrada">
+                      <option value="">
+                        Escoja una opcion
+                      </option>
+
+                      <option value="0">
+                        Desde Bodega Servicio de Salud
+                      </option>
+
+                      <option value="1">
+                        Desde Bodegas Perifericas
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    Bodega Periferica Emisora<br>
+                    <select class="form-control" id="BCE_Bodega_Salida" disabled>
+                      <option value="">
+                        Escoja una opcion
+                      </option>
+
+                      <option value="1">
+                        Graneros
+                      </option>
+
+                      <option value="1">
+                        Rengo
+                      </option>
+
+                      <option value="1">
+                        San Fernando
+                      </option>
+
+                      <option value="1">
+                        Chimbarongo
+                      </option>
+
+                      <option value="1">
+                        San Vicente
+                      </option>
+
+                      <option value="1">
+                        Peumo
+                      </option>
+
+                      <option value="1">
+                        Santa Cruz
+                      </option>
+
+                      <option value="1">
+                        Pichilemu
+                      </option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Movil del Traslado<br>
+                    <select class="form-control" id="BCE_Movil" disabled>
+                      <option value="">
+                        Escoja una opcion
+                      </option>
+
+                      <option>
+                        VIR- Vehiculo de Intervencion Rapida
+                      </option>
+
+                      <option>
+                        M17 - Graneros
+                      </option>
+
+                      <option>
+                        M2 - Rancagua
+                      </option>
+
+                      <option>
+                        M23 - Rancagua
+                      </option>
+
+                      <option>
+                        M24 - Rancagua
+                      </option>
+
+                      <option>
+                        M11 - Rancagua
+                      </option>
+
+                      <option>
+                        M15 - Rengo
+                      </option>
+
+                      <option>
+                        M25 - Rengo
+                      </option>
+
+                      <option>
+                        M16 - S. Fernando
+                      </option>
+
+                      <option>
+                        M22 - S. Fernando
+                      </option>
+
+                      <option>
+                        M19 - S. Vicente
+                      </option>
+
+                      <option>
+                        M10 - Chimbarongo
+                      </option>
+
+                      <option>
+                        M18 - Peumo
+                      </option>
+
+                      <option>
+                        M14 - S. Cruz
+                      </option>
+
+                      <option>
+                        M28 - S. Cruz
+                      </option>
+
+                      <option>
+                        M27 - Pichilemu
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    Nro Orden de Compra<br>
+                    <input type="text" id="BCE_Nro_Orden_Compra" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Nro de Factura<br>
+                    <input type="text" id="BCE_Nro_Factura" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Entregado por<br>
+                    <input type="text" id="BCE_Entregado_Por" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Recibido por<br>
+                    <input type="text" id="BCE_Recibido_Por" class="form-control">
+                  </div>
+                </div>
+              </div>
+
+              <p class="h6"><strong>Informacion del Producto</strong></p>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    Descripcion <select class="form-control" id="BCE_Desc_Producto">
+                      <option>
+                        Escoja una opcion o digite el producto
+                      </option>
+
+                      <option>
+                        {{ option }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Especificacion<br>
+                    <input type="text" id="BCE_Esp_Producto" class="form-control">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    Cantidad<br>
+                    <input type="text" id="BCE_Cantidad" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Formato<br>
+                    <select class="form-control" id="BCE_Formato" onchange="disable('BCE_Formato', 'BCE_C_Detalle')">
+                      <option value="0">
+                        Escoja una opcion
+                      </option>
+
+                      <option value="1">
+                        Unidad(es)
+                      </option>
+
+                      <option value="2">
+                        Caja(s)
+                      </option>
+
+                      <option value="2">
+                        Paquete(s)
+                      </option>
+
+                      <option value="1">
+                        ml(s)
+                      </option>
+
+                      <option value="1">
+                        Litro(s)
+                      </option>
+
+                      <option value="2">
+                        Resma(s)
+                      </option>
+
+                      <option value="1">
+                        Par(es)
+                      </option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Cantidad detalle<br>
+                    <input type="text" id="BCE_C_Detalle" class="form-control">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    Valor por formato<br>
+                    <input type="text" id="BCE_Valor_Formato" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Valor Total<br>
+                    <input type="text" id="BCE_Valor_Total" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Bodega Entrada <select class="form-control" id="BCE_Bodega_Entrada">
+                      <option value="">
+                        Escoja una opcion
+                      </option>
+
+                      <option>
+                        Bodega 1
+                      </option>
+
+                      <option>
+                        Bodega 1A
+                      </option>
+
+                      <option>
+                        Bodega 1B
+                      </option>
+
+                      <option>
+                        Bodega 2
+                      </option>
+
+                      <option>
+                        Bodega 3
+                      </option>
+
+                      <option>
+                        Bodega 4
+                      </option>
+
+                      <option>
+                        Bodega Administrativo
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div><button type="submit" class="btn btn-primary save-btn">+</button>
+            </form><br>
+
+            <form action="" method="post">
+              <input type="hidden" id="formheaderdata" name="formheaderdata"> <input type="hidden" id="formtabledata" name="formtabledata">
+
+              <div style="overflow-x:auto;">
+                <table id="form1table" class="table data-table">
+                  <thead>
+                    <tr>
+                      <th>Descripcion</th>
+
+                      <th>Especificacion</th>
+
+                      <th>Cantidad</th>
+
+                      <th>Formato</th>
+
+                      <th>Cantidad Detalle</th>
+
+                      <th>Valor por Formato</th>
+
+                      <th>Valor Total</th>
+
+                      <th>Bodega Entrada</th>
+                    </tr>
+                  </thead>
+
+                  <tbody id="tbody1"></tbody>
+                </table>
+              </div>
+
+              <div class="container">
+                <div class="row">
+                  <div class="col text-center">
+                    <button onclick="getForm1Data()" type="submit" id="BCE_Enviar" class="btn btn-success">Enviar</button>
+                  </div>
+                </div>
+              </div>
+            </form><script type="text/javascript">
+
+            function getForm1Data() {
+
+            var formheaderdata = []
+
+            var offset = "0"
+            formheaderdata.push(offset)
+            formheaderdata.push("BC-Entrada-Insumos")
+            formheaderdata.push(document.getElementById('BCE_Datepicker').value)
+            formheaderdata.push(document.getElementById('BCE_Nro_Formato_Entrega').value)
+            formheaderdata.push(document.getElementById('BCE_Tipo_Entrada').value)
+            formheaderdata.push(document.getElementById('BCE_Bodega_Salida').value)
+            formheaderdata.push(document.getElementById('BCE_Movil').value)
+            formheaderdata.push(document.getElementById('BCE_Nro_Orden_Compra').value)
+            formheaderdata.push(document.getElementById('BCE_Nro_Factura').value)
+            formheaderdata.push(document.getElementById('BCE_Entregado_Por').value)
+            formheaderdata.push(document.getElementById('BCE_Recibido_Por').value)
+
+            var formtabledata = []
+
+            var form1table = document.getElementById("form1table").tBodies;
+
+            Array.from(form1table).forEach(function(element) {
+            formtabledata.push(element.innerHTML)
+            }
+            )
+
+            $("input[id='formheaderdata']").val(formheaderdata);
+            $("input[id='formtabledata']").val(formtabledata);
+
+            }
+
+            </script> <script type="text/javascript">
+
+            var form1 = document.forms["form1"];
+
+            $(form1).submit(function(e){
+            e.preventDefault();
+            var BCES_producto = $("select[id='BCE_Desc_Producto']").val();
+            var BCES_eproducto = $("input[id='BCE_Esp_Producto']").val();
+            var BCES_cantidad = $("input[id='BCE_Cantidad']").val();
+            var BCES_formato = $("select[id='BCE_Formato']").val();
+            var BCES_cdetalle = $("input[id='BCE_C_Detalle']").val();
+            var BCES_valorformato = $("input[id='BCE_Valor_Formato']").val();
+            var BCES_valortotal = $("input[id='BCE_Valor_Total']").val();
+            var BCES_bentrada = $("select[id='BCE_Bodega_Entrada']").val();
+
+            var actions = "<button class='btn btn-primary btn-xs btn-edit1'>E<\/button><button class='btn btn-danger btn-xs btn-delete1'>X<\/button>"
+
+            var row_data = "<tr data-BCES_producto='"+BCES_producto+"' data-BCES_eproducto='"+BCES_eproducto+"' data-BCES_cantidad='"+BCES_cantidad+"' data-BCES_formato='"+BCES_formato+"' data-BCES_cdetalle='"+BCES_cdetalle+"' data-BCES_valorformato='"+BCES_valorformato+"' data-BCES_valortotal='"+BCES_valortotal+"' data-BCES_bentrada='"+BCES_bentrada+"'>"
+
+            var row = "<td>"+BCES_producto+"<\/td> <td>"+BCES_eproducto+"<\/td> <td>"+BCES_cantidad+"<\/td> <td>"+BCES_formato+"<\/td> <td>"+BCES_cdetalle+"<\/td> <td>"+BCES_valorformato+"<\/td> <td>"+BCES_valortotal+"<\/td> <td>"+BCES_bentrada+"<\/td> <td>"+actions+"<\/td>"
+
+            $("#tbody1").append(row_data + row + "<\/tr>");
+
+
+            $("select[id='BCE_Desc_Producto']").val('');
+            $("input[id='BCE_Esp_Producto']").val('');
+            $("input[id='BCE_Cantidad']").val('');
+            $("select[id='BCE_Formato']").val('');
+            $("input[id='BCE_C_Detalle']").val('');
+            $("input[id='BCE_Valor_Formato']").val('');
+            $("input[id='BCE_Valor_Total']").val('');
+            $("select[id='BCE_Bodega_Entrada']").val('');
+            });
+
+            $("body").on("click", ".btn-delete1", function(){
+
+            $(this).parents("tr").remove();
+            });
+
+            $("body").on("click", ".btn-edit1", function(){
+
+
+            var BCES_producto = $(this).parents("tr").attr('data-BCES_producto');
+            var BCES_eproducto = $(this).parents("tr").attr('data-BCES_eproducto');
+            var BCES_cantidad = $(this).parents("tr").attr('data-BCES_cantidad');
+            var BCES_formato = $(this).parents("tr").attr('data-BCES_formato');
+            var BCES_cdetalle = $(this).parents("tr").attr('data-BCES_cdetalle');
+            var BCES_valorformato = $(this).parents("tr").attr('data-BCES_valorformato');
+            var BCES_valortotal = $(this).parents("tr").attr('data-BCES_valortotal');
+            var BCES_bentrada = $(this).parents("tr").attr('data-BCES_bentrada');
+
+
+            $(this).parents("tr").find("td:eq(0)").html(BCES_producto);
+            $(this).parents("tr").find("td:eq(1)").html('<input name="edit_BCES_eproducto" value="'+BCES_eproducto+'">');
+            $(this).parents("tr").find("td:eq(2)").html('<input name="edit_BCES_cantidad" value="'+BCES_cantidad+'">');
+            $(this).parents("tr").find("td:eq(3)").html(BCES_formato);
+            $(this).parents("tr").find("td:eq(4)").html('<input name="edit_BCES_cdetalle" value="'+BCES_cdetalle+'">');
+            $(this).parents("tr").find("td:eq(5)").html('<input name="edit_BCES_valorformato" value="'+BCES_valorformato+'">');
+            $(this).parents("tr").find("td:eq(6)").html('<input name="edit_BCES_valortotal" value="'+BCES_valortotal+'">');
+            $(this).parents("tr").find("td:eq(7)").html(BCES_bentrada);
+
+            $(this).parents("tr").find("td:eq(8)").prepend("<button class='btn btn-info btn-xs btn-update1'>A<\/button><button class='btn btn-warning btn-xs btn-cancel1'>C<\/button>")
+            $(this).hide();
+            });
+
+            $("body").on("click", ".btn-cancel1", function(){
+            var BCES_producto = $(this).parents("tr").attr('data-BCES_producto');
+            var BCES_eproducto = $(this).parents("tr").attr('data-BCES_eproducto');
+            var BCES_cantidad = $(this).parents("tr").attr('data-BCES_cantidad');
+            var BCES_formato = $(this).parents("tr").attr('data-BCES_formato');
+            var BCES_cdetalle = $(this).parents("tr").attr('data-BCES_cdetalle');
+            var BCES_valorformato = $(this).parents("tr").attr('data-BCES_valorformato');
+            var BCES_valortotal = $(this).parents("tr").attr('data-BCES_valortotal');
+            var BCES_bentrada = $(this).parents("tr").attr('data-BCES_bentrada');
+
+            $(this).parents("tr").find("td:eq(0)").text(BCES_producto);
+            $(this).parents("tr").find("td:eq(1)").text(BCES_eproducto);
+            $(this).parents("tr").find("td:eq(2)").text(BCES_cantidad);
+            $(this).parents("tr").find("td:eq(3)").text(BCES_formato);
+            $(this).parents("tr").find("td:eq(4)").text(BCES_cdetalle);
+            $(this).parents("tr").find("td:eq(5)").text(BCES_valorformato);
+            $(this).parents("tr").find("td:eq(6)").text(BCES_valortotal);
+            $(this).parents("tr").find("td:eq(7)").text(BCES_bentrada);
+
+            $(this).parents("tr").find(".btn-edit1").show();
+            $(this).parents("tr").find(".btn-update1").remove();
+            $(this).parents("tr").find(".btn-cancel1").remove();
+            });
+
+            $("body").on("click", ".btn-update1", function(){
+            var BCES_producto = $(this).parents("tr").find("input[name='edit_BCES_producto']").val();
+            var BCES_eproducto = $(this).parents("tr").find("input[name='edit_BCES_eproducto']").val();
+            var BCES_cantidad = $(this).parents("tr").find("input[name='edit_BCES_cantidad']").val();
+            var BCES_formato = $(this).parents("tr").find("input[name='edit_BCES_formato']").val();
+            var BCES_cdetalle = $(this).parents("tr").find("input[name='edit_BCES_cdetalle']").val();
+            var BCES_valorformato = $(this).parents("tr").find("input[name='edit_BCES_valorformato']").val();
+            var BCES_valortotal = $(this).parents("tr").find("input[name='edit_BCES_valortotal']").val();
+            var BCES_bentrada = $(this).parents("tr").find("input[name='edit_BCES_bentrada']").val();
+
+
+            $(this).parents("tr").find("td:eq(0)").text(BCES_producto);
+            $(this).parents("tr").find("td:eq(1)").text(BCES_eproducto);
+            $(this).parents("tr").find("td:eq(2)").text(BCES_cantidad);
+            $(this).parents("tr").find("td:eq(3)").text(BCES_formato);
+            $(this).parents("tr").find("td:eq(4)").text(BCES_cdetalle);
+            $(this).parents("tr").find("td:eq(5)").text(BCES_valorformato);
+            $(this).parents("tr").find("td:eq(6)").text(BCES_valortotal);
+            $(this).parents("tr").find("td:eq(7)").text(BCES_bentrada);
+
+            $(this).parents("tr").attr('data-BCES_producto', BCES_producto);
+            $(this).parents("tr").attr('data-BCES_eproducto', BCES_eproducto);
+            $(this).parents("tr").attr('data-BCES_cantidad', BCES_cantidad);
+            $(this).parents("tr").attr('data-BCES_formato', BCES_formato);
+            $(this).parents("tr").attr('data-BCES_cdetalle', BCES_cdetalle);
+            $(this).parents("tr").attr('BCES_valorformato', BCES_valorformato);
+            $(this).parents("tr").attr('BCES_valortotal', BCES_valortotal);
+            $(this).parents("tr").attr('data-BCES_bentrada', BCES_bentrada);
+
+            $(this).parents("tr").find(".btn-edit1").show();
+            $(this).parents("tr").find(".btn-cancel1").remove();
+            $(this).parents("tr").find(".btn-update1").remove();
+            });
+
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header bg-primary" id="headingTwo">
+          <h2 class="mb-0"><button class="btn btn-link collapsed text-white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded=
+          "false" aria-controls="collapseTwo">Salida de Insumos - Bodegas Perifericas y Bodega Central Servicio de Salud</button></h2>
         </div>
 
-         <div class="card">
-            <div class="card-header bg-primary" id="headingThree">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed text-white" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Salida de Insumos - Ambulancias
-                    </button>
-                </h2>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                    <form name="form3" class="needs-validation" novalidate>
-                        <p class="h6"><strong>Informaciones del Pedido </strong></p>
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    Fecha Egreso
-                                    </br>
-                                    <input type="text" id="BCSA_datepicker" class="datepicker form-control">
-                                </div>
-                            </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            <form name="form2" class="needs-validation" novalidate="">
+              <p class="h6"><strong>Informaciones del Pedido</strong></p>
 
-                            <div class="col">
-                                <div class="form-group">
-                                    Nro Acta de Entrega
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Solo numeros y letras sin espacio entre caracteres." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="BCSA_Nro_Acta" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Movil Destino
-                                    <select class="form-control" id="BCSA_Movil">
-                                        <option value="">Escoja una opcion</option>
-                                        <option>M17 - Graneros</option>
-                                        <option>M2 - Rancagua</option>
-                                        <option>M23 - Rancagua</option>
-                                        <option>M24 - Rancagua</option>
-                                        <option>M11 - Rancagua</option>
-                                        <option>M15 - Rengo</option>
-                                        <option>M25 - Rengo</option>
-                                        <option>M16 - S. Fernando</option>
-                                        <option>M22 - S. Fernando</option>
-                                        <option>M19 - S. Vicente</option>
-                                        <option>M10 - Chimbarongo</option>
-                                        <option>M18 - Peumo</option>
-                                        <option>M14 - S. Cruz</option>
-                                        <option>M28 - S. Cruz</option>
-                                        <option>M27 - Pichilemu</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    Entregado por
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Digitar un solo nombre y un solo apellido sin tildes." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="BCSA_Entregado_Por"  class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Recibido por
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Digitar un solo nombre y un solo apellido sin tildes." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="BCSA_Recibido_Por" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="h6"><strong>Informacion del Producto </strong></p>
-
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    Descripcion
-                                    </br>
-                                    <select class="form-control" id="BCSA_Desc_Producto" title="Escoja una opcion o escriba el producto">
-
-                                      <option>Escoja una opcion o digite el producto</option>
-                                      {% for option in option_list %}
-                                      <option>{{ option }}</option>
-                                      {% endfor %}
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Especificacion
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Caso necesario, ingrese informacion extra como por exemplo: numero jeringa, marca u otro." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="BCSA_Esp_Producto" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    Cantidad
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Numero de unidades, cajas, paquetes, etc." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="BCSA_Cantidad" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Formato
-                                    </br>
-                                    <select class="form-control" id="BCSA_Formato" onchange="disable('BCSA_Formato', 'BCSA_C_Detalle')">
-                                        <option value="0">Escoja una opcion</option>
-                                        <option value="1">Unidad(es)</option>
-                                        <option value="2">Caja(s)</option>
-                                        <option value="2">Paquete(s)</option>
-                                        <option value="1">ml(s)</option>
-                                        <option value="1">Litro(s)</option>
-                                        <option value="2">Resma(s)</option>
-                                        <option value="1">Par(es)</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Cantidad detalle
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Cuantas unidades por caja, paquete, resma, etc. Digitar '0' en caso de no existir informacion o no ser necesaria." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="BCSA_C_Detalle" class="form-control">
-                                </div>
-                            </div>
-
-                                <div class="col">
-                                    <div class="form-group">
-                                        Valor por formato
-                                        <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Ingresar solo numeros sin simbolo de $." data-trigger="hover"></i></span>
-                                        </br>
-                                        <input type="text" id="BCSA_Valor_Formato" class="form-control">
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="form-group">
-                                        Valor Total
-                                        <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Ingresar solo numeros sin simbolo de $." data-trigger="hover"></i></span>
-                                        </br>
-                                        <input type="text" id="BCSA_Valor_Total" class="form-control">
-                                    </div>
-                                </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Bodega Salida
-                                    <select class="form-control" id="BCSA_Bodega_Salida">
-                                        <option value="">Escoja una opcion</option>
-                                        <option>Bodega 1 </option>
-                                        <option>Bodega 1A </option>
-                                        <option>Bodega 1B </option>
-                                        <option>Bodega 2 </option>
-                                        <option>Bodega 3 </option>
-                                        <option>Bodega 4 </option>
-                                        <option>Bodega Administrativo </option>
-                                    </select>
-                                </div>
-                            </div>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary save-btn">+</button>
-                    </form>
-                    <br/>
-
-                    <form  action="" method="post">
-                    <input type="hidden" id="formheaderdata" name="formheaderdata">
-                    <input type="hidden" id="formtabledata" name="formtabledata">
-                    <div style="overflow-x:auto;">
-                        <table id="form3table" class="table data-table">
-                            <thead>
-                            <th>Descripcion</th>
-                            <th>Especificacion</th>
-                            <th>Cantidad</th>
-                            <th>Formato</th>
-                            <th>Cantidad Detalle</th>
-                            <th>Valor por Formato</th>
-                            <th>Valor Total</th>
-                            <th>Bodega Salida</th>
-                            </thead>
-                            <tbody id="tbody3">
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="container">
-                        <div class="row">
-                            <div class="col text-center">
-                                <button onclick="getForm3Data()" type="submit" id="BCSA_Enviar" class="btn btn-success">Enviar</button>
-                            </div>
-                        </div>
-                    </div>
-                    </form>
-
-<script>
-
-function getForm3Data() {
-
-  var formheaderdata = []
-  var offset = "33"
-  formheaderdata.push(offset)
-  formheaderdata.push("BC-Salida-Amb")
-  formheaderdata.push(document.getElementById('BCSA_datepicker').value)
-  formheaderdata.push(document.getElementById('BCSA_Nro_Acta').value)
-  formheaderdata.push(document.getElementById('BCSA_Movil').value)
-  formheaderdata.push(document.getElementById('BCSA_Entregado_Por').value)
-  formheaderdata.push(document.getElementById('BCSA_Recibido_Por').value)
-
-  var formtabledata = []
-
-  var form3table = document.getElementById("form3table").tBodies;
-
-  Array.from(form3table).forEach(function(element) {
-      formtabledata.push(element.innerHTML)
-      }
-   )
-
-  $("input[id='formheaderdata']").val(formheaderdata);
-  $("input[id='formtabledata']").val(formtabledata);
-
-}
-
-</script>
-
-<script type="text/javascript">
-
-    var form3 = document.forms["form3"];
-
-    $(form3).submit(function(e){
-        e.preventDefault();
-        var BCSAS_producto = $("select[id='BCSA_Desc_Producto']").val();
-        var BCSAS_eproducto = $("input[id='BCSA_Esp_Producto']").val();
-        var BCSAS_cantidad = $("input[id='BCSA_Cantidad']").val();
-        var BCSAS_formato = $("select[id='BCSA_Formato']").val();
-        var BCSAS_cdetalle = $("input[id='BCSA_C_Detalle']").val();
-        var BCSAS_valorformato = $("input[id='BCSA_Valor_Formato']").val();
-        var BCSAS_valortotal = $("input[id='BCSA_Valor_Total']").val();
-        var BCSAS_bsalida = $("select[id='BCSA_Bodega_Salida']").val();
-
-
-        var actions = "<button class='btn btn-primary btn-xs btn-edit3'>E</button><button class='btn btn-danger btn-xs btn-delete3'>X</button>"
-
-        var row_data = "<tr data-BCSAS_producto='"+BCSAS_producto+"' data-BCSAS_eproducto='"+BCSAS_eproducto+"' data-BCSAS_cantidad='"+BCSAS_cantidad+"' data-BCSAS_formato='"+BCSAS_formato+"' data-BCSAS_cdetalle='"+BCSAS_cdetalle+"' data-BCSAS_valorformato='"+BCSAS_valorformato+"' data-BCSAS_valortotal='"+BCSAS_valortotal+"' data-BCSAS_bsalida='"+BCSAS_bsalida+"'>"
-
-        var row = "<td>"+BCSAS_producto+"</td> <td>"+BCSAS_eproducto+"</td> <td>"+BCSAS_cantidad+"</td> <td>"+BCSAS_formato+"</td> <td>"+BCSAS_cdetalle+"</td> <td>"+BCSAS_valorformato+"</td><td>"+BCSAS_valortotal+"</td> <td>"+BCSAS_bsalida+"</td> <td>"+actions+"</td>"
-
-        $("#tbody3").append(row_data + row + "</tr>");
-
-
-        $("select[id='BCSA_Desc_Producto']").val('');
-        $("input[id='BCSA_Esp_Producto']").val('');
-        $("input[id='BCSA_Cantidad']").val('');
-        $("select[id='BCSA_Formato']").val('');
-        $("input[id='BCSA_C_Detalle']").val('');
-        $("input[id='BCSA_Valor_Formato']").val('');
-        $("input[id='BCSA_Valor_Total']").val('');
-        $("select[id='BCSA_Bodega_Salida']").val('');
-
-     });
-
-    $("body").on("click", ".btn-delete3", function(){
-        $(this).parents("tr").remove();
-    });
-
-    $("body").on("click", ".btn-edit3", function(){
-        var BCSAS_producto = $(this).parents("tr").attr('data-BCSAS_producto');
-        var BCSAS_eproducto = $(this).parents("tr").attr('data-BCSAS_eproducto');
-        var BCSAS_cantidad = $(this).parents("tr").attr('data-BCSAS_cantidad');
-        var BCSAS_formato = $(this).parents("tr").attr('data-BCSAS_formato');
-        var BCSAS_cdetalle = $(this).parents("tr").attr('data-BCSAS_cdetalle');
-        var BCSAS_valorformato = $(this).parents("tr").attr('data-BCSAS_valorformato');
-        var BCSAS_valortotal = $(this).parents("tr").attr('data-BCSAS_valortotal');
-        var BCSAS_bsalida = $(this).parents("tr").attr('data-BCSAS_bsalida');
-
-        $(this).parents("tr").find("td:eq(0)").html(BCSAS_producto);
-        $(this).parents("tr").find("td:eq(1)").html('<input name="edit_BCSAS_eproducto" value="'+BCSAS_eproducto+'">');
-        $(this).parents("tr").find("td:eq(2)").html('<input name="edit_BCSAS_cantidad" value="'+BCSAS_cantidad+'">');
-        $(this).parents("tr").find("td:eq(3)").html(BCSAS_formato);
-        $(this).parents("tr").find("td:eq(4)").html('<input name="edit_BCSAS_cdetalle" value="'+BCSAS_cdetalle+'">');
-        $(this).parents("tr").find("td:eq(5)").html('<input name="edit_BCSAS_valorformato" value="'+BCSAS_valorformato+'">');
-        $(this).parents("tr").find("td:eq(6)").html('<input name="edit_BCSAS_valortotal" value="'+BCSAS_valortotal+'">');
-        $(this).parents("tr").find("td:eq(7)").html(BCSAS_bsalida);
-
-        $(this).parents("tr").find("td:eq(8)").prepend("<button class='btn btn-info btn-xs btn-update3'>A</button><button class='btn btn-warning btn-xs btn-cancel3'>C</button>")
-        $(this).hide();
-    });
-
-    $("body").on("click", ".btn-cancel3", function(){
-        var BCSAS_producto = $(this).parents("tr").attr('data-BCSAS_producto');
-        var BCSAS_eproducto = $(this).parents("tr").attr('data-BCSAS_eproducto');
-        var BCSAS_cantidad = $(this).parents("tr").attr('data-BCSAS_cantidad');
-        var BCSAS_formato = $(this).parents("tr").attr('data-BCSAS_formato');
-        var BCSAS_cdetalle = $(this).parents("tr").attr('data-BCSAS_cdetalle');
-        var BCSAS_valorformato = $(this).parents("tr").attr('data-BCSAS_valorformato');
-        var BCSAS_valortotal = $(this).parents("tr").attr('data-BCSAS_valortotal');
-        var BCSAS_bsalida = $(this).parents("tr").attr('data-BCSAS_bsalida');
-
-        $(this).parents("tr").find("td:eq(0)").text(BCSAS_producto);
-        $(this).parents("tr").find("td:eq(1)").text(BCSAS_eproducto);
-        $(this).parents("tr").find("td:eq(2)").text(BCSAS_cantidad);
-        $(this).parents("tr").find("td:eq(3)").text(BCSAS_formato);
-        $(this).parents("tr").find("td:eq(4)").text(BCSAS_cdetalle);
-        $(this).parents("tr").find("td:eq(5)").text(BCSAS_valorformato);
-        $(this).parents("tr").find("td:eq(6)").text(BCSAS_valortotal);
-        $(this).parents("tr").find("td:eq(7)").text(BCSAS_bsalida);
-
-
-        $(this).parents("tr").find(".btn-edit3").show();
-        $(this).parents("tr").find(".btn-update3").remove();
-        $(this).parents("tr").find(".btn-cancel3").remove();
-    });
-
-    $("body").on("click", ".btn-update3", function(){
-        var BCSAS_producto = $(this).parents("tr").find("input[name='edit_BCSAS_producto']").val();
-        var BCSAS_eproducto = $(this).parents("tr").find("input[name='edit_BCSAS_eproducto']").val();
-        var BCSAS_cantidad = $(this).parents("tr").find("input[name='edit_BCSAS_cantidad']").val();
-        var BCSAS_formato = $(this).parents("tr").find("input[name='edit_BCSAS_formato']").val();
-        var BCSAS_cdetalle = $(this).parents("tr").find("input[name='edit_BCSAS_cdetalle']").val();
-        var BCSAS_valorformato = $(this).parents("tr").find("input[name='edit_BCSAS_valorformato']").val();
-        var BCSAS_valortotal = $(this).parents("tr").find("input[name='edit_BCSAS_valortotal']").val();
-        var BCSAS_bsalida = $(this).parents("tr").find("input[name='edit_BCSAS_bsalida']").val();
-
-        $(this).parents("tr").find("td:eq(0)").text(BCSAS_producto);
-        $(this).parents("tr").find("td:eq(1)").text(BCSAS_eproducto);
-        $(this).parents("tr").find("td:eq(2)").text(BCSAS_cantidad);
-        $(this).parents("tr").find("td:eq(3)").text(BCSAS_formato);
-        $(this).parents("tr").find("td:eq(4)").text(BCSAS_cdetalle);
-        $(this).parents("tr").find("td:eq(5)").text(BCSAS_valorformato);
-        $(this).parents("tr").find("td:eq(6)").text(BCSAS_valortotal);
-        $(this).parents("tr").find("td:eq(7)").text(BCSAS_bsalida);
-
-        $(this).parents("tr").attr('data-BCSAS_producto', BCSAS_producto);
-        $(this).parents("tr").attr('data-BCSAS_eproducto', BCSAS_eproducto);
-        $(this).parents("tr").attr('data-BCSAS_cantidad', BCSAS_cantidad);
-        $(this).parents("tr").attr('data-BCSAS_formato', BCSAS_formato);
-        $(this).parents("tr").attr('data-BCSAS_cdetalle', BCSAS_cdetalle);
-        $(this).parents("tr").attr('data-BCSAS_valorformato', BCSAS_valorformato);
-        $(this).parents("tr").attr('data-BCSAS_valortotal', BCSAS_valortotal);
-        $(this).parents("tr").attr('data-BCSAS_bsalida', BCSAS_bsalida);
-
-        $(this).parents("tr").find(".btn-edit3").show();
-        $(this).parents("tr").find(".btn-cancel3").remove();
-        $(this).parents("tr").find(".btn-update3").remove();
-    });
-
-</script>
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    Fecha Egreso<br>
+                    <input type="text" id="BCS_datepicker" class="datepicker form-control">
+                  </div>
                 </div>
-            </div>
-         </div>
 
-                    <div class="card">
-            <div class="card-header bg-primary" id="headingFour">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed text-white" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        Movimiento Interno de Insumos - Entre Bodegas Centrales SAMU
-                    </button>
-                </h2>
-            </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                <div class="card-body">
-                    <form name="form4" class="needs-validation" novalidate>
-                        <p class="h6"><strong>Informaciones del Movimiento </strong></p>
-
-                        <div class="row">
-                           <div class="col">
-                                <div class="form-group">
-                                    Fecha Movimiento
-                                    </br>
-                                    <input type="text" id="MIS_datepicker" class="datepicker form-control">
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Nro Movimiento Interno
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Solo numeros y letras sin espacio entre caracteres." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="MIS_Nro_Acta" class="form-control">
-                                    </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Movimiento Efectuado por
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Digitar un solo nombre y un solo apellido sin tildes." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="MIS_Entregado_Por"  class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Movimiento Digitado por
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Digitar un solo nombre y un solo apellido sin tildes." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="MIS_Digitado_Por" class="form-control">
-                                </div>
-                            </div>
-
-                            </div>
-
-                        <p class="h6"><strong>Informacion del Producto </strong></p>
-
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    Descripcion
-                                    </br>
-                                    <select class="form-control" id="MIS_Desc_Producto">
-                                      <option>Escoja una opcion o digite el producto</option>
-                                      {% for option in option_list %}
-                                      <option>{{ option }}</option>
-                                      {% endfor %}
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Especificacion
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Caso necesario, ingrese informacion extra como por exemplo: numero jeringa, marca u otro." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="MIS_Esp_Producto" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    Cantidad
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Numero de unidades, cajas, paquetes, etc." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="MIS_Cantidad" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Formato
-                                    </br>
-                                    <select class="form-control" id="MIS_Formato" onchange="disable('MIS_Formato', 'MIS_C_Detalle')">
-                                        <option value="0">Escoja una opcion</option>
-                                        <option value="1">Unidad(es) </option>
-                                        <option value="2">Caja(s) </option>
-                                        <option value="2">Paquete(s) </option>
-                                        <option value="1">ml(s)</option>
-                                        <option value="1">Litro(s) </option>
-                                        <option value="2">Resma(s) </option>
-                                        <option value="1">Par(es) </option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Cantidad detalle
-                                    <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Cuantas unidades por caja, paquete, resma, etc. Digitar '0' en caso de no existir informacion o no ser necesaria." data-trigger="hover"></i></span>
-                                    </br>
-                                    <input type="text" id="MIS_C_Detalle" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                 <div class="form-group">
-                                        Valor por formato
-                                        <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Ingresar solo numeros sin simbolo de $." data-trigger="hover"></i></span>
-                                        </br>
-                                        <input type="text" id="MIS_Valor_Formato" class="form-control">
-                                 </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="form-group">
-                                        Valor Total
-                                        <span class="add-on"><i class="fa fa-question-circle fa-xs" data-toggle="tooltip" data-placement="top" title="Ingresar solo numeros sin simbolo de $." data-trigger="hover"></i></span>
-                                        </br>
-                                        <input type="text" id="MIS_Valor_Total" class="form-control">
-                                    </div>
-                                </div>
-                        </div>
-
-                        <div class="row">
-                        <div class="col">
-                                <div class="form-group">
-                                    Bodega Salida
-                                    <select class="form-control" id="MIS_Bodega_Salida">
-                                        <option value="">Escoja una opcion</option>
-                                        <option>Bodega 1 </option>
-                                        <option>Bodega 1A </option>
-                                        <option>Bodega 1B </option>
-                                        <option>Bodega 2 </option>
-                                        <option>Bodega 3 </option>
-                                        <option>Bodega 4 </option>
-                                        <option>Bodega Administrativo </option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="form-group">
-                                    Bodega Destino
-                                    <select class="form-control" id="MIS_Bodega_Destino">
-                                        <option value="">Escoja una opcion</option>
-                                        <option id="Bodega1">Bodega 1 </option>
-                                        <option id="Bodega1A">Bodega 1A </option>
-                                        <option id="Bodega1B">Bodega 1B </option>
-                                        <option id="Bodega2">Bodega 2</option>
-                                        <option id="Bodega3">Bodega 3 </option>
-                                        <option id="Bodega4">Bodega 4 </option>
-                                        <option id="BodegaAdm">Bodega Administrativo </option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary save-btn">+</button>
-                    </form>
-                    <br/>
-
-                    <form  action="" method="post">
-                    <input type="hidden" id="formheaderdata" name="formheaderdata">
-                    <input type="hidden" id="formtabledata" name="formtabledata">
-                    <div style="overflow-x:auto;">
-                        <table id="form4table" class="table data-table">
-                            <thead>
-                            <th>Descripcion</th>
-                            <th>Especificacion</th>
-                            <th>Cantidad</th>
-                            <th>Formato</th>
-                            <th>Cantidad Detalle</th>
-                            <th>Valor por Formato</th>
-                            <th>Valor Total</th>
-                            <th>Bodega Salida</th>
-                            <th>Bodega Destino</th>
-                            </thead>
-                            <tbody id="tbody4">
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="container">
-                        <div class="row">
-                            <div class="col text-center">
-                                <button onclick="getForm4Data()" type="submit" id="MIS_Enviar" class="btn btn-success">Enviar</button>
-                            </div>
-                        </div>
-                    </div>
-                    </form>
-
-<script>
-
-function getForm4Data() {
-
-  var formheaderdata = []
-  var offset = "46"
-
-  formheaderdata.push(offset)
-  formheaderdata.push("BC-Movimiento-Interno")
-  formheaderdata.push(document.getElementById('MIS_datepicker').value)
-  formheaderdata.push(document.getElementById('MIS_Nro_Acta').value)
-  formheaderdata.push(document.getElementById('MIS_Entregado_Por').value)
-  formheaderdata.push(document.getElementById('MIS_Digitado_Por').value)
-
-  var formtabledata = []
-
-  var form4table = document.getElementById("form4table").tBodies;
-
-  Array.from(form4table).forEach(function(element) {
-      formtabledata.push(element.innerHTML)
-      }
-   )
-
-  $("input[id='formheaderdata']").val(formheaderdata);
-  $("input[id='formtabledata']").val(formtabledata);
-
-}
-
-</script>
-
-<script type="text/javascript">
-
-    var form4 = document.forms["form4"];
-
-    $(form4).submit(function(e){
-        e.preventDefault();
-        var MISS_producto = $("select[id='MIS_Desc_Producto']").val();
-        var MISS_eproducto = $("input[id='MIS_Esp_Producto']").val();
-        var MISS_cantidad = $("input[id='MIS_Cantidad']").val();
-        var MISS_formato = $("select[id='MIS_Formato']").val();
-        var MISS_cdetalle = $("input[id='MIS_C_Detalle']").val();
-        var MISS_valorformato = $("input[id='MIS_Valor_Formato']").val();
-        var MISS_valortotal = $("input[id='MIS_Valor_Total']").val();
-        var MISS_bsalida = $("select[id='MIS_Bodega_Salida']").val();
-        var MISS_bdestino = $("select[id='MIS_Bodega_Destino']").val();
-
-
-        var actions = "<button class='btn btn-primary btn-xs btn-edit4'>E</button><button class='btn btn-danger btn-xs btn-delete4'>X</button>"
-
-        var row_data = "<tr data-MISS_producto='"+MISS_producto+"' data-MISS_eproducto='"+MISS_eproducto+"' data-MISS_cantidad='"+MISS_cantidad+"' data-MISS_formato='"+MISS_formato+"' data-MISS_cdetalle='"+MISS_cdetalle+"' data-MISS_valorformato='"+MISS_valorformato+"' data-MISS_valortotal='"+MISS_valortotal+"' data-MISS_bsalida='"+MISS_bsalida+"' data-MISS_bdestino='"+MISS_bdestino+"'>"
-
-        var row = "<td>"+MISS_producto+"</td> <td>"+MISS_eproducto+"</td> <td>"+MISS_cantidad+"</td> <td>"+MISS_formato+"</td> <td>"+MISS_cdetalle+"</td> <td>"+MISS_valorformato+"</td> <td>"+MISS_valortotal+"</td> <td>"+MISS_bsalida+"</td> <td>"+MISS_bdestino+"</td> <td>"+actions+"</td>"
-
-        $("#tbody4").append(row_data + row + "</tr>");
-
-
-        $("select[id='MIS_Desc_Producto']").val('');
-        $("input[id='MIS_Esp_Producto']").val('');
-        $("input[id='MIS_Cantidad']").val('');
-        $("select[id='MIS_Formato']").val('');
-        $("input[id='MIS_C_Detalle']").val('');
-        $("input[id='MIS_Valor_Formato']").val('');
-        $("input[id='MIS_Valor_Total']").val('');
-        $("select[id='MIS_Bodega_Salida']").val('');
-        $("select[id='MIS_Bodega_Destino']").val('');
-
-     });
-
-    $("body").on("click", ".btn-delete4", function(){
-        $(this).parents("tr").remove();
-    });
-
-    $("body").on("click", ".btn-edit4", function(){
-        var MISS_producto = $(this).parents("tr").attr('data-MISS_producto');
-        var MISS_eproducto = $(this).parents("tr").attr('data-MISS_eproducto');
-        var MISS_cantidad = $(this).parents("tr").attr('data-MISS_cantidad');
-        var MISS_formato = $(this).parents("tr").attr('data-MISS_formato');
-        var MISS_cdetalle = $(this).parents("tr").attr('data-MISS_cdetalle');
-        var MISS_valorformato = $(this).parents("tr").attr('data-MISS_valorformato');
-        var MISS_valortotal = $(this).parents("tr").attr('data-MISS_valortotal');
-        var MISS_bsalida = $(this).parents("tr").attr('data-MISS_bsalida');
-        var MISS_bdestino = $(this).parents("tr").attr('data-MISS_bdestino');
-
-
-        $(this).parents("tr").find("td:eq(0)").html(MISS_producto);
-        $(this).parents("tr").find("td:eq(1)").html('<input name="edit_MISS_eproducto" value="'+MISS_eproducto+'">');
-        $(this).parents("tr").find("td:eq(2)").html('<input name="edit_MISS_cantidad" value="'+MISS_cantidad+'">');
-        $(this).parents("tr").find("td:eq(3)").html(MISS_formato);
-        $(this).parents("tr").find("td:eq(4)").html('<input name="edit_MISS_cdetalle" value="'+MISS_cdetalle+'">');
-        $(this).parents("tr").find("td:eq(5)").html('<input name="edit_MISS_valorformato" value="'+MISS_valorformato+'">');
-        $(this).parents("tr").find("td:eq(6)").html('<input name="edit_MISS_valortotal" value="'+MISS_valortotal+'">');
-        $(this).parents("tr").find("td:eq(7)").html(MISS_bsalida);
-        $(this).parents("tr").find("td:eq(8)").html(MISS_bdestino);
-
-        $(this).parents("tr").find("td:eq(9)").prepend("<button class='btn btn-info btn-xs btn-update4'>A</button><button class='btn btn-warning btn-xs btn-cancel4'>C</button>")
-        $(this).hide();
-    });
-
-    $("body").on("click", ".btn-cancel4", function(){
-        var MISS_producto = $(this).parents("tr").attr('data-MISS_producto');
-        var MISS_eproducto = $(this).parents("tr").attr('data-MISS_eproducto');
-        var MISS_cantidad = $(this).parents("tr").attr('data-MISS_cantidad');
-        var MISS_formato = $(this).parents("tr").attr('data-MISS_formato');
-        var MISS_cdetalle = $(this).parents("tr").attr('data-MISS_cdetalle');
-        var MISS_valorformato = $(this).parents("tr").attr('data-MISS_valorformato');
-        var MISS_valortotal = $(this).parents("tr").attr('data-MISS_valortotal');
-        var MISS_bsalida = $(this).parents("tr").attr('data-MISS_bsalida');
-        var MISS_bdestino = $(this).parents("tr").attr('data-MISS_bdestino');
-
-        $(this).parents("tr").find("td:eq(0)").text(MISS_producto);
-        $(this).parents("tr").find("td:eq(1)").text(MISS_eproducto);
-        $(this).parents("tr").find("td:eq(2)").text(MISS_cantidad);
-        $(this).parents("tr").find("td:eq(3)").text(MISS_formato);
-        $(this).parents("tr").find("td:eq(4)").text(MISS_cdetalle);
-        $(this).parents("tr").find("td:eq(5)").text(MISS_valorformato);
-        $(this).parents("tr").find("td:eq(6)").text(MISS_valortotal);
-        $(this).parents("tr").find("td:eq(7)").text(MISS_bsalida);
-        $(this).parents("tr").find("td:eq(8)").text(MISS_bdestino);
-
-        $(this).parents("tr").find(".btn-edit4").show();
-        $(this).parents("tr").find(".btn-update4").remove();
-        $(this).parents("tr").find(".btn-cancel4").remove();
-    });
-
-    $("body").on("click", ".btn-update4", function(){
-        var MISS_producto = $(this).parents("tr").find("input[name='edit_MISS_producto']").val();
-        var MISS_eproducto = $(this).parents("tr").find("input[name='edit_MISS_eproducto']").val();
-        var MISS_cantidad = $(this).parents("tr").find("input[name='edit_MISS_cantidad']").val();
-        var MISS_formato = $(this).parents("tr").find("input[name='edit_MISS_formato']").val();
-        var MISS_cdetalle = $(this).parents("tr").find("input[name='edit_MISS_cdetalle']").val();
-        var MISS_valorformato = $(this).parents("tr").find("input[name='edit_MISS_valorformato']").val();
-        var MISS_valortotal = $(this).parents("tr").find("input[name='edit_MISS_valortotal']").val();
-        var MISS_bsalida = $(this).parents("tr").find("input[name='edit_MISS_bsalida']").val();
-        var MISS_bdestino = $(this).parents("tr").find("input[name='edit_MISS_bdestino']").val();
-
-
-        $(this).parents("tr").find("td:eq(0)").text(MISS_producto);
-        $(this).parents("tr").find("td:eq(1)").text(MISS_eproducto);
-        $(this).parents("tr").find("td:eq(2)").text(MISS_cantidad);
-        $(this).parents("tr").find("td:eq(3)").text(MISS_formato);
-        $(this).parents("tr").find("td:eq(4)").text(MISS_cdetalle);
-        $(this).parents("tr").find("td:eq(5)").text(MISS_valorformato);
-        $(this).parents("tr").find("td:eq(6)").text(MISS_valortotal);
-        $(this).parents("tr").find("td:eq(7)").text(MISS_bsalida);
-        $(this).parents("tr").find("td:eq(8)").text(MISS_bdestino);
-
-        $(this).parents("tr").attr('data-MISS_producto', MISS_producto);
-        $(this).parents("tr").attr('data-MISS_eproducto', MISS_eproducto);
-        $(this).parents("tr").attr('data-MISS_cantidad', MISS_cantidad);
-        $(this).parents("tr").attr('data-MISS_formato', MISS_formato);
-        $(this).parents("tr").attr('data-MISS_cdetalle', MISS_cdetalle);
-        $(this).parents("tr").attr('data-MISS_valorformato', MISS_valorformato);
-        $(this).parents("tr").attr('data-MISS_valortotal', MISS_valortotal);
-        $(this).parents("tr").attr('data-MISS_bsalida', MISS_bsalida);
-        $(this).parents("tr").attr('data-MISS_bdestino', MISS_bdestino);
-
-        $(this).parents("tr").find(".btn-edit4").show();
-        $(this).parents("tr").find(".btn-cancel4").remove();
-        $(this).parents("tr").find(".btn-update4").remove();
-    });
-
-</script>
-
+                <div class="col">
+                  <div class="form-group">
+                    Nro Acta de Entrega<br>
+                    <input type="text" id="BCS_Nro_Acta" class="form-control">
+                  </div>
                 </div>
-            </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Tipo de Salida<br>
+                    <select class="form-control" id="BCS_Tipo_Salida">
+                      <option value="">
+                        Escoja una opcion
+                      </option>
+
+                      <option value="0">
+                        Directa
+                      </option>
+
+                      <option value="1">
+                        Indirecta
+                      </option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Bodega Intermediaria <select class="form-control" id="BCS_Bodega_Intermediaria" disabled>
+                      <option value="">
+                        Escoja una opcion
+                      </option>
+
+                      <option>
+                        Graneros
+                      </option>
+
+                      <option>
+                        Rengo
+                      </option>
+
+                      <option>
+                        San Fernando
+                      </option>
+
+                      <option>
+                        Chimbarongo
+                      </option>
+
+                      <option>
+                        San Vicente
+                      </option>
+
+                      <option>
+                        Peumo
+                      </option>
+
+                      <option>
+                        Santa Cruz
+                      </option>
+
+                      <option>
+                        Pichilemu
+                      </option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Bodega Destino <select class="form-control" id="BCS_Bodega_Destino">
+                      <option value="">
+                        Escoja una opcion
+                      </option>
+
+                      <option id="BCSSO">
+                        Bodega Central SSO
+                      </option>
+
+                      <option id="Graneros">
+                        Graneros
+                      </option>
+
+                      <option id="Rengo">
+                        Rengo
+                      </option>
+
+                      <option id="SanFernando">
+                        San Fernando
+                      </option>
+
+                      <option id="Chimbarongo">
+                        Chimbarongo
+                      </option>
+
+                      <option id="SanVicente">
+                        San Vicente
+                      </option>
+
+                      <option id="Peumo">
+                        Peumo
+                      </option>
+
+                      <option id="SantaCruz">
+                        Santa Cruz
+                      </option>
+
+                      <option id="Pichilemu">
+                        Pichilemu
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    Movil del Traslado<br>
+                    <select class="form-control" id="BCS_Movil">
+                      <option value="">
+                        Escoja una opcion
+                      </option>
+
+                      <option>
+                        VIR- Vehiculo de Intervencion Rapida
+                      </option>
+
+                      <option>
+                        M17 - Graneros
+                      </option>
+
+                      <option>
+                        M2 - Rancagua
+                      </option>
+
+                      <option>
+                        M23 - Rancagua
+                      </option>
+
+                      <option>
+                        M24 - Rancagua
+                      </option>
+
+                      <option>
+                        M11 - Rancagua
+                      </option>
+
+                      <option>
+                        M15 - Rengo
+                      </option>
+
+                      <option>
+                        M25 - Rengo
+                      </option>
+
+                      <option>
+                        M16 - S. Fernando
+                      </option>
+
+                      <option>
+                        M22 - S. Fernando
+                      </option>
+
+                      <option>
+                        M19 - S. Vicente
+                      </option>
+
+                      <option>
+                        M10 - Chimbarongo
+                      </option>
+
+                      <option>
+                        M18 - Peumo
+                      </option>
+
+                      <option>
+                        M14 - S. Cruz
+                      </option>
+
+                      <option>
+                        M28 - S. Cruz
+                      </option>
+
+                      <option>
+                        M27 - Pichilemu
+                      </option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Entregado por<br>
+                    <input type="text" id="BCS_Entregado_Por" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Recibido por<br>
+                    <input type="text" id="BCS_Recibido_Por" class="form-control">
+                  </div>
+                </div>
+              </div>
+
+              <p class="h6"><strong>Informacion del Producto</strong></p>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    Descripcion<br>
+                    <select class="form-control" id="BCS_Desc_Producto">
+                      <option>
+                        Escoja una opcion o digite el producto
+                      </option>
+
+                      <option>
+                        {{ option }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Especificacion<br>
+                    <input type="text" id="BCS_Esp_Producto" class="form-control">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    Cantidad<br>
+                    <input type="text" id="BCS_Cantidad" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Formato<br>
+                    <select class="form-control" id="BCS_Formato" onchange="disable('BCS_Formato', 'BCS_C_Detalle')">
+                      <option value="0">
+                        Escoja una opcion
+                      </option>
+
+                      <option value="1">
+                        Unidad(es)
+                      </option>
+
+                      <option value="2">
+                        Caja(s)
+                      </option>
+
+                      <option value="2">
+                        Paquete(s)
+                      </option>
+
+                      <option value="1">
+                        ml(s)
+                      </option>
+
+                      <option value="1">
+                        Litro(s)
+                      </option>
+
+                      <option value="2">
+                        Resma(s)
+                      </option>
+
+                      <option value="1">
+                        Par(es)
+                      </option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Cantidad detalle<br>
+                    <input type="text" id="BCS_C_Detalle" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Valor por formato<br>
+                    <input type="text" id="BCS_Valor_Formato" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Valor Total<br>
+                    <input type="text" id="BCS_Valor_Total" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Bodega Salida <select class="form-control" id="BCS_Bodega_Salida">
+                      <option value="">
+                        Escoja una opcion
+                      </option>
+
+                      <option>
+                        Bodega 1
+                      </option>
+
+                      <option>
+                        Bodega 1A
+                      </option>
+
+                      <option>
+                        Bodega 1B
+                      </option>
+
+                      <option>
+                        Bodega 2
+                      </option>
+
+                      <option>
+                        Bodega 3
+                      </option>
+
+                      <option>
+                        Bodega 4
+                      </option>
+
+                      <option>
+                        Bodega Administrativo
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div><button type="submit" class="btn btn-primary save-btn">+</button>
+            </form><br>
+
+            <form action="" method="post">
+              <input type="hidden" id="formheaderdata" name="formheaderdata"> <input type="hidden" id="formtabledata" name="formtabledata">
+
+              <div style="overflow-x:auto;">
+                <table id="form2table" class="table data-table">
+                  <thead>
+                    <tr>
+                      <th>Descripcion</th>
+
+                      <th>Especificacion</th>
+
+                      <th>Cantidad</th>
+
+                      <th>Formato</th>
+
+                      <th>Cantidad Detalle</th>
+
+                      <th>Valor por Formato</th>
+
+                      <th>Valor Total</th>
+
+                      <th>Bodega Salida</th>
+                    </tr>
+                  </thead>
+
+                  <tbody id="tbody2"></tbody>
+                </table>
+              </div>
+
+              <div class="container">
+                <div class="row">
+                  <div class="col text-center">
+                    <button onclick="getForm2Data()" type="submit" id="BCSOB_Enviar" class="btn btn-success">Enviar</button>
+                  </div>
+                </div>
+              </div>
+            </form><script type="text/javascript">
+
+            function getForm2Data() {
+
+            var formheaderdata = []
+            var offset = "17"
+
+            formheaderdata.push(offset)
+            formheaderdata.push("BC-Salida-OB")
+            formheaderdata.push(document.getElementById('BCS_datepicker').value)
+            formheaderdata.push(document.getElementById('BCS_Nro_Acta').value)
+            formheaderdata.push(document.getElementById('BCS_Tipo_Salida').value)
+            formheaderdata.push(document.getElementById('BCS_Bodega_Intermediaria').value)
+            formheaderdata.push(document.getElementById('BCS_Bodega_Destino').value)
+            formheaderdata.push(document.getElementById('BCS_Movil').value)
+            formheaderdata.push(document.getElementById('BCS_Entregado_Por').value)
+            formheaderdata.push(document.getElementById('BCS_Recibido_Por').value)
+
+            var formtabledata = []
+
+            var form2table = document.getElementById("form2table").tBodies;
+
+            Array.from(form2table).forEach(function(element) {
+            formtabledata.push(element.innerHTML)
+            }
+            )
+
+            $("input[id='formheaderdata']").val(formheaderdata);
+            $("input[id='formtabledata']").val(formtabledata);
+
+            }
+
+            </script> <script type="text/javascript">
+
+            var form2 = document.forms["form2"];
+
+            $(form2).submit(function(e){
+            e.preventDefault();
+            var BCSS_producto = $("select[id='BCS_Desc_Producto']").val();
+            var BCSS_eproducto = $("input[id='BCS_Esp_Producto']").val();
+            var BCSS_cantidad = $("input[id='BCS_Cantidad']").val();
+            var BCSS_formato = $("select[id='BCS_Formato']").val();
+            var BCSS_cdetalle = $("input[id='BCS_C_Detalle']").val();
+            var BCSS_valorformato = $("input[id='BCS_Valor_Formato']").val();
+            var BCSS_valortotal = $("input[id='BCS_Valor_Total']").val();
+            var BCSS_Bodega_Salida = $("select[id='BCS_Bodega_Salida']").val();
+
+
+            var actions = "<button class='btn btn-primary btn-xs btn-edit2'>E<\/button><button class='btn btn-danger btn-xs btn-delete2'>X<\/button>"
+
+            var row_data = "<tr data-BCSS_producto='"+BCSS_producto+"' data-BCSS_eproducto='"+BCSS_eproducto+"' data-BCSS_cantidad='"+BCSS_cantidad+"' data-BCSS_formato='"+BCSS_formato+"' data-BCSS_cdetalle='"+BCSS_cdetalle+"' data-BCSS_valorformato='"+BCSS_valorformato+"' data-BCSS_valortotal='"+BCSS_valortotal+"' data-BCSS_Bodega_Salida='"+BCSS_Bodega_Salida+"'>"
+
+            var row = "<td>"+BCSS_producto+"<\/td> <td>"+BCSS_eproducto+"<\/td> <td>"+BCSS_cantidad+"<\/td> <td>"+BCSS_formato+"<\/td> <td>"+BCSS_cdetalle+"<\/td> <td>"+BCSS_valorformato+"<\/td> <td>"+BCSS_valortotal+"<\/td> <td>"+BCSS_Bodega_Salida+"<\/td> <td>"+actions+"<\/td>"
+
+            $("#tbody2").append(row_data + row + "<\/tr>");
+
+            $("select[id='BCS_Desc_Producto']").val('');
+            $("input[id='BCS_Esp_Producto']").val('');
+            $("input[id='BCS_Cantidad']").val('');
+            $("select[id='BCS_Formato']").val('');
+            $("input[id='BCS_C_Detalle']").val('');
+            $("input[id='BCS_Valor_Formato']").val('');
+            $("input[id='BCS_Valor_Total']").val('');
+            $("select[id='BCS_Bodega_Salida']").val('');
+
+            });
+
+            $("body").on("click", ".btn-delete2", function(){
+            $(this).parents("tr").remove();
+            });
+
+            $("body").on("click", ".btn-edit2", function(){
+            var BCSS_producto = $(this).parents("tr").attr('data-BCSS_producto');
+            var BCSS_eproducto = $(this).parents("tr").attr('data-BCSS_eproducto');
+            var BCSS_cantidad = $(this).parents("tr").attr('data-BCSS_cantidad');
+            var BCSS_formato = $(this).parents("tr").attr('data-BCSS_formato');
+            var BCSS_cdetalle = $(this).parents("tr").attr('data-BCSS_cdetalle');
+            var BCSS_valorformato = $(this).parents("tr").attr('data-BCSS_valorformato');
+            var BCSS_valortotal = $(this).parents("tr").attr('data-BCSS_valortotal');
+            var BCSS_Bodega_Salida = $(this).parents("tr").attr('data-BCSS_Bodega_Salida');
+
+
+            $(this).parents("tr").find("td:eq(0)").html(BCSS_producto);
+            $(this).parents("tr").find("td:eq(1)").html('<input name="edit_BCSS_eproducto" value="'+BCSS_eproducto+'">');
+            $(this).parents("tr").find("td:eq(2)").html('<input name="edit_BCSS_cantidad" value="'+BCSS_cantidad+'">');
+            $(this).parents("tr").find("td:eq(3)").html(BCSS_formato);
+            $(this).parents("tr").find("td:eq(4)").html('<input name="edit_BCSS_cdetalle" value="'+BCSS_cdetalle+'">');
+            $(this).parents("tr").find("td:eq(5)").html('<input name="edit_BCSS_valorformato" value="'+BCSS_valorformato+'">');
+            $(this).parents("tr").find("td:eq(6)").html('<input name="edit_BCSS_valortotal" value="'+BCSS_valortotal+'">');
+            $(this).parents("tr").find("td:eq(7)").html(BCSS_Bodega_Salida);
+            $(this).parents("tr").find("td:eq(8)").prepend("<button class='btn btn-info btn-xs btn-update2'>A<\/button><button class='btn btn-warning btn-xs btn-cancel2'>C<\/button>")
+            $(this).hide();
+            });
+
+            $("body").on("click", ".btn-cancel2", function(){
+            var BCSS_producto = $(this).parents("tr").attr('data-BCSS_producto');
+            var BCSS_eproducto = $(this).parents("tr").attr('data-BCSS_eproducto');
+            var BCSS_cantidad = $(this).parents("tr").attr('data-BCSS_cantidad');
+            var BCSS_formato = $(this).parents("tr").attr('data-BCSS_formato');
+            var BCSS_cdetalle = $(this).parents("tr").attr('data-BCSS_cdetalle');
+            var BCSS_valorformato = $(this).parents("tr").attr('data-BCSS_valorformato');
+            var BCSS_valortotal = $(this).parents("tr").attr('data-BCSS_valortotal');
+            var BCSS_Bodega_Salida = $(this).parents("tr").attr('data-BCSS_Bodega_Salida');
+
+            $(this).parents("tr").find("td:eq(0)").text(BCSS_producto);
+            $(this).parents("tr").find("td:eq(1)").text(BCSS_eproducto);
+            $(this).parents("tr").find("td:eq(2)").text(BCSS_cantidad);
+            $(this).parents("tr").find("td:eq(3)").text(BCSS_formato);
+            $(this).parents("tr").find("td:eq(4)").text(BCSS_cdetalle);
+            $(this).parents("tr").find("td:eq(5)").text(BCSS_valorformato);
+            $(this).parents("tr").find("td:eq(6)").text(BCSS_valortotal);
+            $(this).parents("tr").find("td:eq(7)").text(BCSS_Bodega_Salida);
+
+            $(this).parents("tr").find(".btn-edit2").show();
+            $(this).parents("tr").find(".btn-update2").remove();
+            $(this).parents("tr").find(".btn-cancel2").remove();
+            });
+
+            $("body").on("click", ".btn-update2", function(){
+            var BCSS_producto = $(this).parents("tr").find("input[name='edit_BCSS_producto']").val();
+            var BCSS_eproducto = $(this).parents("tr").find("input[name='edit_BCSS_eproducto']").val();
+            var BCSS_cantidad = $(this).parents("tr").find("input[name='edit_BCSS_cantidad']").val();
+            var BCSS_formato = $(this).parents("tr").find("input[name='edit_BCSS_formato']").val();
+            var BCSS_cdetalle = $(this).parents("tr").find("input[name='edit_BCSS_cdetalle']").val();
+            var BCSS_valorformato = $(this).parents("tr").find("input[name='edit_BCSS_valorformato']").val();
+            var BCSS_valortotal = $(this).parents("tr").find("input[name='edit_BCSS_valortotal']").val();
+            var BCSS_Bodega_Salida = $(this).parents("tr").find("input[name='edit_BCSS_Bodega_Salida']").val();
+
+            $(this).parents("tr").find("td:eq(0)").text(BCSS_producto);
+            $(this).parents("tr").find("td:eq(1)").text(BCSS_eproducto);
+            $(this).parents("tr").find("td:eq(2)").text(BCSS_cantidad);
+            $(this).parents("tr").find("td:eq(3)").text(BCSS_formato);
+            $(this).parents("tr").find("td:eq(4)").text(BCSS_cdetalle);
+            $(this).parents("tr").find("td:eq(5)").text(BCSS_valorformato);
+            $(this).parents("tr").find("td:eq(6)").text(BCSS_valortotal);
+            $(this).parents("tr").find("td:eq(7)").text(BCSS_Bodega_Salida);
+
+            $(this).parents("tr").attr('data-BCSS_producto', BCSS_producto);
+            $(this).parents("tr").attr('data-BCSS_eproducto', BCSS_eproducto);
+            $(this).parents("tr").attr('data-BCSS_cantidad', BCSS_cantidad);
+            $(this).parents("tr").attr('data-BCSS_formato', BCSS_formato);
+            $(this).parents("tr").attr('data-BCSS_cdetalle', BCSS_cdetalle);
+            $(this).parents("tr").attr('data-BCSS_valorformato', BCSS_valorformato);
+            $(this).parents("tr").attr('data-BCSS_valortotal', BCSS_valortotal);
+            $(this).parents("tr").attr('data-BCSS_Bodega_Salida', BCSS_Bodega_Salida);
+
+            $(this).parents("tr").find(".btn-edit2").show();
+            $(this).parents("tr").find(".btn-cancel2").remove();
+            $(this).parents("tr").find(".btn-update2").remove();
+            });
+
+            </script>
+          </div>
         </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header bg-primary" id="headingThree">
+          <h2 class="mb-0"><button class="btn btn-link collapsed text-white" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+          aria-controls="collapseThree">Salida de Insumos - Ambulancias</button></h2>
+        </div>
+
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            <form name="form3" class="needs-validation" novalidate="">
+              <p class="h6"><strong>Informaciones del Pedido</strong></p>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    Fecha Egreso<br>
+                    <input type="text" id="BCSA_datepicker" class="datepicker form-control">
+                  </div>
                 </div>
-            </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Nro Acta de Entrega<br>
+                    <input type="text" id="BCSA_Nro_Acta" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Movil Destino <select class="form-control" id="BCSA_Movil">
+                      <option value="">
+                        Escoja una opcion
+                      </option>
+
+                      <option>
+                        M17 - Graneros
+                      </option>
+
+                      <option>
+                        M2 - Rancagua
+                      </option>
+
+                      <option>
+                        M23 - Rancagua
+                      </option>
+
+                      <option>
+                        M24 - Rancagua
+                      </option>
+
+                      <option>
+                        M11 - Rancagua
+                      </option>
+
+                      <option>
+                        M15 - Rengo
+                      </option>
+
+                      <option>
+                        M25 - Rengo
+                      </option>
+
+                      <option>
+                        M16 - S. Fernando
+                      </option>
+
+                      <option>
+                        M22 - S. Fernando
+                      </option>
+
+                      <option>
+                        M19 - S. Vicente
+                      </option>
+
+                      <option>
+                        M10 - Chimbarongo
+                      </option>
+
+                      <option>
+                        M18 - Peumo
+                      </option>
+
+                      <option>
+                        M14 - S. Cruz
+                      </option>
+
+                      <option>
+                        M28 - S. Cruz
+                      </option>
+
+                      <option>
+                        M27 - Pichilemu
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    Entregado por<br>
+                    <input type="text" id="BCSA_Entregado_Por" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Recibido por<br>
+                    <input type="text" id="BCSA_Recibido_Por" class="form-control">
+                  </div>
+                </div>
+              </div>
+
+              <p class="h6"><strong>Informacion del Producto</strong></p>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    Descripcion<br>
+                    <select class="form-control" id="BCSA_Desc_Producto" title="Escoja una opcion o escriba el producto">
+                      <option>
+                        Escoja una opcion o digite el producto
+                      </option>
+
+                      <option>
+                        {{ option }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Especificacion<br>
+                    <input type="text" id="BCSA_Esp_Producto" class="form-control">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    Cantidad<br>
+                    <input type="text" id="BCSA_Cantidad" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Formato<br>
+                    <select class="form-control" id="BCSA_Formato" onchange="disable('BCSA_Formato', 'BCSA_C_Detalle')">
+                      <option value="0">
+                        Escoja una opcion
+                      </option>
+
+                      <option value="1">
+                        Unidad(es)
+                      </option>
+
+                      <option value="2">
+                        Caja(s)
+                      </option>
+
+                      <option value="2">
+                        Paquete(s)
+                      </option>
+
+                      <option value="1">
+                        ml(s)
+                      </option>
+
+                      <option value="1">
+                        Litro(s)
+                      </option>
+
+                      <option value="2">
+                        Resma(s)
+                      </option>
+
+                      <option value="1">
+                        Par(es)
+                      </option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Cantidad detalle<br>
+                    <input type="text" id="BCSA_C_Detalle" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Valor por formato<br>
+                    <input type="text" id="BCSA_Valor_Formato" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Valor Total<br>
+                    <input type="text" id="BCSA_Valor_Total" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Bodega Salida <select class="form-control" id="BCSA_Bodega_Salida">
+                      <option value="">
+                        Escoja una opcion
+                      </option>
+
+                      <option>
+                        Bodega 1
+                      </option>
+
+                      <option>
+                        Bodega 1A
+                      </option>
+
+                      <option>
+                        Bodega 1B
+                      </option>
+
+                      <option>
+                        Bodega 2
+                      </option>
+
+                      <option>
+                        Bodega 3
+                      </option>
+
+                      <option>
+                        Bodega 4
+                      </option>
+
+                      <option>
+                        Bodega Administrativo
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div><button type="submit" class="btn btn-primary save-btn">+</button>
+            </form><br>
+
+            <form action="" method="post">
+              <input type="hidden" id="formheaderdata" name="formheaderdata"> <input type="hidden" id="formtabledata" name="formtabledata">
+
+              <div style="overflow-x:auto;">
+                <table id="form3table" class="table data-table">
+                  <thead>
+                    <tr>
+                      <th>Descripcion</th>
+
+                      <th>Especificacion</th>
+
+                      <th>Cantidad</th>
+
+                      <th>Formato</th>
+
+                      <th>Cantidad Detalle</th>
+
+                      <th>Valor por Formato</th>
+
+                      <th>Valor Total</th>
+
+                      <th>Bodega Salida</th>
+                    </tr>
+                  </thead>
+
+                  <tbody id="tbody3"></tbody>
+                </table>
+              </div>
+
+              <div class="container">
+                <div class="row">
+                  <div class="col text-center">
+                    <button onclick="getForm3Data()" type="submit" id="BCSA_Enviar" class="btn btn-success">Enviar</button>
+                  </div>
+                </div>
+              </div>
+            </form><script type="text/javascript">
+
+            function getForm3Data() {
+
+            var formheaderdata = []
+            var offset = "33"
+            formheaderdata.push(offset)
+            formheaderdata.push("BC-Salida-Amb")
+            formheaderdata.push(document.getElementById('BCSA_datepicker').value)
+            formheaderdata.push(document.getElementById('BCSA_Nro_Acta').value)
+            formheaderdata.push(document.getElementById('BCSA_Movil').value)
+            formheaderdata.push(document.getElementById('BCSA_Entregado_Por').value)
+            formheaderdata.push(document.getElementById('BCSA_Recibido_Por').value)
+
+            var formtabledata = []
+
+            var form3table = document.getElementById("form3table").tBodies;
+
+            Array.from(form3table).forEach(function(element) {
+            formtabledata.push(element.innerHTML)
+            }
+            )
+
+            $("input[id='formheaderdata']").val(formheaderdata);
+            $("input[id='formtabledata']").val(formtabledata);
+
+            }
+
+            </script> <script type="text/javascript">
+
+            var form3 = document.forms["form3"];
+
+            $(form3).submit(function(e){
+            e.preventDefault();
+            var BCSAS_producto = $("select[id='BCSA_Desc_Producto']").val();
+            var BCSAS_eproducto = $("input[id='BCSA_Esp_Producto']").val();
+            var BCSAS_cantidad = $("input[id='BCSA_Cantidad']").val();
+            var BCSAS_formato = $("select[id='BCSA_Formato']").val();
+            var BCSAS_cdetalle = $("input[id='BCSA_C_Detalle']").val();
+            var BCSAS_valorformato = $("input[id='BCSA_Valor_Formato']").val();
+            var BCSAS_valortotal = $("input[id='BCSA_Valor_Total']").val();
+            var BCSAS_bsalida = $("select[id='BCSA_Bodega_Salida']").val();
+
+
+            var actions = "<button class='btn btn-primary btn-xs btn-edit3'>E<\/button><button class='btn btn-danger btn-xs btn-delete3'>X<\/button>"
+
+            var row_data = "<tr data-BCSAS_producto='"+BCSAS_producto+"' data-BCSAS_eproducto='"+BCSAS_eproducto+"' data-BCSAS_cantidad='"+BCSAS_cantidad+"' data-BCSAS_formato='"+BCSAS_formato+"' data-BCSAS_cdetalle='"+BCSAS_cdetalle+"' data-BCSAS_valorformato='"+BCSAS_valorformato+"' data-BCSAS_valortotal='"+BCSAS_valortotal+"' data-BCSAS_bsalida='"+BCSAS_bsalida+"'>"
+
+            var row = "<td>"+BCSAS_producto+"<\/td> <td>"+BCSAS_eproducto+"<\/td> <td>"+BCSAS_cantidad+"<\/td> <td>"+BCSAS_formato+"<\/td> <td>"+BCSAS_cdetalle+"<\/td> <td>"+BCSAS_valorformato+"<\/td><td>"+BCSAS_valortotal+"<\/td> <td>"+BCSAS_bsalida+"<\/td> <td>"+actions+"<\/td>"
+
+            $("#tbody3").append(row_data + row + "<\/tr>");
+
+
+            $("select[id='BCSA_Desc_Producto']").val('');
+            $("input[id='BCSA_Esp_Producto']").val('');
+            $("input[id='BCSA_Cantidad']").val('');
+            $("select[id='BCSA_Formato']").val('');
+            $("input[id='BCSA_C_Detalle']").val('');
+            $("input[id='BCSA_Valor_Formato']").val('');
+            $("input[id='BCSA_Valor_Total']").val('');
+            $("select[id='BCSA_Bodega_Salida']").val('');
+
+            });
+
+            $("body").on("click", ".btn-delete3", function(){
+            $(this).parents("tr").remove();
+            });
+
+            $("body").on("click", ".btn-edit3", function(){
+            var BCSAS_producto = $(this).parents("tr").attr('data-BCSAS_producto');
+            var BCSAS_eproducto = $(this).parents("tr").attr('data-BCSAS_eproducto');
+            var BCSAS_cantidad = $(this).parents("tr").attr('data-BCSAS_cantidad');
+            var BCSAS_formato = $(this).parents("tr").attr('data-BCSAS_formato');
+            var BCSAS_cdetalle = $(this).parents("tr").attr('data-BCSAS_cdetalle');
+            var BCSAS_valorformato = $(this).parents("tr").attr('data-BCSAS_valorformato');
+            var BCSAS_valortotal = $(this).parents("tr").attr('data-BCSAS_valortotal');
+            var BCSAS_bsalida = $(this).parents("tr").attr('data-BCSAS_bsalida');
+
+            $(this).parents("tr").find("td:eq(0)").html(BCSAS_producto);
+            $(this).parents("tr").find("td:eq(1)").html('<input name="edit_BCSAS_eproducto" value="'+BCSAS_eproducto+'">');
+            $(this).parents("tr").find("td:eq(2)").html('<input name="edit_BCSAS_cantidad" value="'+BCSAS_cantidad+'">');
+            $(this).parents("tr").find("td:eq(3)").html(BCSAS_formato);
+            $(this).parents("tr").find("td:eq(4)").html('<input name="edit_BCSAS_cdetalle" value="'+BCSAS_cdetalle+'">');
+            $(this).parents("tr").find("td:eq(5)").html('<input name="edit_BCSAS_valorformato" value="'+BCSAS_valorformato+'">');
+            $(this).parents("tr").find("td:eq(6)").html('<input name="edit_BCSAS_valortotal" value="'+BCSAS_valortotal+'">');
+            $(this).parents("tr").find("td:eq(7)").html(BCSAS_bsalida);
+
+            $(this).parents("tr").find("td:eq(8)").prepend("<button class='btn btn-info btn-xs btn-update3'>A<\/button><button class='btn btn-warning btn-xs btn-cancel3'>C<\/button>")
+            $(this).hide();
+            });
+
+            $("body").on("click", ".btn-cancel3", function(){
+            var BCSAS_producto = $(this).parents("tr").attr('data-BCSAS_producto');
+            var BCSAS_eproducto = $(this).parents("tr").attr('data-BCSAS_eproducto');
+            var BCSAS_cantidad = $(this).parents("tr").attr('data-BCSAS_cantidad');
+            var BCSAS_formato = $(this).parents("tr").attr('data-BCSAS_formato');
+            var BCSAS_cdetalle = $(this).parents("tr").attr('data-BCSAS_cdetalle');
+            var BCSAS_valorformato = $(this).parents("tr").attr('data-BCSAS_valorformato');
+            var BCSAS_valortotal = $(this).parents("tr").attr('data-BCSAS_valortotal');
+            var BCSAS_bsalida = $(this).parents("tr").attr('data-BCSAS_bsalida');
+
+            $(this).parents("tr").find("td:eq(0)").text(BCSAS_producto);
+            $(this).parents("tr").find("td:eq(1)").text(BCSAS_eproducto);
+            $(this).parents("tr").find("td:eq(2)").text(BCSAS_cantidad);
+            $(this).parents("tr").find("td:eq(3)").text(BCSAS_formato);
+            $(this).parents("tr").find("td:eq(4)").text(BCSAS_cdetalle);
+            $(this).parents("tr").find("td:eq(5)").text(BCSAS_valorformato);
+            $(this).parents("tr").find("td:eq(6)").text(BCSAS_valortotal);
+            $(this).parents("tr").find("td:eq(7)").text(BCSAS_bsalida);
+
+
+            $(this).parents("tr").find(".btn-edit3").show();
+            $(this).parents("tr").find(".btn-update3").remove();
+            $(this).parents("tr").find(".btn-cancel3").remove();
+            });
+
+            $("body").on("click", ".btn-update3", function(){
+            var BCSAS_producto = $(this).parents("tr").find("input[name='edit_BCSAS_producto']").val();
+            var BCSAS_eproducto = $(this).parents("tr").find("input[name='edit_BCSAS_eproducto']").val();
+            var BCSAS_cantidad = $(this).parents("tr").find("input[name='edit_BCSAS_cantidad']").val();
+            var BCSAS_formato = $(this).parents("tr").find("input[name='edit_BCSAS_formato']").val();
+            var BCSAS_cdetalle = $(this).parents("tr").find("input[name='edit_BCSAS_cdetalle']").val();
+            var BCSAS_valorformato = $(this).parents("tr").find("input[name='edit_BCSAS_valorformato']").val();
+            var BCSAS_valortotal = $(this).parents("tr").find("input[name='edit_BCSAS_valortotal']").val();
+            var BCSAS_bsalida = $(this).parents("tr").find("input[name='edit_BCSAS_bsalida']").val();
+
+            $(this).parents("tr").find("td:eq(0)").text(BCSAS_producto);
+            $(this).parents("tr").find("td:eq(1)").text(BCSAS_eproducto);
+            $(this).parents("tr").find("td:eq(2)").text(BCSAS_cantidad);
+            $(this).parents("tr").find("td:eq(3)").text(BCSAS_formato);
+            $(this).parents("tr").find("td:eq(4)").text(BCSAS_cdetalle);
+            $(this).parents("tr").find("td:eq(5)").text(BCSAS_valorformato);
+            $(this).parents("tr").find("td:eq(6)").text(BCSAS_valortotal);
+            $(this).parents("tr").find("td:eq(7)").text(BCSAS_bsalida);
+
+            $(this).parents("tr").attr('data-BCSAS_producto', BCSAS_producto);
+            $(this).parents("tr").attr('data-BCSAS_eproducto', BCSAS_eproducto);
+            $(this).parents("tr").attr('data-BCSAS_cantidad', BCSAS_cantidad);
+            $(this).parents("tr").attr('data-BCSAS_formato', BCSAS_formato);
+            $(this).parents("tr").attr('data-BCSAS_cdetalle', BCSAS_cdetalle);
+            $(this).parents("tr").attr('data-BCSAS_valorformato', BCSAS_valorformato);
+            $(this).parents("tr").attr('data-BCSAS_valortotal', BCSAS_valortotal);
+            $(this).parents("tr").attr('data-BCSAS_bsalida', BCSAS_bsalida);
+
+            $(this).parents("tr").find(".btn-edit3").show();
+            $(this).parents("tr").find(".btn-cancel3").remove();
+            $(this).parents("tr").find(".btn-update3").remove();
+            });
+
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header bg-primary" id="headingFour">
+          <h2 class="mb-0"><button class="btn btn-link collapsed text-white" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded=
+          "false" aria-controls="collapseFour">Movimiento Interno de Insumos - Entre Bodegas Centrales SAMU</button></h2>
+        </div>
+
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+          <div class="card-body">
+            <form name="form4" class="needs-validation" novalidate="">
+              <p class="h6"><strong>Informaciones del Movimiento</strong></p>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    Fecha Movimiento<br>
+                    <input type="text" id="MIS_datepicker" class="datepicker form-control">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Nro Movimiento Interno<br>
+                    <input type="text" id="MIS_Nro_Acta" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Movimiento Efectuado por<br>
+                    <input type="text" id="MIS_Entregado_Por" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Movimiento Digitado por<br>
+                    <input type="text" id="MIS_Digitado_Por" class="form-control">
+                  </div>
+                </div>
+              </div>
+
+              <p class="h6"><strong>Informacion del Producto</strong></p>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    Descripcion<br>
+                    <select class="form-control" id="MIS_Desc_Producto">
+                      <option>
+                        Escoja una opcion o digite el producto
+                      </option>
+
+                      <option>
+                        {{ option }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Especificacion<br>
+                    <input type="text" id="MIS_Esp_Producto" class="form-control">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    Cantidad<br>
+                    <input type="text" id="MIS_Cantidad" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Formato<br>
+                    <select class="form-control" id="MIS_Formato" onchange="disable('MIS_Formato', 'MIS_C_Detalle')">
+                      <option value="0">
+                        Escoja una opcion
+                      </option>
+
+                      <option value="1">
+                        Unidad(es)
+                      </option>
+
+                      <option value="2">
+                        Caja(s)
+                      </option>
+
+                      <option value="2">
+                        Paquete(s)
+                      </option>
+
+                      <option value="1">
+                        ml(s)
+                      </option>
+
+                      <option value="1">
+                        Litro(s)
+                      </option>
+
+                      <option value="2">
+                        Resma(s)
+                      </option>
+
+                      <option value="1">
+                        Par(es)
+                      </option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Cantidad detalle<br>
+                    <input type="text" id="MIS_C_Detalle" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Valor por formato<br>
+                    <input type="text" id="MIS_Valor_Formato" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Valor Total<br>
+                    <input type="text" id="MIS_Valor_Total" class="form-control">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    Bodega Salida <select class="form-control" id="MIS_Bodega_Salida">
+                      <option value="">
+                        Escoja una opcion
+                      </option>
+
+                      <option>
+                        Bodega 1
+                      </option>
+
+                      <option>
+                        Bodega 1A
+                      </option>
+
+                      <option>
+                        Bodega 1B
+                      </option>
+
+                      <option>
+                        Bodega 2
+                      </option>
+
+                      <option>
+                        Bodega 3
+                      </option>
+
+                      <option>
+                        Bodega 4
+                      </option>
+
+                      <option>
+                        Bodega Administrativo
+                      </option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    Bodega Destino <select class="form-control" id="MIS_Bodega_Destino">
+                      <option value="">
+                        Escoja una opcion
+                      </option>
+
+                      <option id="Bodega1">
+                        Bodega 1
+                      </option>
+
+                      <option id="Bodega1A">
+                        Bodega 1A
+                      </option>
+
+                      <option id="Bodega1B">
+                        Bodega 1B
+                      </option>
+
+                      <option id="Bodega2">
+                        Bodega 2
+                      </option>
+
+                      <option id="Bodega3">
+                        Bodega 3
+                      </option>
+
+                      <option id="Bodega4">
+                        Bodega 4
+                      </option>
+
+                      <option id="BodegaAdm">
+                        Bodega Administrativo
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div><button type="submit" class="btn btn-primary save-btn">+</button>
+            </form><br>
+
+            <form action="" method="post">
+              <input type="hidden" id="formheaderdata" name="formheaderdata"> <input type="hidden" id="formtabledata" name="formtabledata">
+
+              <div style="overflow-x:auto;">
+                <table id="form4table" class="table data-table">
+                  <thead>
+                    <tr>
+                      <th>Descripcion</th>
+
+                      <th>Especificacion</th>
+
+                      <th>Cantidad</th>
+
+                      <th>Formato</th>
+
+                      <th>Cantidad Detalle</th>
+
+                      <th>Valor por Formato</th>
+
+                      <th>Valor Total</th>
+
+                      <th>Bodega Salida</th>
+
+                      <th>Bodega Destino</th>
+                    </tr>
+                  </thead>
+
+                  <tbody id="tbody4"></tbody>
+                </table>
+              </div>
+
+              <div class="container">
+                <div class="row">
+                  <div class="col text-center">
+                    <button onclick="getForm4Data()" type="submit" id="MIS_Enviar" class="btn btn-success">Enviar</button>
+                  </div>
+                </div>
+              </div>
+            </form><script type="text/javascript">
+
+            function getForm4Data() {
+
+            var formheaderdata = []
+            var offset = "46"
+
+            formheaderdata.push(offset)
+            formheaderdata.push("BC-Movimiento-Interno")
+            formheaderdata.push(document.getElementById('MIS_datepicker').value)
+            formheaderdata.push(document.getElementById('MIS_Nro_Acta').value)
+            formheaderdata.push(document.getElementById('MIS_Entregado_Por').value)
+            formheaderdata.push(document.getElementById('MIS_Digitado_Por').value)
+
+            var formtabledata = []
+
+            var form4table = document.getElementById("form4table").tBodies;
+
+            Array.from(form4table).forEach(function(element) {
+            formtabledata.push(element.innerHTML)
+            }
+            )
+
+            $("input[id='formheaderdata']").val(formheaderdata);
+            $("input[id='formtabledata']").val(formtabledata);
+
+            }
+
+            </script> <script type="text/javascript">
+
+            var form4 = document.forms["form4"];
+
+            $(form4).submit(function(e){
+            e.preventDefault();
+            var MISS_producto = $("select[id='MIS_Desc_Producto']").val();
+            var MISS_eproducto = $("input[id='MIS_Esp_Producto']").val();
+            var MISS_cantidad = $("input[id='MIS_Cantidad']").val();
+            var MISS_formato = $("select[id='MIS_Formato']").val();
+            var MISS_cdetalle = $("input[id='MIS_C_Detalle']").val();
+            var MISS_valorformato = $("input[id='MIS_Valor_Formato']").val();
+            var MISS_valortotal = $("input[id='MIS_Valor_Total']").val();
+            var MISS_bsalida = $("select[id='MIS_Bodega_Salida']").val();
+            var MISS_bdestino = $("select[id='MIS_Bodega_Destino']").val();
+
+
+            var actions = "<button class='btn btn-primary btn-xs btn-edit4'>E<\/button><button class='btn btn-danger btn-xs btn-delete4'>X<\/button>"
+
+            var row_data = "<tr data-MISS_producto='"+MISS_producto+"' data-MISS_eproducto='"+MISS_eproducto+"' data-MISS_cantidad='"+MISS_cantidad+"' data-MISS_formato='"+MISS_formato+"' data-MISS_cdetalle='"+MISS_cdetalle+"' data-MISS_valorformato='"+MISS_valorformato+"' data-MISS_valortotal='"+MISS_valortotal+"' data-MISS_bsalida='"+MISS_bsalida+"' data-MISS_bdestino='"+MISS_bdestino+"'>"
+
+            var row = "<td>"+MISS_producto+"<\/td> <td>"+MISS_eproducto+"<\/td> <td>"+MISS_cantidad+"<\/td> <td>"+MISS_formato+"<\/td> <td>"+MISS_cdetalle+"<\/td> <td>"+MISS_valorformato+"<\/td> <td>"+MISS_valortotal+"<\/td> <td>"+MISS_bsalida+"<\/td> <td>"+MISS_bdestino+"<\/td> <td>"+actions+"<\/td>"
+
+            $("#tbody4").append(row_data + row + "<\/tr>");
+
+
+            $("select[id='MIS_Desc_Producto']").val('');
+            $("input[id='MIS_Esp_Producto']").val('');
+            $("input[id='MIS_Cantidad']").val('');
+            $("select[id='MIS_Formato']").val('');
+            $("input[id='MIS_C_Detalle']").val('');
+            $("input[id='MIS_Valor_Formato']").val('');
+            $("input[id='MIS_Valor_Total']").val('');
+            $("select[id='MIS_Bodega_Salida']").val('');
+            $("select[id='MIS_Bodega_Destino']").val('');
+
+            });
+
+            $("body").on("click", ".btn-delete4", function(){
+            $(this).parents("tr").remove();
+            });
+
+            $("body").on("click", ".btn-edit4", function(){
+            var MISS_producto = $(this).parents("tr").attr('data-MISS_producto');
+            var MISS_eproducto = $(this).parents("tr").attr('data-MISS_eproducto');
+            var MISS_cantidad = $(this).parents("tr").attr('data-MISS_cantidad');
+            var MISS_formato = $(this).parents("tr").attr('data-MISS_formato');
+            var MISS_cdetalle = $(this).parents("tr").attr('data-MISS_cdetalle');
+            var MISS_valorformato = $(this).parents("tr").attr('data-MISS_valorformato');
+            var MISS_valortotal = $(this).parents("tr").attr('data-MISS_valortotal');
+            var MISS_bsalida = $(this).parents("tr").attr('data-MISS_bsalida');
+            var MISS_bdestino = $(this).parents("tr").attr('data-MISS_bdestino');
+
+
+            $(this).parents("tr").find("td:eq(0)").html(MISS_producto);
+            $(this).parents("tr").find("td:eq(1)").html('<input name="edit_MISS_eproducto" value="'+MISS_eproducto+'">');
+            $(this).parents("tr").find("td:eq(2)").html('<input name="edit_MISS_cantidad" value="'+MISS_cantidad+'">');
+            $(this).parents("tr").find("td:eq(3)").html(MISS_formato);
+            $(this).parents("tr").find("td:eq(4)").html('<input name="edit_MISS_cdetalle" value="'+MISS_cdetalle+'">');
+            $(this).parents("tr").find("td:eq(5)").html('<input name="edit_MISS_valorformato" value="'+MISS_valorformato+'">');
+            $(this).parents("tr").find("td:eq(6)").html('<input name="edit_MISS_valortotal" value="'+MISS_valortotal+'">');
+            $(this).parents("tr").find("td:eq(7)").html(MISS_bsalida);
+            $(this).parents("tr").find("td:eq(8)").html(MISS_bdestino);
+
+            $(this).parents("tr").find("td:eq(9)").prepend("<button class='btn btn-info btn-xs btn-update4'>A<\/button><button class='btn btn-warning btn-xs btn-cancel4'>C<\/button>")
+            $(this).hide();
+            });
+
+            $("body").on("click", ".btn-cancel4", function(){
+            var MISS_producto = $(this).parents("tr").attr('data-MISS_producto');
+            var MISS_eproducto = $(this).parents("tr").attr('data-MISS_eproducto');
+            var MISS_cantidad = $(this).parents("tr").attr('data-MISS_cantidad');
+            var MISS_formato = $(this).parents("tr").attr('data-MISS_formato');
+            var MISS_cdetalle = $(this).parents("tr").attr('data-MISS_cdetalle');
+            var MISS_valorformato = $(this).parents("tr").attr('data-MISS_valorformato');
+            var MISS_valortotal = $(this).parents("tr").attr('data-MISS_valortotal');
+            var MISS_bsalida = $(this).parents("tr").attr('data-MISS_bsalida');
+            var MISS_bdestino = $(this).parents("tr").attr('data-MISS_bdestino');
+
+            $(this).parents("tr").find("td:eq(0)").text(MISS_producto);
+            $(this).parents("tr").find("td:eq(1)").text(MISS_eproducto);
+            $(this).parents("tr").find("td:eq(2)").text(MISS_cantidad);
+            $(this).parents("tr").find("td:eq(3)").text(MISS_formato);
+            $(this).parents("tr").find("td:eq(4)").text(MISS_cdetalle);
+            $(this).parents("tr").find("td:eq(5)").text(MISS_valorformato);
+            $(this).parents("tr").find("td:eq(6)").text(MISS_valortotal);
+            $(this).parents("tr").find("td:eq(7)").text(MISS_bsalida);
+            $(this).parents("tr").find("td:eq(8)").text(MISS_bdestino);
+
+            $(this).parents("tr").find(".btn-edit4").show();
+            $(this).parents("tr").find(".btn-update4").remove();
+            $(this).parents("tr").find(".btn-cancel4").remove();
+            });
+
+            $("body").on("click", ".btn-update4", function(){
+            var MISS_producto = $(this).parents("tr").find("input[name='edit_MISS_producto']").val();
+            var MISS_eproducto = $(this).parents("tr").find("input[name='edit_MISS_eproducto']").val();
+            var MISS_cantidad = $(this).parents("tr").find("input[name='edit_MISS_cantidad']").val();
+            var MISS_formato = $(this).parents("tr").find("input[name='edit_MISS_formato']").val();
+            var MISS_cdetalle = $(this).parents("tr").find("input[name='edit_MISS_cdetalle']").val();
+            var MISS_valorformato = $(this).parents("tr").find("input[name='edit_MISS_valorformato']").val();
+            var MISS_valortotal = $(this).parents("tr").find("input[name='edit_MISS_valortotal']").val();
+            var MISS_bsalida = $(this).parents("tr").find("input[name='edit_MISS_bsalida']").val();
+            var MISS_bdestino = $(this).parents("tr").find("input[name='edit_MISS_bdestino']").val();
+
+
+            $(this).parents("tr").find("td:eq(0)").text(MISS_producto);
+            $(this).parents("tr").find("td:eq(1)").text(MISS_eproducto);
+            $(this).parents("tr").find("td:eq(2)").text(MISS_cantidad);
+            $(this).parents("tr").find("td:eq(3)").text(MISS_formato);
+            $(this).parents("tr").find("td:eq(4)").text(MISS_cdetalle);
+            $(this).parents("tr").find("td:eq(5)").text(MISS_valorformato);
+            $(this).parents("tr").find("td:eq(6)").text(MISS_valortotal);
+            $(this).parents("tr").find("td:eq(7)").text(MISS_bsalida);
+            $(this).parents("tr").find("td:eq(8)").text(MISS_bdestino);
+
+            $(this).parents("tr").attr('data-MISS_producto', MISS_producto);
+            $(this).parents("tr").attr('data-MISS_eproducto', MISS_eproducto);
+            $(this).parents("tr").attr('data-MISS_cantidad', MISS_cantidad);
+            $(this).parents("tr").attr('data-MISS_formato', MISS_formato);
+            $(this).parents("tr").attr('data-MISS_cdetalle', MISS_cdetalle);
+            $(this).parents("tr").attr('data-MISS_valorformato', MISS_valorformato);
+            $(this).parents("tr").attr('data-MISS_valortotal', MISS_valortotal);
+            $(this).parents("tr").attr('data-MISS_bsalida', MISS_bsalida);
+            $(this).parents("tr").attr('data-MISS_bdestino', MISS_bdestino);
+
+            $(this).parents("tr").find(".btn-edit4").show();
+            $(this).parents("tr").find(".btn-cancel4").remove();
+            $(this).parents("tr").find(".btn-update4").remove();
+            });
+
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
