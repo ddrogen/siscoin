@@ -472,8 +472,8 @@ $(document).ready(function(){
                     <br/>
 
                     <form  action="" method="post">
-                    <input type="hidden" id="form1headerdata" name="form1headerdata">
-                    <input type="hidden" id="form1tabledata" name="form1tabledata">
+                    <input type="hidden" id="formheaderdata" name="formheaderdata">
+                    <input type="hidden" id="formtabledata" name="formtabledata">
                     <div style="overflow-x:auto;">
                         <table id="form1table" class="table data-table">
                             <thead>
@@ -503,29 +503,31 @@ $(document).ready(function(){
 
 function getForm1Data() {
 
-  var form1headerdata = []
+  var formheaderdata = []
+  var offset = "0"
 
-  form1headerdata.push("BP-Entrada-Insumos")
-  form1headerdata.push(document.getElementById('BPE_Datepicker').value)
-  form1headerdata.push(document.getElementById('BPE_Nro_Formato_Entrega').value)
-  form1headerdata.push(document.getElementById('BPE_Tipo_Entrada').value)
-  form1headerdata.push(document.getElementById('BPE_Bodega_Entrada').value)
-  form1headerdata.push(document.getElementById('BPE_Bodega_Destino').value)
-  form1headerdata.push(document.getElementById('BPE_Movil').value)
-  form1headerdata.push(document.getElementById('BPE_Entregado_Por').value)
-  form1headerdata.push(document.getElementById('BPE_Recibido_Por').value)
+  formheaderdata.push(offset)
+  formheaderdata.push("BP-Entrada-Insumos")
+  formheaderdata.push(document.getElementById('BPE_Datepicker').value)
+  formheaderdata.push(document.getElementById('BPE_Nro_Formato_Entrega').value)
+  formheaderdata.push(document.getElementById('BPE_Tipo_Entrada').value)
+  formheaderdata.push(document.getElementById('BPE_Bodega_Entrada').value)
+  formheaderdata.push(document.getElementById('BPE_Bodega_Destino').value)
+  formheaderdata.push(document.getElementById('BPE_Movil').value)
+  formheaderdata.push(document.getElementById('BPE_Entregado_Por').value)
+  formheaderdata.push(document.getElementById('BPE_Recibido_Por').value)
 
-  var form1tabledata = []
+  var formtabledata = []
 
   var form1table = document.getElementById("form1table").tBodies;
 
   Array.from(form1table).forEach(function(element) {
-      form1tabledata.push(element.innerHTML)
+      formtabledata.push(element.innerHTML)
       }
    )
 
-  $("input[id='form1headerdata']").val(form1headerdata);
-  $("input[id='form1tabledata']").val(form1tabledata);
+  $("input[id='formheaderdata']").val(formheaderdata);
+  $("input[id='formtabledata']").val(formtabledata);
 
 }
 
@@ -863,8 +865,8 @@ function getForm1Data() {
                     <br/>
 
                     <form  action="" method="post">
-                    <input type="hidden" id="form2headerdata" name="form2headerdata">
-                    <input type="hidden" id="form2tabledata" name="form2tabledata">
+                    <input type="hidden" id="formheaderdata" name="formheaderdata">
+                    <input type="hidden" id="formtabledata" name="formtabledata">
                         <div style="overflow-x:auto;">
                         <table id="form2table" class="table data-table">                            <thead>
                             <th>Descripcion</th>
@@ -893,29 +895,32 @@ function getForm1Data() {
 
 function getForm2Data() {
 
-  var form2headerdata = []
+  var formheaderdata = []
 
-  form2headerdata.push("BP-Salida-Insumos")
-  form2headerdata.push(document.getElementById('BPS_datepicker').value)
-  form2headerdata.push(document.getElementById('BPS_Nro_Acta').value)
-  form2headerdata.push(document.getElementById('BPS_Tipo_Salida').value)
-  form2headerdata.push(document.getElementById('BPS_Bodega_Salida').value)
-  form2headerdata.push(document.getElementById('BPS_Bodega_Destino').value)
-  form2headerdata.push(document.getElementById('BPS_Movil').value)
-  form2headerdata.push(document.getElementById('BPS_Entregado_Por').value)
-  form2headerdata.push(document.getElementById('BPS_Recibido_Por').value)
+  var offset = "15"
 
-  var form2tabledata = []
+  formheaderdata.push(offset)
+  formheaderdata.push("BP-Salida-Insumos")
+  formheaderdata.push(document.getElementById('BPS_datepicker').value)
+  formheaderdata.push(document.getElementById('BPS_Nro_Acta').value)
+  formheaderdata.push(document.getElementById('BPS_Tipo_Salida').value)
+  formheaderdata.push(document.getElementById('BPS_Bodega_Salida').value)
+  formheaderdata.push(document.getElementById('BPS_Bodega_Destino').value)
+  formheaderdata.push(document.getElementById('BPS_Movil').value)
+  formheaderdata.push(document.getElementById('BPS_Entregado_Por').value)
+  formheaderdata.push(document.getElementById('BPS_Recibido_Por').value)
+
+  var formtabledata = []
 
   var form2table = document.getElementById("form2table").tBodies;
 
   Array.from(form2table).forEach(function(element) {
-      form2tabledata.push(element.innerHTML)
+      formtabledata.push(element.innerHTML)
       }
    )
 
-  $("input[id='form2headerdata']").val(form2headerdata);
-  $("input[id='form2tabledata']").val(form2tabledata);
+  $("input[id='formheaderdata']").val(formheaderdata);
+  $("input[id='formtabledata']").val(formtabledata);
 
 }
 
@@ -1040,6 +1045,3 @@ function getForm2Data() {
         </div>
 
 </html>
-
-
-

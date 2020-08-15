@@ -508,8 +508,8 @@ $(document).ready(function(){
                     <br/>
 
                     <form  action="" method="post">
-                    <input type="hidden" id="form1headerdata" name="form1headerdata">
-                    <input type="hidden" id="form1tabledata" name="form1tabledata">
+                    <input type="hidden" id="formheaderdata" name="formheaderdata">
+                    <input type="hidden" id="formtabledata" name="formtabledata">
                     <div style="overflow-x:auto;">
                         <table id="form1table" class="table data-table">
                             <thead>
@@ -540,30 +540,32 @@ $(document).ready(function(){
 
 function getForm1Data() {
 
-  var form1headerdata = []
+  var formheaderdata = []
 
-  form1headerdata.push("BC-Entrada-Insumos")
-  form1headerdata.push(document.getElementById('BCE_Datepicker').value)
-  form1headerdata.push(document.getElementById('BCE_Nro_Formato_Entrega').value)
-  form1headerdata.push(document.getElementById('BCE_Tipo_Entrada').value)
-  form1headerdata.push(document.getElementById('BCE_Bodega_Salida').value)
-  form1headerdata.push(document.getElementById('BCE_Movil').value)
-  form1headerdata.push(document.getElementById('BCE_Nro_Orden_Compra').value)
-  form1headerdata.push(document.getElementById('BCE_Nro_Factura').value)
-  form1headerdata.push(document.getElementById('BCE_Entregado_Por').value)
-  form1headerdata.push(document.getElementById('BCE_Recibido_Por').value)
+  var offset = "0"
+  formheaderdata.push(offset)
+  formheaderdata.push("BC-Entrada-Insumos")
+  formheaderdata.push(document.getElementById('BCE_Datepicker').value)
+  formheaderdata.push(document.getElementById('BCE_Nro_Formato_Entrega').value)
+  formheaderdata.push(document.getElementById('BCE_Tipo_Entrada').value)
+  formheaderdata.push(document.getElementById('BCE_Bodega_Salida').value)
+  formheaderdata.push(document.getElementById('BCE_Movil').value)
+  formheaderdata.push(document.getElementById('BCE_Nro_Orden_Compra').value)
+  formheaderdata.push(document.getElementById('BCE_Nro_Factura').value)
+  formheaderdata.push(document.getElementById('BCE_Entregado_Por').value)
+  formheaderdata.push(document.getElementById('BCE_Recibido_Por').value)
 
-  var form1tabledata = []
+  var formtabledata = []
 
   var form1table = document.getElementById("form1table").tBodies;
 
   Array.from(form1table).forEach(function(element) {
-      form1tabledata.push(element.innerHTML)
+      formtabledata.push(element.innerHTML)
       }
    )
 
-  $("input[id='form1headerdata']").val(form1headerdata);
-  $("input[id='form1tabledata']").val(form1tabledata);
+  $("input[id='formheaderdata']").val(formheaderdata);
+  $("input[id='formtabledata']").val(formtabledata);
 
 }
 
@@ -931,8 +933,8 @@ function getForm1Data() {
                     <br/>
 
                     <form  action="" method="post">
-                    <input type="hidden" id="form2headerdata" name="form2headerdata">
-                    <input type="hidden" id="form2tabledata" name="form2tabledata">
+                    <input type="hidden" id="formheaderdata" name="formheaderdata">
+                    <input type="hidden" id="formtabledata" name="formtabledata">
                     <div style="overflow-x:auto;">
                         <table id="form2table" class="table data-table">
                             <thead>
@@ -963,29 +965,31 @@ function getForm1Data() {
 
 function getForm2Data() {
 
-  var form2headerdata = []
+  var formheaderdata = []
+  var offset = "17"
 
-  form2headerdata.push("BC-Salida-OB")
-  form2headerdata.push(document.getElementById('BCS_datepicker').value)
-  form2headerdata.push(document.getElementById('BCS_Nro_Acta').value)
-  form2headerdata.push(document.getElementById('BCS_Tipo_Salida').value)
-  form2headerdata.push(document.getElementById('BCS_Bodega_Intermediaria').value)
-  form2headerdata.push(document.getElementById('BCS_Bodega_Destino').value)
-  form2headerdata.push(document.getElementById('BCS_Movil').value)
-  form2headerdata.push(document.getElementById('BCS_Entregado_Por').value)
-  form2headerdata.push(document.getElementById('BCS_Recibido_Por').value)
+  formheaderdata.push(offset)
+  formheaderdata.push("BC-Salida-OB")
+  formheaderdata.push(document.getElementById('BCS_datepicker').value)
+  formheaderdata.push(document.getElementById('BCS_Nro_Acta').value)
+  formheaderdata.push(document.getElementById('BCS_Tipo_Salida').value)
+  formheaderdata.push(document.getElementById('BCS_Bodega_Intermediaria').value)
+  formheaderdata.push(document.getElementById('BCS_Bodega_Destino').value)
+  formheaderdata.push(document.getElementById('BCS_Movil').value)
+  formheaderdata.push(document.getElementById('BCS_Entregado_Por').value)
+  formheaderdata.push(document.getElementById('BCS_Recibido_Por').value)
 
-  var form2tabledata = []
+  var formtabledata = []
 
   var form2table = document.getElementById("form2table").tBodies;
 
   Array.from(form2table).forEach(function(element) {
-      form2tabledata.push(element.innerHTML)
+      formtabledata.push(element.innerHTML)
       }
    )
 
-  $("input[id='form2headerdata']").val(form2headerdata);
-  $("input[id='form2tabledata']").val(form2tabledata);
+  $("input[id='formheaderdata']").val(formheaderdata);
+  $("input[id='formtabledata']").val(formtabledata);
 
 }
 
@@ -1298,8 +1302,8 @@ function getForm2Data() {
                     <br/>
 
                     <form  action="" method="post">
-                    <input type="hidden" id="form3headerdata" name="form3headerdata">
-                    <input type="hidden" id="form3tabledata" name="form3tabledata">
+                    <input type="hidden" id="formheaderdata" name="formheaderdata">
+                    <input type="hidden" id="formtabledata" name="formtabledata">
                     <div style="overflow-x:auto;">
                         <table id="form3table" class="table data-table">
                             <thead>
@@ -1330,26 +1334,27 @@ function getForm2Data() {
 
 function getForm3Data() {
 
-  var form3headerdata = []
+  var formheaderdata = []
+  var offset = "33"
+  formheaderdata.push(offset)
+  formheaderdata.push("BC-Salida-Amb")
+  formheaderdata.push(document.getElementById('BCSA_datepicker').value)
+  formheaderdata.push(document.getElementById('BCSA_Nro_Acta').value)
+  formheaderdata.push(document.getElementById('BCSA_Movil').value)
+  formheaderdata.push(document.getElementById('BCSA_Entregado_Por').value)
+  formheaderdata.push(document.getElementById('BCSA_Recibido_Por').value)
 
-  form3headerdata.push("BC-Salida-Amb")
-  form3headerdata.push(document.getElementById('BCSA_datepicker').value)
-  form3headerdata.push(document.getElementById('BCSA_Nro_Acta').value)
-  form3headerdata.push(document.getElementById('BCSA_Movil').value)
-  form3headerdata.push(document.getElementById('BCSA_Entregado_Por').value)
-  form3headerdata.push(document.getElementById('BCSA_Recibido_Por').value)
-
-  var form3tabledata = []
+  var formtabledata = []
 
   var form3table = document.getElementById("form3table").tBodies;
 
   Array.from(form3table).forEach(function(element) {
-      form3tabledata.push(element.innerHTML)
+      formtabledata.push(element.innerHTML)
       }
    )
 
-  $("input[id='form3headerdata']").val(form3headerdata);
-  $("input[id='form3tabledata']").val(form3tabledata);
+  $("input[id='formheaderdata']").val(formheaderdata);
+  $("input[id='formtabledata']").val(formtabledata);
 
 }
 
@@ -1657,8 +1662,8 @@ function getForm3Data() {
                     <br/>
 
                     <form  action="" method="post">
-                    <input type="hidden" id="form4headerdata" name="form4headerdata">
-                    <input type="hidden" id="form4tabledata" name="form4tabledata">
+                    <input type="hidden" id="formheaderdata" name="formheaderdata">
+                    <input type="hidden" id="formtabledata" name="formtabledata">
                     <div style="overflow-x:auto;">
                         <table id="form4table" class="table data-table">
                             <thead>
@@ -1690,25 +1695,27 @@ function getForm3Data() {
 
 function getForm4Data() {
 
-  var form4headerdata = []
+  var formheaderdata = []
+  var offset = "46"
 
-  form4headerdata.push("BC-Movimiento-Interno")
-  form4headerdata.push(document.getElementById('MIS_datepicker').value)
-  form4headerdata.push(document.getElementById('MIS_Nro_Acta').value)
-  form4headerdata.push(document.getElementById('MIS_Entregado_Por').value)
-  form4headerdata.push(document.getElementById('MIS_Digitado_Por').value)
+  formheaderdata.push(offset)
+  formheaderdata.push("BC-Movimiento-Interno")
+  formheaderdata.push(document.getElementById('MIS_datepicker').value)
+  formheaderdata.push(document.getElementById('MIS_Nro_Acta').value)
+  formheaderdata.push(document.getElementById('MIS_Entregado_Por').value)
+  formheaderdata.push(document.getElementById('MIS_Digitado_Por').value)
 
-  var form4tabledata = []
+  var formtabledata = []
 
   var form4table = document.getElementById("form4table").tBodies;
 
   Array.from(form4table).forEach(function(element) {
-      form4tabledata.push(element.innerHTML)
+      formtabledata.push(element.innerHTML)
       }
    )
 
-  $("input[id='form3headerdata']").val(form4headerdata);
-  $("input[id='form3tabledata']").val(form4tabledata);
+  $("input[id='formheaderdata']").val(formheaderdata);
+  $("input[id='formtabledata']").val(formtabledata);
 
 }
 
