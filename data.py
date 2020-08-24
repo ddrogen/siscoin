@@ -1,9 +1,14 @@
+import os
 import gspread
 
 
 class GoogleSpread:
     def __init__(self, sheet, worksheet=None):
-        self.client = gspread.service_account(filename='siscoin-f6bf903a5c41.json')
+
+        siscoin_service_account = os.getenv("SISCOIN_SERVICE_ACCOUNT")
+        with open("siscoin-service-account.json", "w") as f:
+            f.write(siscoin_service_account)
+        self.client = gspread.service_account(filename='siscoin-service-account.json')
         self.sheet = self.client.open(sheet)
         if worksheet:
             self.worksheet = self.sheet.worksheet(worksheet)
