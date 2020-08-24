@@ -487,10 +487,9 @@ $(document).ready(function(){
                       <option>
                         Escoja una opcion o digite el producto
                       </option>
-
-                      <option>
-                        {{ option }}
-                      </option>
+                      {% for option in option_list %}
+                        <option>{{ option }}</option>
+                      {% endfor %}
                     </select>
                   </div>
                 </div>
@@ -990,10 +989,9 @@ $(document).ready(function(){
                       <option>
                         Escoja una opcion o digite el producto
                       </option>
-
-                      <option>
-                        {{ option }}
-                      </option>
+                      {% for option in option_list %}
+                        <option>{{ option }}</option>
+                      {% endfor %}
                     </select>
                   </div>
                 </div>

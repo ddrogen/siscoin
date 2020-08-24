@@ -11,9 +11,6 @@ app.config['SECRET_KEY'] = '7d441f27d441f27567d441f2b6176a'
 
 @app.route("/", methods=['GET', 'POST'])
 def home():
-    if request.method == 'POST':
-        pass
-
     return render_template('home.html')
 
 @app.route("/bc", methods=['GET', 'POST'])
@@ -48,7 +45,7 @@ def bodega_periferica():
     option_list = []
     if request.method == 'GET':
         google_spread = GoogleSpread(sheet="siscoin_data")
-
+        option_list = google_spread.get_option_list()
 
     if request.method == 'POST':
 
