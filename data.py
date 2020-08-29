@@ -24,7 +24,11 @@ class GoogleSpread:
 
     def process_form_header(self, form_header):
 
-        offset = int(form_header.pop(0))
+        try:
+            offset = int(form_header.pop(0))
+        except:
+            offset = 0
+            
         form = [form_header.pop(0)]
         empty = ["" for i in range(offset)]
 
