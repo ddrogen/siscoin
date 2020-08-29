@@ -682,7 +682,7 @@ $(document).ready(function(){
             var BCES_valortotal = $("input[id='BCE_Valor_Total']").val();
             var BCES_bentrada = $("select[id='BCE_Bodega_Entrada']").val();
 
-            var actions = "<button class='btn btn-primary btn-xs btn-edit1'>E<\/button><button class='btn btn-danger btn-xs btn-delete1'>X<\/button>"
+            var actions = "<button class='btn btn-danger btn-xs btn-delete1'>X<\/button>"
 
             var row_data = "<tr data-BCES_producto='"+BCES_producto+"' data-BCES_eproducto='"+BCES_eproducto+"' data-BCES_cantidad='"+BCES_cantidad+"' data-BCES_formato='"+BCES_formato+"' data-BCES_cdetalle='"+BCES_cdetalle+"' data-BCES_valorformato='"+BCES_valorformato+"' data-BCES_valortotal='"+BCES_valortotal+"' data-BCES_bentrada='"+BCES_bentrada+"'>"
 
@@ -704,90 +704,6 @@ $(document).ready(function(){
             $("body").on("click", ".btn-delete1", function(){
 
             $(this).parents("tr").remove();
-            });
-
-            $("body").on("click", ".btn-edit1", function(){
-
-
-            var BCES_producto = $(this).parents("tr").attr('data-BCES_producto');
-            var BCES_eproducto = $(this).parents("tr").attr('data-BCES_eproducto');
-            var BCES_cantidad = $(this).parents("tr").attr('data-BCES_cantidad');
-            var BCES_formato = $(this).parents("tr").attr('data-BCES_formato');
-            var BCES_cdetalle = $(this).parents("tr").attr('data-BCES_cdetalle');
-            var BCES_valorformato = $(this).parents("tr").attr('data-BCES_valorformato');
-            var BCES_valortotal = $(this).parents("tr").attr('data-BCES_valortotal');
-            var BCES_bentrada = $(this).parents("tr").attr('data-BCES_bentrada');
-
-
-            $(this).parents("tr").find("td:eq(0)").html(BCES_producto);
-            $(this).parents("tr").find("td:eq(1)").html('<input name="edit_BCES_eproducto" value="'+BCES_eproducto+'">');
-            $(this).parents("tr").find("td:eq(2)").html('<input name="edit_BCES_cantidad" value="'+BCES_cantidad+'">');
-            $(this).parents("tr").find("td:eq(3)").html(BCES_formato);
-            $(this).parents("tr").find("td:eq(4)").html('<input name="edit_BCES_cdetalle" value="'+BCES_cdetalle+'">');
-            $(this).parents("tr").find("td:eq(5)").html('<input name="edit_BCES_valorformato" value="'+BCES_valorformato+'">');
-            $(this).parents("tr").find("td:eq(6)").html('<input name="edit_BCES_valortotal" value="'+BCES_valortotal+'">');
-            $(this).parents("tr").find("td:eq(7)").html(BCES_bentrada);
-
-            $(this).parents("tr").find("td:eq(8)").prepend("<button class='btn btn-info btn-xs btn-update1'>A<\/button><button class='btn btn-warning btn-xs btn-cancel1'>C<\/button>")
-            $(this).hide();
-            });
-
-            $("body").on("click", ".btn-cancel1", function(){
-            var BCES_producto = $(this).parents("tr").attr('data-BCES_producto');
-            var BCES_eproducto = $(this).parents("tr").attr('data-BCES_eproducto');
-            var BCES_cantidad = $(this).parents("tr").attr('data-BCES_cantidad');
-            var BCES_formato = $(this).parents("tr").attr('data-BCES_formato');
-            var BCES_cdetalle = $(this).parents("tr").attr('data-BCES_cdetalle');
-            var BCES_valorformato = $(this).parents("tr").attr('data-BCES_valorformato');
-            var BCES_valortotal = $(this).parents("tr").attr('data-BCES_valortotal');
-            var BCES_bentrada = $(this).parents("tr").attr('data-BCES_bentrada');
-
-            $(this).parents("tr").find("td:eq(0)").text(BCES_producto);
-            $(this).parents("tr").find("td:eq(1)").text(BCES_eproducto);
-            $(this).parents("tr").find("td:eq(2)").text(BCES_cantidad);
-            $(this).parents("tr").find("td:eq(3)").text(BCES_formato);
-            $(this).parents("tr").find("td:eq(4)").text(BCES_cdetalle);
-            $(this).parents("tr").find("td:eq(5)").text(BCES_valorformato);
-            $(this).parents("tr").find("td:eq(6)").text(BCES_valortotal);
-            $(this).parents("tr").find("td:eq(7)").text(BCES_bentrada);
-
-            $(this).parents("tr").find(".btn-edit1").show();
-            $(this).parents("tr").find(".btn-update1").remove();
-            $(this).parents("tr").find(".btn-cancel1").remove();
-            });
-
-            $("body").on("click", ".btn-update1", function(){
-            var BCES_producto = $(this).parents("tr").find("input[name='edit_BCES_producto']").val();
-            var BCES_eproducto = $(this).parents("tr").find("input[name='edit_BCES_eproducto']").val();
-            var BCES_cantidad = $(this).parents("tr").find("input[name='edit_BCES_cantidad']").val();
-            var BCES_formato = $(this).parents("tr").find("input[name='edit_BCES_formato']").val();
-            var BCES_cdetalle = $(this).parents("tr").find("input[name='edit_BCES_cdetalle']").val();
-            var BCES_valorformato = $(this).parents("tr").find("input[name='edit_BCES_valorformato']").val();
-            var BCES_valortotal = $(this).parents("tr").find("input[name='edit_BCES_valortotal']").val();
-            var BCES_bentrada = $(this).parents("tr").find("input[name='edit_BCES_bentrada']").val();
-
-
-            $(this).parents("tr").find("td:eq(0)").text(BCES_producto);
-            $(this).parents("tr").find("td:eq(1)").text(BCES_eproducto);
-            $(this).parents("tr").find("td:eq(2)").text(BCES_cantidad);
-            $(this).parents("tr").find("td:eq(3)").text(BCES_formato);
-            $(this).parents("tr").find("td:eq(4)").text(BCES_cdetalle);
-            $(this).parents("tr").find("td:eq(5)").text(BCES_valorformato);
-            $(this).parents("tr").find("td:eq(6)").text(BCES_valortotal);
-            $(this).parents("tr").find("td:eq(7)").text(BCES_bentrada);
-
-            $(this).parents("tr").attr('data-BCES_producto', BCES_producto);
-            $(this).parents("tr").attr('data-BCES_eproducto', BCES_eproducto);
-            $(this).parents("tr").attr('data-BCES_cantidad', BCES_cantidad);
-            $(this).parents("tr").attr('data-BCES_formato', BCES_formato);
-            $(this).parents("tr").attr('data-BCES_cdetalle', BCES_cdetalle);
-            $(this).parents("tr").attr('BCES_valorformato', BCES_valorformato);
-            $(this).parents("tr").attr('BCES_valortotal', BCES_valortotal);
-            $(this).parents("tr").attr('data-BCES_bentrada', BCES_bentrada);
-
-            $(this).parents("tr").find(".btn-edit1").show();
-            $(this).parents("tr").find(".btn-cancel1").remove();
-            $(this).parents("tr").find(".btn-update1").remove();
             });
 
             </script>
@@ -1239,7 +1155,7 @@ $(document).ready(function(){
             var BCSS_Bodega_Salida = $("select[id='BCS_Bodega_Salida']").val();
 
 
-            var actions = "<button class='btn btn-primary btn-xs btn-edit2'>E<\/button><button class='btn btn-danger btn-xs btn-delete2'>X<\/button>"
+            var actions = "<button class='btn btn-danger btn-xs btn-delete2'>X<\/button>"
 
             var row_data = "<tr data-BCSS_producto='"+BCSS_producto+"' data-BCSS_eproducto='"+BCSS_eproducto+"' data-BCSS_cantidad='"+BCSS_cantidad+"' data-BCSS_formato='"+BCSS_formato+"' data-BCSS_cdetalle='"+BCSS_cdetalle+"' data-BCSS_valorformato='"+BCSS_valorformato+"' data-BCSS_valortotal='"+BCSS_valortotal+"' data-BCSS_Bodega_Salida='"+BCSS_Bodega_Salida+"'>"
 
@@ -1260,86 +1176,6 @@ $(document).ready(function(){
 
             $("body").on("click", ".btn-delete2", function(){
             $(this).parents("tr").remove();
-            });
-
-            $("body").on("click", ".btn-edit2", function(){
-            var BCSS_producto = $(this).parents("tr").attr('data-BCSS_producto');
-            var BCSS_eproducto = $(this).parents("tr").attr('data-BCSS_eproducto');
-            var BCSS_cantidad = $(this).parents("tr").attr('data-BCSS_cantidad');
-            var BCSS_formato = $(this).parents("tr").attr('data-BCSS_formato');
-            var BCSS_cdetalle = $(this).parents("tr").attr('data-BCSS_cdetalle');
-            var BCSS_valorformato = $(this).parents("tr").attr('data-BCSS_valorformato');
-            var BCSS_valortotal = $(this).parents("tr").attr('data-BCSS_valortotal');
-            var BCSS_Bodega_Salida = $(this).parents("tr").attr('data-BCSS_Bodega_Salida');
-
-
-            $(this).parents("tr").find("td:eq(0)").html(BCSS_producto);
-            $(this).parents("tr").find("td:eq(1)").html('<input name="edit_BCSS_eproducto" value="'+BCSS_eproducto+'">');
-            $(this).parents("tr").find("td:eq(2)").html('<input name="edit_BCSS_cantidad" value="'+BCSS_cantidad+'">');
-            $(this).parents("tr").find("td:eq(3)").html(BCSS_formato);
-            $(this).parents("tr").find("td:eq(4)").html('<input name="edit_BCSS_cdetalle" value="'+BCSS_cdetalle+'">');
-            $(this).parents("tr").find("td:eq(5)").html('<input name="edit_BCSS_valorformato" value="'+BCSS_valorformato+'">');
-            $(this).parents("tr").find("td:eq(6)").html('<input name="edit_BCSS_valortotal" value="'+BCSS_valortotal+'">');
-            $(this).parents("tr").find("td:eq(7)").html(BCSS_Bodega_Salida);
-            $(this).parents("tr").find("td:eq(8)").prepend("<button class='btn btn-info btn-xs btn-update2'>A<\/button><button class='btn btn-warning btn-xs btn-cancel2'>C<\/button>")
-            $(this).hide();
-            });
-
-            $("body").on("click", ".btn-cancel2", function(){
-            var BCSS_producto = $(this).parents("tr").attr('data-BCSS_producto');
-            var BCSS_eproducto = $(this).parents("tr").attr('data-BCSS_eproducto');
-            var BCSS_cantidad = $(this).parents("tr").attr('data-BCSS_cantidad');
-            var BCSS_formato = $(this).parents("tr").attr('data-BCSS_formato');
-            var BCSS_cdetalle = $(this).parents("tr").attr('data-BCSS_cdetalle');
-            var BCSS_valorformato = $(this).parents("tr").attr('data-BCSS_valorformato');
-            var BCSS_valortotal = $(this).parents("tr").attr('data-BCSS_valortotal');
-            var BCSS_Bodega_Salida = $(this).parents("tr").attr('data-BCSS_Bodega_Salida');
-
-            $(this).parents("tr").find("td:eq(0)").text(BCSS_producto);
-            $(this).parents("tr").find("td:eq(1)").text(BCSS_eproducto);
-            $(this).parents("tr").find("td:eq(2)").text(BCSS_cantidad);
-            $(this).parents("tr").find("td:eq(3)").text(BCSS_formato);
-            $(this).parents("tr").find("td:eq(4)").text(BCSS_cdetalle);
-            $(this).parents("tr").find("td:eq(5)").text(BCSS_valorformato);
-            $(this).parents("tr").find("td:eq(6)").text(BCSS_valortotal);
-            $(this).parents("tr").find("td:eq(7)").text(BCSS_Bodega_Salida);
-
-            $(this).parents("tr").find(".btn-edit2").show();
-            $(this).parents("tr").find(".btn-update2").remove();
-            $(this).parents("tr").find(".btn-cancel2").remove();
-            });
-
-            $("body").on("click", ".btn-update2", function(){
-            var BCSS_producto = $(this).parents("tr").find("input[name='edit_BCSS_producto']").val();
-            var BCSS_eproducto = $(this).parents("tr").find("input[name='edit_BCSS_eproducto']").val();
-            var BCSS_cantidad = $(this).parents("tr").find("input[name='edit_BCSS_cantidad']").val();
-            var BCSS_formato = $(this).parents("tr").find("input[name='edit_BCSS_formato']").val();
-            var BCSS_cdetalle = $(this).parents("tr").find("input[name='edit_BCSS_cdetalle']").val();
-            var BCSS_valorformato = $(this).parents("tr").find("input[name='edit_BCSS_valorformato']").val();
-            var BCSS_valortotal = $(this).parents("tr").find("input[name='edit_BCSS_valortotal']").val();
-            var BCSS_Bodega_Salida = $(this).parents("tr").find("input[name='edit_BCSS_Bodega_Salida']").val();
-
-            $(this).parents("tr").find("td:eq(0)").text(BCSS_producto);
-            $(this).parents("tr").find("td:eq(1)").text(BCSS_eproducto);
-            $(this).parents("tr").find("td:eq(2)").text(BCSS_cantidad);
-            $(this).parents("tr").find("td:eq(3)").text(BCSS_formato);
-            $(this).parents("tr").find("td:eq(4)").text(BCSS_cdetalle);
-            $(this).parents("tr").find("td:eq(5)").text(BCSS_valorformato);
-            $(this).parents("tr").find("td:eq(6)").text(BCSS_valortotal);
-            $(this).parents("tr").find("td:eq(7)").text(BCSS_Bodega_Salida);
-
-            $(this).parents("tr").attr('data-BCSS_producto', BCSS_producto);
-            $(this).parents("tr").attr('data-BCSS_eproducto', BCSS_eproducto);
-            $(this).parents("tr").attr('data-BCSS_cantidad', BCSS_cantidad);
-            $(this).parents("tr").attr('data-BCSS_formato', BCSS_formato);
-            $(this).parents("tr").attr('data-BCSS_cdetalle', BCSS_cdetalle);
-            $(this).parents("tr").attr('data-BCSS_valorformato', BCSS_valorformato);
-            $(this).parents("tr").attr('data-BCSS_valortotal', BCSS_valortotal);
-            $(this).parents("tr").attr('data-BCSS_Bodega_Salida', BCSS_Bodega_Salida);
-
-            $(this).parents("tr").find(".btn-edit2").show();
-            $(this).parents("tr").find(".btn-cancel2").remove();
-            $(this).parents("tr").find(".btn-update2").remove();
             });
 
             </script>
@@ -1674,14 +1510,13 @@ $(document).ready(function(){
             var BCSAS_bsalida = $("select[id='BCSA_Bodega_Salida']").val();
 
 
-            var actions = "<button class='btn btn-primary btn-xs btn-edit3'>E<\/button><button class='btn btn-danger btn-xs btn-delete3'>X<\/button>"
+            var actions = "<button class='btn btn-danger btn-xs btn-delete3'>X<\/button>"
 
             var row_data = "<tr data-BCSAS_producto='"+BCSAS_producto+"' data-BCSAS_eproducto='"+BCSAS_eproducto+"' data-BCSAS_cantidad='"+BCSAS_cantidad+"' data-BCSAS_formato='"+BCSAS_formato+"' data-BCSAS_cdetalle='"+BCSAS_cdetalle+"' data-BCSAS_valorformato='"+BCSAS_valorformato+"' data-BCSAS_valortotal='"+BCSAS_valortotal+"' data-BCSAS_bsalida='"+BCSAS_bsalida+"'>"
 
             var row = "<td>"+BCSAS_producto+"<\/td> <td>"+BCSAS_eproducto+"<\/td> <td>"+BCSAS_cantidad+"<\/td> <td>"+BCSAS_formato+"<\/td> <td>"+BCSAS_cdetalle+"<\/td> <td>"+BCSAS_valorformato+"<\/td><td>"+BCSAS_valortotal+"<\/td> <td>"+BCSAS_bsalida+"<\/td> <td>"+actions+"<\/td>"
 
             $("#tbody3").append(row_data + row + "<\/tr>");
-
 
             $("select[id='BCSA_Desc_Producto']").val('');
             $("input[id='BCSA_Esp_Producto']").val('');
@@ -1696,87 +1531,6 @@ $(document).ready(function(){
 
             $("body").on("click", ".btn-delete3", function(){
             $(this).parents("tr").remove();
-            });
-
-            $("body").on("click", ".btn-edit3", function(){
-            var BCSAS_producto = $(this).parents("tr").attr('data-BCSAS_producto');
-            var BCSAS_eproducto = $(this).parents("tr").attr('data-BCSAS_eproducto');
-            var BCSAS_cantidad = $(this).parents("tr").attr('data-BCSAS_cantidad');
-            var BCSAS_formato = $(this).parents("tr").attr('data-BCSAS_formato');
-            var BCSAS_cdetalle = $(this).parents("tr").attr('data-BCSAS_cdetalle');
-            var BCSAS_valorformato = $(this).parents("tr").attr('data-BCSAS_valorformato');
-            var BCSAS_valortotal = $(this).parents("tr").attr('data-BCSAS_valortotal');
-            var BCSAS_bsalida = $(this).parents("tr").attr('data-BCSAS_bsalida');
-
-            $(this).parents("tr").find("td:eq(0)").html(BCSAS_producto);
-            $(this).parents("tr").find("td:eq(1)").html('<input name="edit_BCSAS_eproducto" value="'+BCSAS_eproducto+'">');
-            $(this).parents("tr").find("td:eq(2)").html('<input name="edit_BCSAS_cantidad" value="'+BCSAS_cantidad+'">');
-            $(this).parents("tr").find("td:eq(3)").html(BCSAS_formato);
-            $(this).parents("tr").find("td:eq(4)").html('<input name="edit_BCSAS_cdetalle" value="'+BCSAS_cdetalle+'">');
-            $(this).parents("tr").find("td:eq(5)").html('<input name="edit_BCSAS_valorformato" value="'+BCSAS_valorformato+'">');
-            $(this).parents("tr").find("td:eq(6)").html('<input name="edit_BCSAS_valortotal" value="'+BCSAS_valortotal+'">');
-            $(this).parents("tr").find("td:eq(7)").html(BCSAS_bsalida);
-
-            $(this).parents("tr").find("td:eq(8)").prepend("<button class='btn btn-info btn-xs btn-update3'>A<\/button><button class='btn btn-warning btn-xs btn-cancel3'>C<\/button>")
-            $(this).hide();
-            });
-
-            $("body").on("click", ".btn-cancel3", function(){
-            var BCSAS_producto = $(this).parents("tr").attr('data-BCSAS_producto');
-            var BCSAS_eproducto = $(this).parents("tr").attr('data-BCSAS_eproducto');
-            var BCSAS_cantidad = $(this).parents("tr").attr('data-BCSAS_cantidad');
-            var BCSAS_formato = $(this).parents("tr").attr('data-BCSAS_formato');
-            var BCSAS_cdetalle = $(this).parents("tr").attr('data-BCSAS_cdetalle');
-            var BCSAS_valorformato = $(this).parents("tr").attr('data-BCSAS_valorformato');
-            var BCSAS_valortotal = $(this).parents("tr").attr('data-BCSAS_valortotal');
-            var BCSAS_bsalida = $(this).parents("tr").attr('data-BCSAS_bsalida');
-
-            $(this).parents("tr").find("td:eq(0)").text(BCSAS_producto);
-            $(this).parents("tr").find("td:eq(1)").text(BCSAS_eproducto);
-            $(this).parents("tr").find("td:eq(2)").text(BCSAS_cantidad);
-            $(this).parents("tr").find("td:eq(3)").text(BCSAS_formato);
-            $(this).parents("tr").find("td:eq(4)").text(BCSAS_cdetalle);
-            $(this).parents("tr").find("td:eq(5)").text(BCSAS_valorformato);
-            $(this).parents("tr").find("td:eq(6)").text(BCSAS_valortotal);
-            $(this).parents("tr").find("td:eq(7)").text(BCSAS_bsalida);
-
-
-            $(this).parents("tr").find(".btn-edit3").show();
-            $(this).parents("tr").find(".btn-update3").remove();
-            $(this).parents("tr").find(".btn-cancel3").remove();
-            });
-
-            $("body").on("click", ".btn-update3", function(){
-            var BCSAS_producto = $(this).parents("tr").find("input[name='edit_BCSAS_producto']").val();
-            var BCSAS_eproducto = $(this).parents("tr").find("input[name='edit_BCSAS_eproducto']").val();
-            var BCSAS_cantidad = $(this).parents("tr").find("input[name='edit_BCSAS_cantidad']").val();
-            var BCSAS_formato = $(this).parents("tr").find("input[name='edit_BCSAS_formato']").val();
-            var BCSAS_cdetalle = $(this).parents("tr").find("input[name='edit_BCSAS_cdetalle']").val();
-            var BCSAS_valorformato = $(this).parents("tr").find("input[name='edit_BCSAS_valorformato']").val();
-            var BCSAS_valortotal = $(this).parents("tr").find("input[name='edit_BCSAS_valortotal']").val();
-            var BCSAS_bsalida = $(this).parents("tr").find("input[name='edit_BCSAS_bsalida']").val();
-
-            $(this).parents("tr").find("td:eq(0)").text(BCSAS_producto);
-            $(this).parents("tr").find("td:eq(1)").text(BCSAS_eproducto);
-            $(this).parents("tr").find("td:eq(2)").text(BCSAS_cantidad);
-            $(this).parents("tr").find("td:eq(3)").text(BCSAS_formato);
-            $(this).parents("tr").find("td:eq(4)").text(BCSAS_cdetalle);
-            $(this).parents("tr").find("td:eq(5)").text(BCSAS_valorformato);
-            $(this).parents("tr").find("td:eq(6)").text(BCSAS_valortotal);
-            $(this).parents("tr").find("td:eq(7)").text(BCSAS_bsalida);
-
-            $(this).parents("tr").attr('data-BCSAS_producto', BCSAS_producto);
-            $(this).parents("tr").attr('data-BCSAS_eproducto', BCSAS_eproducto);
-            $(this).parents("tr").attr('data-BCSAS_cantidad', BCSAS_cantidad);
-            $(this).parents("tr").attr('data-BCSAS_formato', BCSAS_formato);
-            $(this).parents("tr").attr('data-BCSAS_cdetalle', BCSAS_cdetalle);
-            $(this).parents("tr").attr('data-BCSAS_valorformato', BCSAS_valorformato);
-            $(this).parents("tr").attr('data-BCSAS_valortotal', BCSAS_valortotal);
-            $(this).parents("tr").attr('data-BCSAS_bsalida', BCSAS_bsalida);
-
-            $(this).parents("tr").find(".btn-edit3").show();
-            $(this).parents("tr").find(".btn-cancel3").remove();
-            $(this).parents("tr").find(".btn-update3").remove();
             });
 
             </script>
@@ -2083,7 +1837,7 @@ $(document).ready(function(){
             var MISS_bdestino = $("select[id='MIS_Bodega_Destino']").val();
 
 
-            var actions = "<button class='btn btn-primary btn-xs btn-edit4'>E<\/button><button class='btn btn-danger btn-xs btn-delete4'>X<\/button>"
+            var actions = "<button class='btn btn-danger btn-xs btn-delete4'>X<\/button>"
 
             var row_data = "<tr data-MISS_producto='"+MISS_producto+"' data-MISS_eproducto='"+MISS_eproducto+"' data-MISS_cantidad='"+MISS_cantidad+"' data-MISS_formato='"+MISS_formato+"' data-MISS_cdetalle='"+MISS_cdetalle+"' data-MISS_valorformato='"+MISS_valorformato+"' data-MISS_valortotal='"+MISS_valortotal+"' data-MISS_bsalida='"+MISS_bsalida+"' data-MISS_bdestino='"+MISS_bdestino+"'>"
 
@@ -2106,95 +1860,6 @@ $(document).ready(function(){
 
             $("body").on("click", ".btn-delete4", function(){
             $(this).parents("tr").remove();
-            });
-
-            $("body").on("click", ".btn-edit4", function(){
-            var MISS_producto = $(this).parents("tr").attr('data-MISS_producto');
-            var MISS_eproducto = $(this).parents("tr").attr('data-MISS_eproducto');
-            var MISS_cantidad = $(this).parents("tr").attr('data-MISS_cantidad');
-            var MISS_formato = $(this).parents("tr").attr('data-MISS_formato');
-            var MISS_cdetalle = $(this).parents("tr").attr('data-MISS_cdetalle');
-            var MISS_valorformato = $(this).parents("tr").attr('data-MISS_valorformato');
-            var MISS_valortotal = $(this).parents("tr").attr('data-MISS_valortotal');
-            var MISS_bsalida = $(this).parents("tr").attr('data-MISS_bsalida');
-            var MISS_bdestino = $(this).parents("tr").attr('data-MISS_bdestino');
-
-
-            $(this).parents("tr").find("td:eq(0)").html(MISS_producto);
-            $(this).parents("tr").find("td:eq(1)").html('<input name="edit_MISS_eproducto" value="'+MISS_eproducto+'">');
-            $(this).parents("tr").find("td:eq(2)").html('<input name="edit_MISS_cantidad" value="'+MISS_cantidad+'">');
-            $(this).parents("tr").find("td:eq(3)").html(MISS_formato);
-            $(this).parents("tr").find("td:eq(4)").html('<input name="edit_MISS_cdetalle" value="'+MISS_cdetalle+'">');
-            $(this).parents("tr").find("td:eq(5)").html('<input name="edit_MISS_valorformato" value="'+MISS_valorformato+'">');
-            $(this).parents("tr").find("td:eq(6)").html('<input name="edit_MISS_valortotal" value="'+MISS_valortotal+'">');
-            $(this).parents("tr").find("td:eq(7)").html(MISS_bsalida);
-            $(this).parents("tr").find("td:eq(8)").html(MISS_bdestino);
-
-            $(this).parents("tr").find("td:eq(9)").prepend("<button class='btn btn-info btn-xs btn-update4'>A<\/button><button class='btn btn-warning btn-xs btn-cancel4'>C<\/button>")
-            $(this).hide();
-            });
-
-            $("body").on("click", ".btn-cancel4", function(){
-            var MISS_producto = $(this).parents("tr").attr('data-MISS_producto');
-            var MISS_eproducto = $(this).parents("tr").attr('data-MISS_eproducto');
-            var MISS_cantidad = $(this).parents("tr").attr('data-MISS_cantidad');
-            var MISS_formato = $(this).parents("tr").attr('data-MISS_formato');
-            var MISS_cdetalle = $(this).parents("tr").attr('data-MISS_cdetalle');
-            var MISS_valorformato = $(this).parents("tr").attr('data-MISS_valorformato');
-            var MISS_valortotal = $(this).parents("tr").attr('data-MISS_valortotal');
-            var MISS_bsalida = $(this).parents("tr").attr('data-MISS_bsalida');
-            var MISS_bdestino = $(this).parents("tr").attr('data-MISS_bdestino');
-
-            $(this).parents("tr").find("td:eq(0)").text(MISS_producto);
-            $(this).parents("tr").find("td:eq(1)").text(MISS_eproducto);
-            $(this).parents("tr").find("td:eq(2)").text(MISS_cantidad);
-            $(this).parents("tr").find("td:eq(3)").text(MISS_formato);
-            $(this).parents("tr").find("td:eq(4)").text(MISS_cdetalle);
-            $(this).parents("tr").find("td:eq(5)").text(MISS_valorformato);
-            $(this).parents("tr").find("td:eq(6)").text(MISS_valortotal);
-            $(this).parents("tr").find("td:eq(7)").text(MISS_bsalida);
-            $(this).parents("tr").find("td:eq(8)").text(MISS_bdestino);
-
-            $(this).parents("tr").find(".btn-edit4").show();
-            $(this).parents("tr").find(".btn-update4").remove();
-            $(this).parents("tr").find(".btn-cancel4").remove();
-            });
-
-            $("body").on("click", ".btn-update4", function(){
-            var MISS_producto = $(this).parents("tr").find("input[name='edit_MISS_producto']").val();
-            var MISS_eproducto = $(this).parents("tr").find("input[name='edit_MISS_eproducto']").val();
-            var MISS_cantidad = $(this).parents("tr").find("input[name='edit_MISS_cantidad']").val();
-            var MISS_formato = $(this).parents("tr").find("input[name='edit_MISS_formato']").val();
-            var MISS_cdetalle = $(this).parents("tr").find("input[name='edit_MISS_cdetalle']").val();
-            var MISS_valorformato = $(this).parents("tr").find("input[name='edit_MISS_valorformato']").val();
-            var MISS_valortotal = $(this).parents("tr").find("input[name='edit_MISS_valortotal']").val();
-            var MISS_bsalida = $(this).parents("tr").find("input[name='edit_MISS_bsalida']").val();
-            var MISS_bdestino = $(this).parents("tr").find("input[name='edit_MISS_bdestino']").val();
-
-
-            $(this).parents("tr").find("td:eq(0)").text(MISS_producto);
-            $(this).parents("tr").find("td:eq(1)").text(MISS_eproducto);
-            $(this).parents("tr").find("td:eq(2)").text(MISS_cantidad);
-            $(this).parents("tr").find("td:eq(3)").text(MISS_formato);
-            $(this).parents("tr").find("td:eq(4)").text(MISS_cdetalle);
-            $(this).parents("tr").find("td:eq(5)").text(MISS_valorformato);
-            $(this).parents("tr").find("td:eq(6)").text(MISS_valortotal);
-            $(this).parents("tr").find("td:eq(7)").text(MISS_bsalida);
-            $(this).parents("tr").find("td:eq(8)").text(MISS_bdestino);
-
-            $(this).parents("tr").attr('data-MISS_producto', MISS_producto);
-            $(this).parents("tr").attr('data-MISS_eproducto', MISS_eproducto);
-            $(this).parents("tr").attr('data-MISS_cantidad', MISS_cantidad);
-            $(this).parents("tr").attr('data-MISS_formato', MISS_formato);
-            $(this).parents("tr").attr('data-MISS_cdetalle', MISS_cdetalle);
-            $(this).parents("tr").attr('data-MISS_valorformato', MISS_valorformato);
-            $(this).parents("tr").attr('data-MISS_valortotal', MISS_valortotal);
-            $(this).parents("tr").attr('data-MISS_bsalida', MISS_bsalida);
-            $(this).parents("tr").attr('data-MISS_bdestino', MISS_bdestino);
-
-            $(this).parents("tr").find(".btn-edit4").show();
-            $(this).parents("tr").find(".btn-cancel4").remove();
-            $(this).parents("tr").find(".btn-update4").remove();
             });
 
             </script>
