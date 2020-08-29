@@ -648,7 +648,7 @@ $(document).ready(function(){
             var BPES_producto = $("select[id='BPE_Desc_Producto']").val();
             var BPES_eproducto = $("input[id='BPE_Esp_Producto']").val();
             var BPES_cantidad = $("input[id='BPE_Cantidad']").val();
-            var BPES_formato = $("select[id='BPE_Formato']").val();
+            var BPES_formato = $("select[id='BPE_Formato']").children("option:selected").text();
             var BPES_cdetalle = $("input[id='BPE_C_Detalle']").val();
             var BPES_valorformato = $("input[id='BPE_Valor_Formato']").val();
             var BPES_valortotal = $("input[id='BPE_Valor_Total']").val();
@@ -1152,7 +1152,7 @@ $(document).ready(function(){
             var BPSS_producto = $("select[id='BPS_Desc_Producto']").val();
             var BPSS_eproducto = $("input[id='BPS_Esp_Producto']").val();
             var BPSS_cantidad = $("input[id='BPS_Cantidad']").val();
-            var BPSS_formato = $("select[id='BPS_Formato']").val();
+            var BPSS_formato = $("select[id='BPS_Formato']").children("option:selected").text();
             var BPSS_cdetalle = $("input[id='BPS_C_Detalle']").val();
             var BPSS_valorformato = $("input[id='BPS_Valor_Formato']").val();
             var BPSS_valortotal = $("input[id='BPS_Valor_Total']").val();

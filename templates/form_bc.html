@@ -676,7 +676,7 @@ $(document).ready(function(){
             var BCES_producto = $("select[id='BCE_Desc_Producto']").val();
             var BCES_eproducto = $("input[id='BCE_Esp_Producto']").val();
             var BCES_cantidad = $("input[id='BCE_Cantidad']").val();
-            var BCES_formato = $("select[id='BCE_Formato']").val();
+            var BCES_formato = $("select[id='BCE_Formato']").children("option:selected").text();
             var BCES_cdetalle = $("input[id='BCE_C_Detalle']").val();
             var BCES_valorformato = $("input[id='BCE_Valor_Formato']").val();
             var BCES_valortotal = $("input[id='BCE_Valor_Total']").val();
@@ -1232,7 +1232,7 @@ $(document).ready(function(){
             var BCSS_producto = $("select[id='BCS_Desc_Producto']").val();
             var BCSS_eproducto = $("input[id='BCS_Esp_Producto']").val();
             var BCSS_cantidad = $("input[id='BCS_Cantidad']").val();
-            var BCSS_formato = $("select[id='BCS_Formato']").val();
+            var BCSS_formato = $("select[id='BCS_Formato']").children("option:selected").text();
             var BCSS_cdetalle = $("input[id='BCS_C_Detalle']").val();
             var BCSS_valorformato = $("input[id='BCS_Valor_Formato']").val();
             var BCSS_valortotal = $("input[id='BCS_Valor_Total']").val();
@@ -1667,7 +1667,7 @@ $(document).ready(function(){
             var BCSAS_producto = $("select[id='BCSA_Desc_Producto']").val();
             var BCSAS_eproducto = $("input[id='BCSA_Esp_Producto']").val();
             var BCSAS_cantidad = $("input[id='BCSA_Cantidad']").val();
-            var BCSAS_formato = $("select[id='BCSA_Formato']").val();
+            var BCSAS_formato = $("select[id='BCSA_Formato']").children("option:selected").text();
             var BCSAS_cdetalle = $("input[id='BCSA_C_Detalle']").val();
             var BCSAS_valorformato = $("input[id='BCSA_Valor_Formato']").val();
             var BCSAS_valortotal = $("input[id='BCSA_Valor_Total']").val();
@@ -2075,7 +2075,7 @@ $(document).ready(function(){
             var MISS_producto = $("select[id='MIS_Desc_Producto']").val();
             var MISS_eproducto = $("input[id='MIS_Esp_Producto']").val();
             var MISS_cantidad = $("input[id='MIS_Cantidad']").val();
-            var MISS_formato = $("select[id='MIS_Formato']").val();
+            var MISS_formato = $("select[id='MIS_Formato']").children("option:selected").text();
             var MISS_cdetalle = $("input[id='MIS_C_Detalle']").val();
             var MISS_valorformato = $("input[id='MIS_Valor_Formato']").val();
             var MISS_valortotal = $("input[id='MIS_Valor_Total']").val();
