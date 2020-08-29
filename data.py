@@ -34,7 +34,16 @@ class GoogleSpread:
 
         rows = []
         for tr in form_table.split("</tr>"):
-            row = [ r.replace("</td>","") for r in tr.split("<td>") if "</td>" in r and 'button' not in r]
+            row = [ r.replace("</td>","").replace(" ", "") for r in tr.split("<td>") if "</td>" in r and 'button' not in r]
             if row:
-                rows.append(row)
+                # convert numeric values to numbers whenever possible
+                converted = []
+                for r in row:
+                    try:
+                        number = float(r)
+                    except:
+                        number = r
+                    converted.append(number)
+
+                rows.append(converted)
         return rows
